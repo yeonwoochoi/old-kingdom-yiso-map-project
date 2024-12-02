@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest1-2
+  m_EditorClassIdentifier: 
+  id: 90000102
+  type: 0
+  name:
+    kr: "\uC5EC\uC778\uACFC \uC0AC\uB0B4\uB4E4\uC744 \uBB3C\uB9AC\uCCD0\uB77C."
+    en: 'Defeat women and men.
+
+'
+  autoComplete: 0
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20000101
+      fieldName:
+        kr: "\uBE44\uB958\uB098 \uD56D\uAD6C \uB0A8\uCABD"
+        en: Southern Biryuna Harbor
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: efc66fe8846394d46970d74ade50bfc1, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: c38b0419a616a1f498171ea5ea00a15e, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 406270f27fb6d4a468fb6bc8336dad9f, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 442ab2b5245d75348ae7e21bb09e5c3d, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

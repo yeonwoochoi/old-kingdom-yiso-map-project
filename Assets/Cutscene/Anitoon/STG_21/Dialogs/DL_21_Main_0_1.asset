@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_21_Main_0_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC800\uAC8C \uB2F9\uC219\uC758 \uBD80\uB300 \uAE43\uBC1C\uC774\uC57C."
+      en: That's Yugang's flag!
+    readingTime:
+      kr: 2.6
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB610 \uB2A6\uC5C8\uB124. \uBE68\uB9AC \uAC00\uC11C \uAD6C\uD558\uC790."
+      en: We're late, again. Let's hurry, Mudin.
+    readingTime:
+      kr: 2.8
+      en: 3.4

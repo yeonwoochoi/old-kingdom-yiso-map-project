@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest14-3
+  m_EditorClassIdentifier: 
+  id: 90001403
+  type: 0
+  name:
+    kr: "\uCD1D\uD45C\uB450\uB97C \uC81C\uC555\uD558\uB77C."
+    en: Defeat the head of Namchang
+  autoComplete: 0
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001403
+      fieldName:
+        kr: "\uB0A8\uCC3D\uD45C\uAD6D \uAD00\uCCAD"
+        en: Headquarter of Namchang Logistics
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 57c7eef47ee05a74ebf41bdc9f8d9fac, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001205
+      fieldName:
+        kr: "\uB0A8\uCC3D\uD45C\uAD6D \uAD00\uCCAD"
+        en: Headquarter of Namchang Logistics
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_13_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: d216e4231dc32dc4ebb55d376d634cba, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB0B4\uAC00 \uC65C \uB108\uD76C\uB4E4\uC744 \uC12C\uACA8\uC57C\uD55C\uB2E8
+        \uB9D0\uC774\uB0D0? \uBC31\uC81C? \uC6C3\uAE30\uC9C0\uB3C4 \uC54A\uB294\uAD6C\uB098."
+      en: BaekJae? I do have to serve your household now? You're joking.
+    readingTime:
+      kr: 5.1
+      en: 5.2
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC774\uC81C \uBBF8\uCD94\uD640\uC740 \uB0B4 \uC5B4\uBA38\uB2C8\uC778
+        \uC18C\uC11C\uB178 \uC5EC\uC655\uB2D8\uC758 \uAD00\uD560\uC774\uB77C\uACE0
+        \uD558\uC9C0 \uC54A\uC558\uB290\uB0D0."
+      en: It's the final notice. You'd better do what I say. Michuhol is now under
+        the jurisdiction of Queen SosuNo.
+    readingTime:
+      kr: 5.5
+      en: 8.3
+  - characterSo: {fileID: 11400000, guid: d216e4231dc32dc4ebb55d376d634cba, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBC31\uC81C? \uB098\uB294 \uADF8\uB534 \uB098\uB77C \uC774\uB984\uC740
+        \uCC98\uC74C \uB4E4\uC5B4\uBCF8\uB2E4. \uB108\uD76C \uAC19\uC740 \uC0AC\uAE30\uAFBC
+        \uB188\uB4E4\uC744 \uCC98\uB9AC\uD558\uB294 \uBC95\uC744 \uC774\uBBF8 \uC798
+        \uC54C\uACE0 \uC788\uB2E4."
+      en: I've never heard of that. Besides, I'm used to dealing with scams like
+        you.
+    readingTime:
+      kr: 8.2
+      en: 6.3
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB108\uD76C \uD638\uB2E8\uC740 \uB0B4 \uBA85\uC744 \uB530\uB974\uC9C0
+        \uC54A\uACA0\uB2E4\uB294 \uAC83\uC774\uB0D0?"
+      en: Are you saying that Hoh in Michuhol will reject my orders?
+    readingTime:
+      kr: 3.8
+      en: 4.9

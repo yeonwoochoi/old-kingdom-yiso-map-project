@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_11_Main_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uBAA8\uB3C4\uB77C \uB188\uB4E4\uC774 \uB178\uB9AC\uB294 \uC0AC\uB78C\uC774
+        \uADF8 \uC0AC\uB78C \uB9DE\uC544\uC694? \uAD1C\uD55C \uC9D3 \uD558\uB294
+        \uAC70 \uC544\uB2D0\uAE4C\uC694, \uC5B8\uB2C8?"
+      en: Do you really think it's Mudin, the one we met in Korea? It could be someone
+        else, sis.
+    readingTime:
+      kr: 6
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB77C\uD0C0\uC774\uB780 \uC791\uC790\uAC00 \uB0B4\uB9B0 \uBA85\uB839\uC11C\uB97C
+        \uBD24\uC796\uC544. \uC0DD\uAE40\uC0C8\uB97C \uBB18\uC0AC\uD55C \uAC78 \uBCF4\uBA74
+        \uD655\uC2E4\uD788 \uBB34\uB518\uC774\uC57C."
+      en: As you've seen the order from Latai, the description of the target reminds
+        me of Mudin.
+    readingTime:
+      kr: 6
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "16\uC0B4\uC5D0 \uC798 \uC0DD\uAE34 \uADC0\uACF5\uC790. \uB2EC\uAC40\uD615
+        \uC5BC\uAD74, \uD070 \uD0A4. \uAC00\uB290\uB2E4\uB780 \uB208\uC379. \uADF8\uB7F0
+        \uC0AC\uB78C\uC740 \uAC81\uB098 \uB9CE\uC544\uC694."
+      en: Sixteen years old, handsome with an egg-shaped face, tall, and slender
+        eyebrows. I could easily find hundreds of people like that in town, sis.
+    readingTime:
+      kr: 7
+      en: 8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBAA9\uAC78\uC774 \uBB38\uC591\uC744 \uADF8\uB824\uB193\uC558\uC796\uC544.
+        \uADF8\uAC8C \uADF8 \uC0AC\uB78C \uBAA9\uC5D0 \uAC78\uB824\uC788\uC5C8\uC5B4."
+      en: There's also a description of a necklace, which is the same as Mudin's.
+    readingTime:
+      kr: 5
+      en: 6
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uCC38 \uADF8 \uC9E7\uC740 \uC21C\uAC04\uC5D0 \uC790\uC138\uD788\uB3C4
+        \uBD24\uB124\uC694, \uC5B8\uB2C8."
+      en: Wow, sis! Did you catch it in such a short time? You seem to be quite interested
+        in him.
+    readingTime:
+      kr: 4
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uD638\uD638\uD638. \uB124\uAC00 \uD6C8\uB828\uC774 \uB354 \uD544\uC694\uD558\uB2E4
+        \uC774\uAC70\uC9C0?"
+      en: Hey, keep it down. You don't want me to train you harder and harder, do
+        you?
+    readingTime:
+      kr: 4
+      en: 6
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB0B4\uAC00 \uBB50\uB7AC\uC5B4\uC694? \uADF8\uB0E5 \uC5B8\uB2C8 \uAD00\uCC30\uB825\uC774
+        \uC88B\uB2E4\uACE0 \uD55C \uAC83\uBFD0\uC774\uC5D0\uC694."
+      en: What did I say? I was just pointing out how observant you are.
+    readingTime:
+      kr: 5
+      en: 5

@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest17-3
+  m_EditorClassIdentifier: 
+  id: 90001703
+  type: 0
+  name:
+    kr: "\uC81C\uD55C \uC2DC\uAC04 \uB0B4\uC5D0 \uBC31\uC81C\uAD70\uC744 \uCC98\uCE58\uD558\uACE0
+      \uD328\uB9AC\uB97C \uAD6C\uD558\uB77C."
+    en: Defeat the Baekjae forces and rescue Felie within the time limit.
+  autoComplete: 1
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001702
+      fieldName:
+        kr: "\uC791 \uB9C8\uC744 \uC67C\uCABD \uD56D\uAD6C \uC785\uAD6C"
+        en: Left Port Entrance of Zack Town
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 1212486e5ed10bf4a80c3d344d7b5942, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001205
+      fieldName:
+        kr: "\uB0A8\uCC3D\uD45C\uAD6D \uAD00\uCCAD"
+        en: Headquarter of Namchang Logistics
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 43fd1f274edcb92488c43e4d758406ea, type: 2}
+      count: 4
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 6a3591092f5e70147b4d48033094bb0f, type: 2}
+      count: 2
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 4fb97881df2b5034ca62f5e425f88606, type: 2}
+      count: 2
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

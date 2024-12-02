@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_8_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uAC10\uC0AC\uD574\uC694. \uBB54\uAC00 \uB354 \uC54C\uB824\uC904 \uB9D0\uC774
+        \uC5C6\uB098\uC694?"
+      en: Thank you. Something else I should be aware of?
+    readingTime:
+      kr: 3.5
+      en: 4.1
+  - characterSo: {fileID: 11400000, guid: 7b8c1300cf1ed3349948e9ac481ed570, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB354 \uAD81\uAE08\uD558\uC2DC\uBA74, \uC2DD\uC0AC \uB05D\uB0B4\uACE0,
+        \uD6C4\uBBF8 \uCABD\uC73C\uB85C \uC624\uC138\uC694."
+      en: Come to the stern after meal, if you're interested.
+    readingTime:
+      kr: 4.2
+      en: 4.4

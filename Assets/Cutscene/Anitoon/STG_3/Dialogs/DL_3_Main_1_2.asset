@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_3_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b3d010b47af2cc94f991dd305390b7e5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uD3C9\uBC94\uD55C \uBAA8\uB140\uB77C\uACE0 \uD558\uC9C0 \uC54A\uC558\uC5B4?"
+      en: How did this happen? We were promised a simple task.
+    readingTime:
+      kr: 2.7
+      en: 4.4
+  - characterSo: {fileID: 11400000, guid: 0079b0a04ae9f7640b868de83aeb6b65, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uBC8C\uC368 \uB458\uC774\uB098 \uC800 \uC5B4\uBBF8\uC758 \uC190\uC5D0
+        \uC8FD\uC5C8\uB294\uB370, \uB538\uB144\uB3C4 \uC7A5\uB09C \uC544\uB2C8\uC57C."
+      en: The mother has already defeated two members of our team, and her daughter
+        seems even stronger than her mother.
+    readingTime:
+      kr: 4.9
+      en: 9
+  - characterSo: {fileID: 11400000, guid: e9de6e434836eee4b813682a786db383, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC800 \uC5EC\uC790\uB294 \uC774\uBBF8 \uCE7C\uC5D0 \uB9DE\uC558\uC5B4.
+        \uB194\uB450\uBA74 \uC5B4\uCC28\uD53C \uC8FD\uC74C\uC744 \uBA74\uCE58 \uBABB\uD560
+        \uAC70\uC57C."
+      en: The mother has sustained a fatal wound and is on the brink of death.
+    readingTime:
+      kr: 5.5
+      en: 5.9

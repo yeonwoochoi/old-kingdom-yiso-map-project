@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1926658905014176803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438294756961044973}
+  - component: {fileID: 8953529679871247189}
+  - component: {fileID: 2769075979752692043}
+  - component: {fileID: 1798396531616463578}
+  - component: {fileID: 1501739822634089629}
+  - component: {fileID: 8036703195486940316}
+  - component: {fileID: 3287954169315600444}
+  - component: {fileID: 8883271043146605230}
+  - component: {fileID: 4747797432691613680}
+  m_Layer: 0
+  m_Name: pfAIBrainAllySlash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438294756961044973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8953529679871247189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786967fc1c8a4b4d813403b978216a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - stateName: Detecting
+    actions:
+      array:
+      - {fileID: 2769075979752692043}
+    transitions:
+      array:
+      - decision: {fileID: 8036703195486940316}
+        trueState: Moving
+        falseState: 
+  - stateName: Moving
+    actions:
+      array:
+      - {fileID: 1798396531616463578}
+    transitions:
+      array:
+      - decision: {fileID: 8036703195486940316}
+        trueState: 
+        falseState: Detecting
+      - decision: {fileID: 3287954169315600444}
+        trueState: 
+        falseState: Detecting
+      - decision: {fileID: 8883271043146605230}
+        trueState: Attacking
+        falseState: 
+  - stateName: Attacking
+    actions:
+      array:
+      - {fileID: 1501739822634089629}
+    transitions:
+      array:
+      - decision: {fileID: 4747797432691613680}
+        trueState: Detecting
+        falseState: 
+  owner: {fileID: 0}
+  currentState: 
+  timeInThisState: 0
+  target: {fileID: 0}
+  lastKnownTargetPosition: {x: 0, y: 0, z: 0}
+  brainActive: 1
+  resetBrainOnStart: 1
+  resetBrainOnEnable: 0
+  actionsFrequency: 0
+  decisionsFrequency: 0
+  randomizeFrequencies: 0
+  randomActionFrequency: {x: 0.5, y: 1}
+  randomDecisionFrequency: {x: 0.5, y: 1}
+--- !u!114 &2769075979752692043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7c230cff9749f490ea023a52f215b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+--- !u!114 &1798396531616463578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948257ccdaf34c26a2d723a5e11508e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+  minimumDistance: 2
+--- !u!114 &1501739822634089629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d91857a0a341fbb5612b4959f156a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+  faceTargetWhenAttacking: 1
+  aimAtTargetWhenAttacking: 1
+  onlyAimWhenInState: 0
+  weaponAimDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &8036703195486940316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fe78438a8f458490beac464dad7bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  obstaclesDetectionMode: 1
+  radius: 12
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  targetCheckFrequency: 1
+  overlapMaximum: 10
+  obstacleDetection: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 320
+--- !u!114 &3287954169315600444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b83de33b4d4bf68a007cbca83b7a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+--- !u!114 &8883271043146605230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f967133e75be4580be0b46175ead2c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: AttackingDistanceToTarget
+  comparisonMode: 1
+  distance: 2
+  minDistance: 2
+  ignoreTarget: 0
+  ignoreTargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &4747797432691613680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926658905014176803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: AttackingTimeInState
+  minDuration: 1.5
+  maxDuration: 2.5

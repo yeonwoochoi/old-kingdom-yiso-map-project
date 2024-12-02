@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87fe101b9274d269d9de197cbe0426e, type: 3}
+  m_Name: Dialogue_18_2_Main_4
+  m_EditorClassIdentifier: 
+  id: 91820004
+  dialogues:
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 3c2affa808c320943b7cb6ce2dd01179, type: 2}
+    content:
+      kr: "\uC655\uC790\uB2D8, \uB3CC\uC544\uC624\uC168\uAD70\uC694. \uC88B\uC544\uD558\uC2DC\uB294
+        \uACF0\uD0D5\uC744 \uD574\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4."
+      en: My prince is back in one piece. Thank you, Heaven. I can make your favorite
+        soup now and ever.
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 80fac0f144aaed54cad13bd20fbf7d6a, type: 2}
+    content:
+      kr: "\uC5EC\uAE30 \uC815\uB9AC\uD55C \uB2E4\uC74C, \uC790\uB124\uAC00 \uD574\uC900
+        \uACF0\uD0D5\uC744 \uC81C\uC77C \uBA3C\uC800 \uBA39\uACA0\uB124."
+      en: Beef soup, as soon as our house is secured.

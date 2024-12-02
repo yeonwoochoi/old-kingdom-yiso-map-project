@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_2_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uAD6C\uC885 \uC624\uBE60! \uC774 \uC790\uB4E4\uC740 \uB204\uAD6C\uC5D0\uC694?"
+      en: Gujong Oppa, are you okay?
+    readingTime:
+      kr: 3
+      en: 2.6
+  - characterSo: {fileID: 11400000, guid: da25e0a18a970af4eb011767f36a7f9c, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC5B4? \uC5B4\uB5BB\uAC8C \uC0B4\uC544\uC788\uC9C0?"
+      en: How did she make it here?
+    readingTime:
+      kr: 2.2
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uBB50\uB77C\uACE0\uC694?"
+      en: what do you mean?
+    readingTime:
+      kr: 1.3
+      en: 2
+  - characterSo: {fileID: 11400000, guid: da25e0a18a970af4eb011767f36a7f9c, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC544! \uB9D0\uC774 \uC798\uBABB \uB098\uC654\uB124. \uC774 \uC0AC\uB78C\uB4E4\uC774
+        \uB0A0 \uBD99\uC7A1\uB294 \uBC14\uB78C\uC5D0 \uB0B4\uAC00 \uC880 \uB2A6\uC5C8\uC9C0?"
+      en: Ah! It was a mere slip of the tongue. My delay was caused by these individuals
+        who apprehended me, my love.
+    readingTime:
+      kr: 5.8
+      en: 8.3

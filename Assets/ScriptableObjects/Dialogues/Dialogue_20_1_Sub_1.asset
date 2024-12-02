@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87fe101b9274d269d9de197cbe0426e, type: 3}
+  m_Name: Dialogue_20_1_Sub_1
+  m_EditorClassIdentifier: 
+  id: 92010001
+  dialogues:
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 80fac0f144aaed54cad13bd20fbf7d6a, type: 2}
+    content:
+      kr: "\uCCAB\uC9F8 \uD615\uB2D8\uC740 \uC5B4\uB514 \uACC4\uC2DC\uC624?"
+      en: Where's my eldest brother?
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 0cddaba68f5ec454f961626158aa99d9, type: 2}
+    content:
+      kr: "\uC548\uCC44\uC5D0 \uC788\uB2E4\uACE0 \uB4E4\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uD0DC\uC790\uB2D8\uC744 \uAD6C\uD574\uC8FC\uC2ED\uC2DC\uC624."
+      en: I heard he is in the main building. Please save him, Prince Mudin.

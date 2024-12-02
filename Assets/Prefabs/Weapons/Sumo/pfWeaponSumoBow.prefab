@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1913085116687295154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3379785242916377374}
+  - component: {fileID: 1749105856082347588}
+  - component: {fileID: 4421560571086802353}
+  m_Layer: 0
+  m_Name: pfWeaponSumoBow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3379785242916377374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913085116687295154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4481715041703883766}
+  - {fileID: 731934614944601113}
+  - {fileID: 4538566352127725465}
+  - {fileID: 2795192349464149352}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749105856082347588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913085116687295154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181b23a172304125b007b7d8a4a945e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aimControl: 0
+  useSecondaryMovement: 1
+  aimControlActive: 1
+  minimumAngle: -180
+  maximumAngle: 180
+  minimumMagnitude: 0.2
+--- !u!114 &4421560571086802353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913085116687295154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b0a10728745d787fed4d2fc9d7d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: Sumo Bow
+  weaponActive: 0
+  interruptable: 0
+  triggerMode: 0
+  attackSpeed: 1.5
+  delayBeforeUse: 0
+  delayUse: 1.2
+  delayBetweenUses: 0.15
+  canDelayBeforeUseInterrupted: 0
+  canDelayBetweenUsesInterrupted: 0
+  recoilForce: 0
+  preventAllMovementWhileInUse: 1
+  preventAllAimWhileInUse: 1
+  weaponStartFeedbacks: {fileID: 0}
+  weaponUsedFeedbacks: {fileID: 0}
+  weaponStopFeedbacks: {fileID: 0}
+  projectilePrefab: {fileID: 5828760181399573660, guid: e217b916dcca5f94d8fb549400537420, type: 3}
+  poolSize: 30
+  projectilesPerShot: 1
+  projectilesPerShotDelayBetween: 0.1
+  projectileMovementType: 1
+  damageCalculationMethod: 1
+  minDamage: 10
+  maxDamage: 100
+  detectorAreaRange: 6
+  detectLayerMask:
+    serializedVersion: 2
+    m_Bits: 394240
+  detectedGameObject: {fileID: 0}
+  spawnDelay: 0.6
+  projectileSpawnPositionType: 0
+  projectileSpawnOffsetE: {x: 0.27, y: 0.52, z: 0}
+  projectileSpawnOffsetW: {x: -0.27, y: 0.52, z: 0}
+  projectileSpawnOffsetS: {x: -0.023, y: -0.056, z: 0}
+  projectileSpawnOffsetN: {x: -0.033, y: 0.833, z: 0}
+  spawnTransformE: {fileID: 4481715041703883766}
+  spawnTransformW: {fileID: 731934614944601113}
+  spawnTransformS: {fileID: 4538566352127725465}
+  spawnTransformN: {fileID: 2795192349464149352}
+  spread: {x: 0, y: 0, z: 10}
+  spawnFeedbacks: []
+  spawnPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &2893178993522438057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731934614944601113}
+  m_Layer: 0
+  m_Name: Spawn (W)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731934614944601113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893178993522438057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29, y: -0.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3379785242916377374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6424628028009162233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4481715041703883766}
+  m_Layer: 0
+  m_Name: Spawn (E)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4481715041703883766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6424628028009162233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29, y: 0.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3379785242916377374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6580610750212574956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2795192349464149352}
+  m_Layer: 0
+  m_Name: Spawn (N)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2795192349464149352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580610750212574956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.45, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3379785242916377374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9045911706592198708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4538566352127725465}
+  m_Layer: 0
+  m_Name: Spawn (S)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4538566352127725465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9045911706592198708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.023, y: -0.056, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3379785242916377374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

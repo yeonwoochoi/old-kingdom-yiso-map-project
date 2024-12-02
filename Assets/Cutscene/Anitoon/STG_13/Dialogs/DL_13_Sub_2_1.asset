@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_13_Sub_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 7792aee5ac702fc4495174523c1b184a, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB300\uBA85\uCC9C\uC9C0\uC5D0 \uBB34\uC2A8 \uC9D3\uB4E4\uC778\uAC00!
+        \uC81C\uBC1C \uB3C4\uC640\uC8FC\uC2DC\uC624."
+      en: What are you doing out in the open like this? Please help me!
+    readingTime:
+      kr: 3.7
+      en: 5.1
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uAC15\uB3C4\uB4E4\uC778\uAC00\uBD10\uC694, \uC5B8\uB2C8."
+      en: They look like robbers, sis.
+    readingTime:
+      kr: 2.2
+      en: 2.7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uD589\uC138\uB97C \uBCF4\uB2C8, \uADF8\uB0E5 \uAC15\uB3C4\uAC00 \uC544\uB2C8\uB77C
+        \uBC30 \uD0C0\uB294 \uC218\uC801 \uB188\uB4E4\uC774\uB124."
+      en: They're not merely robbers, they're all pirates.
+    readingTime:
+      kr: 4.7
+      en: 4.1

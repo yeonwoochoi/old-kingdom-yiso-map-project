@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Sub_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: c1e3a5a2db3cc554597cf464dd453084, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC0B4\uB824\uC8FC\uC138\uC694. \uB09C \uC5B5\uC6B8\uD574\uC694."
+      en: Please, spare me. I'm innocent.
+    readingTime:
+      kr: 3
+      en: 3
+  - characterSo: {fileID: 11400000, guid: cdd35fe7cc17da0419684989772186e1, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uAC10\uD788 \uB124\uAC00 \uBC14\uB78C\uC744 \uD53C\uC6CC!"
+      en: How dare you cheat on me!
+    readingTime:
+      kr: 3
+      en: 3
+  - characterSo: {fileID: 11400000, guid: f1bbc4966ef4ef74f88f1f811e75745f, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uCD94\uC7A1\uD55C \uC9D3\uC73C\uB85C \uC6B0\uB9AC \uAC00\uBB38\uC744
+        \uBAA8\uC695\uD558\uB2E4\uB2C8..."
+      en: Your actions have insulted our family.
+    readingTime:
+      kr: 3.5
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: 82c45845cffb66d43b33b3c6ada25ab7, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC774 \uB144 \uBCF8\uAC00\uB85C \uAC11\uC2DC\uB2E4. \uAC00\uC11C \uADF8
+        \uC9D1\uC548 \uB188\uB4E4\uB3C4..."
+      en: Let's go to your parent's house and find out who's to blame...
+    readingTime:
+      kr: 4
+      en: 5
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC815\uB9D0 \uB108\uBB34 \uD558\uB124. \uC624\uC8FD \uC0AC\uB0B4 \uAD6C\uC2E4\uC744
+        \uBABB\uD558\uBA74, \uC5EC\uC790\uAC00 \uBC14\uB78C\uC744 \uD53C\uC6E0\uC744\uAE4C."
+      en: A wife with a passive husband often cheats.
+    readingTime:
+      kr: 5
+      en: 4
+  - characterSo: {fileID: 11400000, guid: c1e3a5a2db3cc554597cf464dd453084, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC544\uB2C8\uC5D0\uC694. \uC774 \uC0AC\uB78C\uC774 \uB098\uB97C \uB0B4\uCAD3\uACE0
+        \uC0C8 \uC7A5\uAC00 \uB4E4\uB824\uACE0 \uC774\uB7EC\uB294 \uAC70\uB77C\uAD6C\uC694."
+      en: That's not the case. He's trying to kick me out and get a new wife.
+    readingTime:
+      kr: 5
+      en: 5

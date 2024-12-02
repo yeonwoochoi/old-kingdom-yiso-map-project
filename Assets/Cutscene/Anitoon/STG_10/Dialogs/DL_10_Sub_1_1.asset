@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_10_Sub_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uB204\uAD6C\uB0D0! \uB2F9\uC7A5 \uC190\uC744 \uB5BC\uB77C!"
+      en: Who are you? Take your hands off right now!
+    readingTime:
+      kr: 3.5
+      en: 5

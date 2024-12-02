@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_6_Main_5_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB10C \uC9C4\uC9DC \uB204\uAD6C\uB0D0?"
+      en: Who are you, exactly?
+    readingTime:
+      kr: 1.8
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uADF8\uAC74 \uC54C \uAC70 \uC5C6\uACE0... \uAD6C\uC885\uC744 \uC544\uAF08\uB2E4\uB294
+        \uC778\uAC04\uC740 \uB204\uAD6C\uC9C0?"
+      en: A dead man needs no question. Who is it that recognizes Gujong much?
+    readingTime:
+      kr: 4.5
+      en: 5.6
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB108\uAD6C\uB098. \uC774\uC18C\uB77C\uB294 \uB144\uC744 \uAD6C\uD55C
+        \uD0DC\uC655\uC758 \uBB34\uC0AC\uAC00..."
+      en: It's you! You are the King's warrior who saved Yiso.
+    readingTime:
+      kr: 4
+      en: 4.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBB34\uC2A8 \uC18C\uB9AC\uB97C \uD558\uB294 \uAC70\uB0D0?"
+      en: King's warrior? What are you talking about?
+    readingTime:
+      kr: 2.3
+      en: 3.8

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_20_Main_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uD615\uB2D8! \uD615\uB2D8!"
+      en: No way! You can't do that to the crown prince.
+    readingTime:
+      kr: 1.6
+      en: 4
+  - characterSo: {fileID: 11400000, guid: dc7602114a171334fba4ca411d5c2d9a, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC77C\uACF1\uC9F8 \uB3C4\uB828\uB2D8, \uC624\uC168\uC2B5\uB2C8\uAE4C.
+        \uB09C \uAD70\uB300\uB77C\uB3C4 \uCCD0\uB4E4\uC5B4\uC628 \uC904 \uC54C\uC558\uC2B5\uB2C8\uB2E4."
+      en: Just two of you, the 7th prince? Where's the rest of your army?
+    readingTime:
+      kr: 5.2
+      en: 5.2
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC655\uC790\uBE44\uB77C\uB294 \uBD84\uC774 \uC5B4\uCC0C \uC774\uB9AC
+        \uC794\uC778\uD558\uC2ED\uB2C8\uAE4C."
+      en: You are one of the royal family. How could you be so cruel?
+    readingTime:
+      kr: 3.5
+      en: 4.9
+  - characterSo: {fileID: 11400000, guid: dc7602114a171334fba4ca411d5c2d9a, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC794\uC778\uD55C \uAC74 \uC544\uBC84\uB2D8\uC774\uC2DC\uC9C0\uC694.
+        \uC5B4\uBA38\uB2C8\uB97C \uB0B4\uCAD3\uACE0 \uC18C\uC11C\uB178\uC5D0\uAC8C
+        \uB098\uB77C\uB97C \uBC14\uCE58\uB824\uACE0 \uD558\uC168\uC73C\uB2C8\uAE4C\uC694."
+      en: It's your father who is really cruel. He's been planning to remove the
+        2nd queen and dedicate the whole Mahan to SosuNo as a wedding present.
+    readingTime:
+      kr: 6.5
+      en: 10.8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC7A1\uC744\uAE4C? \uC8FD\uC77C\uAE4C?"
+      en: Should we capture her or eliminate her?
+    readingTime:
+      kr: 1.8
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uD615\uC218\uB2D8\uB3C4 \uBB34\uC608\uB97C \uC544\uB2C8\uAE4C, \uC870\uC2EC\uD574."
+      en: She knows how to fight. Be careful.
+    readingTime:
+      kr: 3
+      en: 3.2
+  - characterSo: {fileID: 11400000, guid: dc7602114a171334fba4ca411d5c2d9a, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uADF8\uB7F0 \uAC83\uAE4C\uC9C0 \uAE30\uC5B5\uD574\uC8FC\uB2E4\uB2C8 \uAC10\uB3D9\uC785\uB2C8\uB2E4,
+        \uB3C4\uB828\uB2D8."
+      en: I'm moved that you've remembered such a detail, Mudin.
+    readingTime:
+      kr: 3.8
+      en: 4.6

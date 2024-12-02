@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_8_Main_4_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 631a21ccca8959841ba3a7518bccde4b, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB09C \uC5B4\uB290 \uD30C\uB3C4 \uC544\uB2C8\uC9C0 \uC54A\uC2B5\uB2C8\uAE4C!
+        \uC65C \uB098\uB97C \uC8FD\uC774\uB824\uACE0 \uD569\uB2C8\uAE4C?"
+      en: I'm neutral. Why are you attacking me?
+    readingTime:
+      kr: 4.7
+      en: 3.4
+  - characterSo: {fileID: 11400000, guid: 7b8c1300cf1ed3349948e9ac481ed570, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uC6D0\uC8FC\uC57C, \uB3C4\uB9DD\uAC08 \uC218 \uC5C6\uC744 \uB550, \uBE68\uB9AC
+        \uD3B8\uC5D0 \uC11C\uC57C\uD574."
+      en: You should choose a side when it's unavoidable.
+    readingTime:
+      kr: 4.1
+      en: 4.1

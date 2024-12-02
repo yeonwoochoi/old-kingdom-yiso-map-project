@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: ec0e9d3e8196dcb488ee16d2420fb9b3, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uAC10\uD788 \uB204\uAD6C \uC55E\uC774\uB77C\uACE0 \uB18D\uC9D3\uAC70\uB9AC\uB97C
+        \uC9C0\uAEC4\uC774\uB294 \uAC83\uC774\uB0D0. \uC55E\uC73C\uB85C \uB098\uC640,
+        \uBC31\uC81C \uC655\uC790 \uC628\uC870\uB2D8\uC758 \uBA85\uB839\uC744 \uBC1B\uB4E4\uC5B4\uB77C."
+      en: How dare you chatter so disrespectfully in front of us? Step forward and
+        receive the command of Prince Onjo of Baekjae.
+    readingTime:
+      kr: 6.9
+      en: 5.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBC31\uC81C \uC655\uC790? \uBE44\uB958\uB2D8\uC740 \uC544\uB294\uB370,
+        \uC628\uC870 \uC655\uC790\uB294 \uB204\uAD6C\uC694?"
+      en: Prince of Baekjae? I know Prince Biryu, but who is Prince Onjo?
+    readingTime:
+      kr: 4.2
+      en: 4.3
+  - characterSo: {fileID: 11400000, guid: ec0e9d3e8196dcb488ee16d2420fb9b3, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uAC10\uD788 \uB124\uAE5F \uAC83\uC774 \uC628\uC870\uB2D8\uACFC \uBE44\uB958\uB2D8\uC758
+        \uC774\uB984\uC744 \uB4E4\uBA39\uC774\uB294 \uAC83\uC774\uB0D0? \uBB34\uB840\uD558\uB2E4."
+      en: How dare someone like you speak the names of both Prince Onjo and Prince
+        Biryu? Such insolence.
+    readingTime:
+      kr: 6
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uADF8\uB300\uC758 \uC655\uC790\uB294 \uADF8\uC758 \uD615\uB2D8\uACFC\uB294
+        \uC0AC\uBB47 \uB2E4\uB974\uAD70. \uBE44\uB958\uB2D8\uC740 \uCE5C\uC808\uD588\uB294\uB370\u2026"
+      en: "Your prince is quite different from his brother. Prince Biryu was kind\u2026"
+    readingTime:
+      kr: 5.4
+      en: 6.1
+  - characterSo: {fileID: 11400000, guid: ec0e9d3e8196dcb488ee16d2420fb9b3, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB354 \uC774\uC0C1 \uB300\uAFB8\uD560 \uD544\uC694 \uC5C6\uACA0\uAD70.
+        \uC628\uC870 \uB300\uC655\uB2D8\uC758 \uBA85\uC5D0 \uB530\uB77C \uB108\uD76C\uB97C
+        \uBCF5\uC18D\uC2DC\uD0A4\uB7EC \uC654\uB178\uB77C. \uC800\uAC83\uB4E4\uC744
+        \uD3EC\uBC15\uD558\uB77C!"
+      en: There is no need for further words. By the command of Great King Onjo,
+        we have come to bring you under our rule. Seize them!
+    readingTime:
+      kr: 7
+      en: 7

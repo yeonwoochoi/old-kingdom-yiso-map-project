@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_4_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC0B4\uB824\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+      en: Thank you for saving me.
+    readingTime:
+      kr: 2.2
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uAD1C\uCC2E\uB2C8? \uB2E4\uCE5C \uB374 \uC5C6\uACE0?"
+      en: Are you okay? Did they hurt you?
+    readingTime:
+      kr: 2.3
+      en: 3
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB124, \uAC10\uC0AC\uD569\uB2C8\uB2E4. \uC81C \uC5B4\uBA38\uB2C8\uB3C4
+        \uAD6C\uD574\uC8FC\uC2E4 \uC218 \uC788\uC5B4\uC694?"
+      en: I'm fine, but can you rescue my mother too?
+    readingTime:
+      kr: 4.2
+      en: 3.8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB124 \uC5B4\uBA38\uB2C8\uB294 \uC5B4\uB514\uC5D0 \uC788\uB294\uB370?"
+      en: Such a brave girl. Where is your mother now?
+    readingTime:
+      kr: 2.6
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uCD0C\uC7A5\uB2D8 \uC9D1\uC5D0 \uC794\uCE58\uAC00 \uC788\uB2E4\uACE0
+        \uD574\uC11C \uC77C\uD558\uB7EC \uAC00\uC168\uC5B4\uC694. \uADF8\uB7F0\uB370,
+        \uC218\uC801\uB4E4\uC774 \uCCD0\uB4E4\uC5B4\uC624\uB294 \uBC14\uB78C\uC5D0..."
+      en: She might be at the headman's house. She went there to work for a big party
+        they were having all day.
+    readingTime:
+      kr: 7
+      en: 7.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uADF8\uB7FC, \uCD0C\uC7A5 \uC9D1\uC5D0 \uD55C\uBC88 \uAC00\uBCF4\uC790."
+      en: Let's go check the headman's house first.
+    readingTime:
+      kr: 2.8
+      en: 3.7

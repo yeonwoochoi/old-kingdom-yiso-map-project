@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_16_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uB3C5\uD2B9\uD55C \uC0AC\uB78C\uC774\uB124\uC694, \uC5B8\uB2C8. \uCE7C\uC5D0
+        \uC790\uBE44\uAC00 \uB118\uCE58\uB294\uB370, \uC5C6\uB2E4\uACE0 \uAC70\uC9D3\uB9D0\uC744
+        \uD558\uB124\uC694."
+      en: His sword is full of mercy. What he showed is quite the opposite of what
+        he said.
+    readingTime:
+      kr: 5.9
+      en: 6.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uADF8\uCE58? \uAE08\uBC29 \uB4E4\uD1B5\uB0A0 \uAC78 \uC65C \uAC70\uC9D3\uB9D0\uD558\uC9C0?
+        \uAC00\uC790, \uC5B4\uB9AC\uC57C."
+      en: What a liar he is! Let's forget it and move forward, Noydoll.
+    readingTime:
+      kr: 4.5
+      en: 5.1

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_4_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 48dc2f3666de310489a9cf8f3ef5c414, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC791\uB2E8 \uC5EC\uC8FC\uB294 \uD3EC\uBC15\uC744 \uBC1B\uC73C\uB77C."
+      en: Better get arrested obediently, Zack leader!
+    readingTime:
+      kr: 3
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB0A8\uC758 \uC9D1\uC5D0\uC11C \uD589\uD328\uB97C \uBD80\uB9AC\uB294
+        \uB188\uB4E4\uC5D0\uAC8C \uAD74\uBCF5\uD560 \uC0DD\uAC01\uC740 \uC804\uD600
+        \uC5C6\uB2E4."
+      en: I've never given in to the bullies trespassing my home.
+    readingTime:
+      kr: 5
+      en: 5

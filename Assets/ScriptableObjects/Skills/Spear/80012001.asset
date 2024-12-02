@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3982e3c3224086b064bc1647aed45a, type: 3}
+  m_Name: 80012001
+  m_EditorClassIdentifier: 
+  id: 80012001
+  icon: {fileID: 21300000, guid: 2998ab6dfc8b143b797e495c55c186da, type: 3}
+  name:
+    kr: "\uD30C\uCC9C\uC77C\uACA9"
+    en: Shatter Thrust
+  description:
+    kr: "\uAE30\uB97C \uBAA8\uC544 \uB3CC\uC9C4\uD558\uC5EC \uC55E\uC758 \uC801\uC5D0\uAC8C
+      \uD070 \uB300\uBBF8\uC9C0\uB97C \uC785\uD799\uB2C8\uB2E4"
+    en: 
+  unlockStageId: 1
+  masterLevel: 10
+  requiredSkillSO: {fileID: 0}
+  type: 1
+  attackType: 2
+  requiredSkillLevel: 0
+  passiveEffects: []
+  active:
+    attackCount: 1
+    damageRate: 300
+    criticalRate: 0
+    criticalDamageRate: 0
+    cooldown: 3
+    attackIncCount: 0
+    damageIncRate: 5
+    criticalIncRate: 0
+    criticalDamageIncRate: 0
+    coolDownDec: 3

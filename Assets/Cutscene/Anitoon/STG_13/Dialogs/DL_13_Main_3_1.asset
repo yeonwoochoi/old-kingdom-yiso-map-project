@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_13_Main_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uB09C \uBC31\uC81C\uC758 \uC655\uC790 \uBE44\uB958\uB2E4. \uC774\uC81C
+        \uB108\uD76C \uCCAD\uD574\uCC3D\uC740 \uD638\uB97C \uBC84\uB9AC\uACE0, \uC791
+        \uC218\uC801\uB2E8\uC744 \uB530\uB978\uB2E4."
+      en: I am Biryu, the prince of BaekJae. You will no longer follow Hoh. From
+        now on, the head of Zack pirates will be your leader.
+    readingTime:
+      kr: 6.3
+      en: 9.6
+  - characterSo: {fileID: 11400000, guid: f0a119baa989e9a4fa511df59b8dbda9, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC6B0\uB9B0 \uD638\uAC00 \uC544\uB2D9\uB2C8\uB2E4. \uD638\uB294 \uAC1D\uC794
+        \uB188\uB4E4\uC774\uC5C8\uC9C0\uC694."
+      en: I never belonged to Hoh, not like the ones at the hotel.
+    readingTime:
+      kr: 3.8
+      en: 4.7
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC54C\uACE0 \uC788\uB2E4. \uB108\uD76C \uCCAD\uD574\uCC3D\uC740 \uBAA8\uB450
+        \uBBF8\uCD94\uD640 \uC0AC\uB78C\uB4E4\uB85C \uAD6C\uC131\uB418\uC5C8\uB2E4\uB294
+        \uAC83\uC744..."
+      en: I know that the people here are different from those at the hotel. You
+        are not under Hoh's control anymore.
+    readingTime:
+      kr: 5.6
+      en: 8.3
+  - characterSo: {fileID: 11400000, guid: f0a119baa989e9a4fa511df59b8dbda9, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uD638\uB2E8 \uB188\uB4E4\uC758 \uC218\uD0C8\uC5D0\uC11C \uBC97\uC5B4\uB0A0
+        \uC218 \uC788\uAC8C \uD574\uC8FC\uC154\uC11C \uAC10\uC0AC\uB4DC\uB9BD\uB2C8\uB2E4."
+      en: Thank you for freeing me from Hoh's exploitation.
+    readingTime:
+      kr: 4.9
+      en: 4.2
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC774\uC18C\uC57C, \uC774\uC81C \uCCAD\uD574\uAC1D\uC794\uACFC \uCCAD\uD574\uCC3D\uC740
+        \uB124 \uAC83\uC774\uB2E4. \uC774\uAC78\uB85C \uC0DD\uBA85\uC744 \uAD6C\uD574\uC900
+        \uC740\uD61C\uB97C \uAC1A\uC744 \uC218 \uC788\uC5B4\uC11C \uAE30\uC058\uAD6C\uB098."
+      en: As I promised, the hotel and warehouse are now under your control. I'm
+        glad I could repay you for saving my life.
+    readingTime:
+      kr: 7.8
+      en: 8.8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uADF8\uB7F0\uB370, \uBE44\uB958 \uC655\uC790\uB2D8..."
+      en: By the way, prince...
+    readingTime:
+      kr: 2.5
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC751?"
+      en: Yes, what is it?
+    readingTime:
+      kr: 0.9
+      en: 1.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC6B0\uB9AC\uB294 \uC774\uC81C \uC791 \uC218\uC801\uB2E8\uC774 \uC544\uB2C8\uB77C,
+        \uC791 \uAD50\uC5ED\uB2E8\uC785\uB2C8\uB2E4. \uB354\uC774\uC0C1 \uC218\uC801
+        \uC77C\uC740 \uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4."
+      en: Zack is no longer a pirate organization. We are now solely involved in
+        trading and logistics.
+    readingTime:
+      kr: 6.6
+      en: 7.4
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uB4E3\uB358 \uC911, \uBC18\uAC00\uC6B4 \uC18C\uC2DD\uC774\uAD6C\uB098.
+        \uB124\uAC00 \uC798 \uC774\uB04C\uC5B4 \uBBF8\uCD94\uD640\uC5D0 \uC218\uC801\uB4E4\uC774
+        \uC5C6\uC5B4\uC9C0\uBA74 \uC88B\uACA0\uAD6C\uB098."
+      en: I'm very glad to hear that. I hope you will lead them well and help eliminate
+        pirates in Michuhol.
+    readingTime:
+      kr: 6.5
+      en: 7.7

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Main_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: f7db0efc97dda2849946e72794735bc3, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB108\uD76C\uAC00 \uC9C0\uB09C \uBC88\uC5D0 \uB0B4 \uB3D9\uC0DD\uC744
+        \uCE5C \uB188\uB4E4\uC774\uAD6C\uB098."
+      en: Are you the ones who bit my younger brother last time?
+    readingTime:
+      kr: 4
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uB188\uB4E4\uC774 \uC544\uB0D0, \uB144\uB4E4\uC774\uC57C."
+      en: Do we look like guys? We're ladies.
+    readingTime:
+      kr: 3
+      en: 3

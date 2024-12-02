@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest7-2
+  m_EditorClassIdentifier: 
+  id: 90000702
+  type: 0
+  name:
+    kr: "\uC218\uC801\uC744 \uBAA8\uB450 \uC18C\uD0D5\uD558\uACE0, \uBB34\uC0AC\uD788
+      \uC120\uC220\uC9D1\uC744 \uD0C8\uCD9C\uD558\uB77C."
+    en: Eliminate all the pirates and safely escape the pub.
+  autoComplete: 0
+  startRequirements:
+  - type: 5
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 11400000, guid: 658de8e27bd01654280c3b4cf9ec47c8, type: 2}
+    preCompleteQuest:
+      questSO: {fileID: 11400000, guid: 658de8e27bd01654280c3b4cf9ec47c8, type: 2}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 1542bec1aab6a974e86a05638391e596, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: f4ef33c3a264ff048ba3322a3d436d5b, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 54e74edf473d4bb4f8a0856beeb836ea, type: 2}
+      count: 2
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 1380571cbb7070743b666fa949109ee2, type: 2}
+      count: 2
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: adc0f0c18d28fd246aa05724d14d725e, type: 2}
+      count: 3
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

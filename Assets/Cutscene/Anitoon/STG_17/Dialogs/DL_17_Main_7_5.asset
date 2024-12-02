@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_7_5
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b1c1ddee92ee42943b9a721bf9d942cd, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB108\uB294 \uC774\uACF3 \uC0AC\uB78C\uC774 \uC544\uB2C8\uAD6C\uB098.
+        \uACE0\uAD6C\uB824 \uC5B4\uB514 \uCD9C\uC2E0\uC774\uB0D0?"
+      en: You are from Korea. Where are you from?
+    readingTime:
+      kr: 4.2
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uBE44\uB958\uB098\uC758 \uC870\uADF8\uB9CC \uB9C8\uC744\uC5D0 \uC0B4\uC558\uC2B5\uB2C8\uB2E4.
+        \uD558\uC9C0\uB9CC, \uC554\uC801\uC758 \uC815\uCCB4\uB97C \uCC3E\uC544 \uC5EC\uAE30\uAE4C\uC9C0
+        \uC654\uC2B5\uB2C8\uB2E4."
+      en: I lived in a small town near the Biryu river. But I had to leave to trace
+        a veiled enemy.
+    readingTime:
+      kr: 6.5
+      en: 7.1
+  - characterSo: {fileID: 11400000, guid: b1c1ddee92ee42943b9a721bf9d942cd, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBD80\uBAA8\uB2D8\uC740 \uC5B4\uB5BB\uAC8C \uB418\uC5C8\uB290\uB0D0?"
+      en: What happened to your parent?
+    readingTime:
+      kr: 2.5
+      en: 2.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4\uBA38\uB2C8\uAC00 \uD63C\uC790 \uC800\uB97C \uD0A4\uC6B0\uC168\uC2B5\uB2C8\uB2E4.
+        \uD558\uC9C0\uB9CC, \uC554\uC801\uC758 \uC2B5\uACA9\uC744 \uBC1B\uC544 \uC5B4\uBA38\uB2C8\uAC00
+        \uC0B4\uC218\uC758 \uC190\uC5D0 \uC8FD\uC5C8\uC2B5\uB2C8\uB2E4."
+      en: I'd raised by a single mother, but she was dead by assassins.
+    readingTime:
+      kr: 7.4
+      en: 5.1

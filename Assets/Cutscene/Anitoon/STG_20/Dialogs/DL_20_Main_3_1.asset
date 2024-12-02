@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_20_Main_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 618df64f46131734dabcf9da2c68df92, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBB34\uB518\uC544... \uC720, \uC720\uAC15\uB2D8\uC744... \uC11C\uB458\uB7EC\uB77C."
+      en: My dear Mudin... Go rescue... Yugang...
+    readingTime:
+      kr: 3.6
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uBB34\uC2A8 \uB9D0\uC500\uC774\uC138\uC694, \uD615\uB2D8."
+      en: Just breathe, crown prince.
+    readingTime:
+      kr: 2.3
+      en: 2.7
+  - characterSo: {fileID: 11400000, guid: 618df64f46131734dabcf9da2c68df92, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB450, \uB458\uC9F8\uAC00... \uAD70\uC0AC\uB97C \uB370\uB9AC\uACE0...
+        \uC720\uAC15\uB2D8\uC744..."
+      en: The 2nd left... with his special forces... to capture Yu... gang...
+    readingTime:
+      kr: 4.2
+      en: 5.5

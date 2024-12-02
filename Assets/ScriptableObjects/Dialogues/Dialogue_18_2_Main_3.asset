@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87fe101b9274d269d9de197cbe0426e, type: 3}
+  m_Name: Dialogue_18_2_Main_3
+  m_EditorClassIdentifier: 
+  id: 91820003
+  dialogues:
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 2196fd3b29005a146be5ae7450542d1a, type: 2}
+    content:
+      kr: "\uC655\uC790\uB2D8, \uC5B4\uBA38\uB2D8\uC774 \uC7A1\uD600\uAC00\uC168\uC2B5\uB2C8\uB2E4.
+        \uC5B4\uBA38\uB2C8\uB97C \uAD6C\uD558\uC154\uC57C\uD574\uC694."
+      en: Your mother's been taken, prince. You have to find and save her.
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 80fac0f144aaed54cad13bd20fbf7d6a, type: 2}
+    content:
+      kr: "\uADF8\uB7F4 \uAC70\uC57C. \uC790\uB124\uB294 \uC77C\uB2E8 \uC548\uC804\uD55C
+        \uACF3\uC73C\uB85C \uBAB8\uC744 \uC228\uACA8."
+      en: I will. Go hide yourself in a safe place.

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_16_Main_5_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uAD1C\uCC2E\uC544?"
+      en: Are you ok?
+    readingTime:
+      kr: 1.2
+      en: 1.5
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBBF8\uC548\uD574\uC694, \uC5B8\uB2C8. \uC9C4\uC9DC \uC5F4\uC2EC\uD788
+        \uBB34\uC608\uB97C \uC5F0\uB9C8\uD574\uC11C \uB2E4\uC2DC\uB294 \uC5B8\uB2C8
+        \uBC1C\uBAA9\uC744 \uC548 \uC7A1\uC744\uAC8C\uC694."
+      en: Sorry, sis. I'll practice every day so hard that I won't be a burden to
+        you.
+    readingTime:
+      kr: 6.3
+      en: 6.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uBC14\uBCF4\uC57C, \uC11C\uB450\uB974\uC9C0\uB9C8. \uBB34\uC608\uB294
+        \uC6D0\uB798 \uC2DC\uAC04\uC774 \uD544\uC694\uD574."
+      en: You're not a burden, Noydoll. We're in this together. It takes time to
+        master martial skills.
+    readingTime:
+      kr: 4.1
+      en: 7.3

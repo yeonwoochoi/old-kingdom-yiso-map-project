@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Main_0_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB9DE\uC9C0? \uC138\uC9F8 \uD615\uC740 \uC544\uB2C8\uC9C0?"
+      en: Is it not my third oldest brother? Am I right?
+    readingTime:
+      kr: 2.5
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 7b8c1300cf1ed3349948e9ac481ed570, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC7A5\uB2F4\uD560 \uC218\uB294 \uC5C6\uC9C0\uB9CC, \uB9C8\uD55C \uC138\uC9F8
+        \uC655\uC790\uB2D8\uB3C4 \uC554\uC2B5\uC744 \uBC1B\uACE0 \uC4F0\uB7EC\uC84C\uB2E4\uACE0
+        \uD569\uB2C8\uB2E4."
+      en: I'm not entirely sure, but given that the 3rd prince of Mahan was also
+        attacked under cover of darkness, it seems plausible.
+    readingTime:
+      kr: 5.8
+      en: 9.6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uADF8\uB7FC \uD45C\uB450 \uB188\uC774 \uAC70\uC9D3\uB9D0\uC744 \uD588\uB2E4\uB294
+        \uC18C\uB9B0\uB370..."
+      en: That means that the manager of Namchang was lying to us.
+    readingTime:
+      kr: 3.7
+      en: 4.7
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uC73C\uC774\uAD6C, \uC5B8\uB2C8. \uD45C\uB450 \uB530\uC704\uAC00 \uBB34\uC2A8
+        \uAC70\uC9D3\uB9D0\uC744 \uD574\uC694. \uCD1D\uD45C\uB450\uAC00 \uADF8 \uC815\uB3C4\uB9CC
+        \uC774\uC57C\uAE30\uD588\uACA0\uC8E0."
+      en: Come on, sis. He is just the manager of a branch, he only knew what was
+        communicated to him from the top.
+    readingTime:
+      kr: 6.5
+      en: 8.2

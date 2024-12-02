@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: TestQuest1
+  m_EditorClassIdentifier: 
+  id: 90000999
+  type: 0
+  name:
+    kr: "\uC0AC\uB78C\uB4E4 \uB208\uC744 \uD53C\uD574 \uC74C\uC2DD\uC744 \uC870\uAE08\uC529
+      \uBC84\uB824\uB77C."
+    en: Dispose of food little by little, avoiding people's eyes.
+  autoComplete: 0
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20009999
+      fieldName:
+        kr: "\uD14C\uC2A4\uD2B8 \uD544\uB4DC"
+        en: Test Field
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 0
+    item:
+      itemSO: {fileID: 11400000, guid: 584dee4c2a7704e4caff74b80585bfde, type: 2}
+      type: 0
+      value: 3
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions:
+  - type: 5
+    exp: 0
+    itemSO: {fileID: 11400000, guid: ec12d2258bad9744185531e0bb533d9f, type: 2}
+    amount: 1
+    removeItemSO: {fileID: 0}
+    removeAll: 0
+    removeAmount: 1
+    addItemSO: {fileID: 11400000, guid: 584dee4c2a7704e4caff74b80585bfde, type: 2}
+    addAmount: 3
+    money: 0
+  completeActions:
+  - type: 0
+    exp: 300
+    itemSO: {fileID: 0}
+    amount: 0
+    removeItemSO: {fileID: 0}
+    removeAll: 0
+    removeAmount: 1
+    addItemSO: {fileID: 0}
+    addAmount: 1
+    money: 0

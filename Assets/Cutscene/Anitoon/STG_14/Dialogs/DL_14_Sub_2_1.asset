@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Sub_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 7792aee5ac702fc4495174523c1b184a, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC220\uAC12\uC740 \uC548 \uC918\uB3C4 \uB418\uB2C8, \uC81C\uBC1C \uC0AC\uB78C\uB4E4\uC740
+        \uB54C\uB9AC\uC9C0 \uB9C8\uC2DC\uC624."
+      en: You don't have to pay for the drink. Please don't disturb the customers.
+    readingTime:
+      kr: 4
+      en: 6
+  - characterSo: {fileID: 11400000, guid: ddd55b16042b4674ab406247b0fcfcd9, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBB34\uC5B4\uB77C? \uC220\uAC12? \uB124\uB188\uC774 \uC6B0\uB9B4 \uBB34\uC2DC\uD574\uB193\uACE0
+        \uB3C8\uC744 \uB2EC\uB77C\uACE0?"
+      en: Pay for what? We are the ones getting paid! How dare you disrespect me!
+    readingTime:
+      kr: 4
+      en: 6
+  - characterSo: {fileID: 11400000, guid: e629435e05b8e874ea5a862e26b67da3, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB124\uB188\uC774 \uC6B0\uB9AC\uB97C \uBAA8\uC695\uD588\uC73C\uB2C8,
+        \uB124\uB188\uC774 \uBCF4\uC0C1\uC744 \uD574\uC57C\uC9C0."
+      en: You insulted all of us! You'll pay for that!
+    readingTime:
+      kr: 4
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC5EC\uC790 \uC544\uC774\uAE4C\uC9C0 \uB54C\uB9AC\uACE0 \uC788\uB124\uC694,
+        \uC5B8\uB2C8."
+      en: Even girls aren't safe from their troublemaking, sist.
+    readingTime:
+      kr: 3
+      en: 4.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uD558\uC5EC\uAC04 \uC220 \uCC98\uBA39\uACE0 \uD589\uD328\uB098 \uBD80\uB9AC\uB294
+        \uAC74 \uAE08\uC218\uB9CC\uB3C4 \uBABB\uD574."
+      en: A beast is more dignified than drunken individuals who harass the innocent.
+    readingTime:
+      kr: 4
+      en: 6

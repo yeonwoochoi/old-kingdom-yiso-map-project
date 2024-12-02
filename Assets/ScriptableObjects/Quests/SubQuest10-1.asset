@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: SubQuest10-1
+  m_EditorClassIdentifier: 
+  id: 90001004
+  type: 1
+  name:
+    kr: "\uAE08\uB369\uC774\uB97C \uBE7C\uC557\uC544\uB77C."
+    en: Take the gold.
+  autoComplete: 0
+  startRequirements: []
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: adc0f0c18d28fd246aa05724d14d725e, type: 2}
+      count: 3
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

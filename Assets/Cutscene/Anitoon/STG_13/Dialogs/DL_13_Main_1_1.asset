@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_13_Main_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B8\uB2C8, \uC2E4\uB9DD\uC774\uC5D0\uC694."
+      en: You've let me down, sis.
+    readingTime:
+      kr: 1.9
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC65C? \uB0B4\uAC00 \uBB58?"
+      en: What do you mean? I haven't done anything to disappoint you.
+    readingTime:
+      kr: 1.7
+      en: 5
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uBB34\uB518 \uC624\uBE60\uAC00 \uC655\uC790\uB77C\uB2C8\uAE4C \uCAC4\uC558\uC8E0?"
+      en: Oh, how brave of you to back down now that you know Mudin is a prince.
+    readingTime:
+      kr: 2.8
+      en: 5.7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uCAC4\uAE34 \uB204\uAC00 \uCAC4\uC544? \uADF8\uB0E5 \uC6B0\uB9AC \uC218\uC801\uB2E8\uC744
+        \uC774\uC81C \uD569\uBC95\uC801\uC778 \uAD50\uC5ED\uB2E8\uC73C\uB85C \uB9CC\uB4DC\uB290\uB77C
+        \uBC14\uC05C \uAC70\uC9C0."
+      en: Don't be ridiculous, I'm not scared of anything. I've been busy making
+        our group a legitimate trading organization.
+    readingTime:
+      kr: 6.5
+      en: 8.9
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4? \uAC1D\uC794\uC774 \uBB34\uCC99 \uC18C\uB780\uC2A4\uB7EC\uC6B4\uB370\uC694?"
+      en: What the... It's noisy in the hotel.
+    readingTime:
+      kr: 3
+      en: 3.3

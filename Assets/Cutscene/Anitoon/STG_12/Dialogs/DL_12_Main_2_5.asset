@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_12_Main_2_5
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC138\uC9F8 \uC655\uC790\uAC00 \uC9C1\uC811 \uCCAD\uBD80\uD55C \uC77C\uC785\uB2C8\uB2E4."
+      en: The 3rd prince made this contract.
+    readingTime:
+      kr: 3.1
+      en: 3.2
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC138\uC9F8 \uD615\uC774? \uAC70\uC9D3\uB9D0 \uD558\uC9C0 \uB9C8\uB77C.
+        \uC138\uC9F8 \uD615\uC740 \uADF8\uB7F4 \uC0AC\uB78C\uC774 \uC544\uB2C8\uB2E4."
+      en: You're lying. My third brother is the last man who wants me dead.
+    readingTime:
+      kr: 5.1
+      en: 5.4
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC800\uB3C4 \uADF8 \uC774\uC0C1\uC740 \uBAA8\uB985\uB2C8\uB2E4. \uCD1D\uD45C\uB450\uB2D8\uAED8\uC11C
+        \uB9C8\uD55C \uCE60\uC655\uC790\uB97C \uC8FD\uC774\uB77C\uBA70 \uADF8\uAC83\uB9CC
+        \uC54C\uB824\uC8FC\uC168\uC2B5\uB2C8\uB2E4."
+      en: That's all I've been told. The head of Namchang ordered me to kill the
+        7th prince of Mahan within that information.
+    readingTime:
+      kr: 6.6
+      en: 8.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB9C8\uD55C? \uCE60\uC655\uC790?"
+      en: 'The 7th prince of Mahan? '
+    readingTime:
+      kr: 1.7
+      en: 2.5

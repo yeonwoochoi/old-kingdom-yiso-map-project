@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_20_Main_0_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBB54 \uC9D1\uC774 \uC774\uB807\uAC8C \uCEE4? \uAC70\uC758 \uC655\uAD81\uC774\uC57C."
+      en: It's so grand, it's more like a palace than a manor.
+    readingTime:
+      kr: 3.2
+      en: 4.4
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uB458\uC9F8 \uC5B4\uBA38\uB2C8\uAC00 \uC6D0\uB798 \uC774\uACF3 \uB3D9\uBD80
+        \uCE78\uC758 \uB538\uC774\uC57C."
+      en: The 2nd queen is the daughter of the kahn of the eastern Mahan.
+    readingTime:
+      kr: 3.7
+      en: 5.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC9D1\uB9CC \uD06C\uBA74 \uBB58\uD558\uB0D0? \uD615\uC81C\uBD80\uD130
+        \uC8FD\uC774\uB824\uB294 \uC0AC\uB78C\uC744 \uB0B3\uC558\uB294\uB370..."
+      en: Well, they say that a man born in a big house has a big mouth to swallow
+        his brother.
+    readingTime:
+      kr: 4.7
+      en: 6.8
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uD070 \uD615\uB2D8\uC774 \uBB34\uC0AC\uD574\uC57C\uD560\uD150\uB370..."
+      en: I hope the eldest brother be safe.
+    readingTime:
+      kr: 2.7
+      en: 3.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAC00\uC11C \uC9C1\uC811 \uD655\uC778\uD574\uBCF4\uC790."
+      en: Let's go check it out, now.
+    readingTime:
+      kr: 2.2
+      en: 2.7

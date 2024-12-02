@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Main_0_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB10C \uCC38 \uB611\uB611\uD574\uC11C \uC88B\uC544. \uCC38 \uB0B4 \uBCF5\uC774\uC57C."
+      en: I'm glad you know everything. You truly are a know-it-all, annoydoll, Noydoll.
+    readingTime:
+      kr: 3.3
+      en: 6.3
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uADF8\uB807\uB2E4\uBA74, \uCD1D\uD45C\uB450\uC5D0\uAC8C \uC9C1\uC811
+        \uB2F5\uC744 \uB4E4\uC5B4\uC57C\uD55C\uB2E4\uB294 \uC18C\uB9AC\uC778\uB370..."
+      en: This means we need to interrogate the head of Namchang directly.
+    readingTime:
+      kr: 4.7
+      en: 5.3
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBB58 \uAE30\uB2E4\uB824. \uCD1D\uD45C\uB450 \uB188\uC744 \uC7A1\uC73C\uB7EC
+        \uAC00\uBA74 \uB418\uC9C0."
+      en: What are we waiting for? Let's go find him.
+    readingTime:
+      kr: 3.7
+      en: 3.8
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC77C\uB2E8 \uCD1D\uD45C\uB450\uAC00 \uC5B4\uB528\uB294\uC9C0 \uC54C\uC544\uC57C\uC8E0,
+        \uC5B8\uB2C8."
+      en: Oh, my sis. Let's confirm his whereabouts before we set out to find him.
+    readingTime:
+      kr: 3.5
+      en: 5.9
+  - characterSo: {fileID: 11400000, guid: 631a21ccca8959841ba3a7518bccde4b, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uB9C8\uCE68 \uCD1D\uD45C\uB450\uB780 \uB188\uC774 \uC9C0\uAE08 \uB0A8\uCC3D\uD45C\uAD6D\uC5D0
+        \uBA38\uBB3C\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      en: Fortunately, he's currently at the Namchang Logistics.
+    readingTime:
+      kr: 4.4
+      en: 4.6

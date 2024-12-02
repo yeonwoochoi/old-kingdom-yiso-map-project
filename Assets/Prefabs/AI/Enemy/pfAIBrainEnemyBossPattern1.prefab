@@ -1,0 +1,1469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &233143398486008323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2429694256619519614}
+  - component: {fileID: 5121913496683130795}
+  m_Layer: 0
+  m_Name: '[Action] Detecting'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2429694256619519614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233143398486008323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5121913496683130795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233143398486008323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7c230cff9749f490ea023a52f215b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+--- !u!1 &618261591580475772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264509610285203653}
+  - component: {fileID: 8939402095595404235}
+  - component: {fileID: 1332453459324130814}
+  m_Layer: 0
+  m_Name: pfAIBrainEnemyBossPattern1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264509610285203653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618261591580475772}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7082320110882370447}
+  - {fileID: 1543473367771760452}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8939402095595404235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618261591580475772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786967fc1c8a4b4d813403b978216a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - stateName: Detecting
+    actions:
+      array:
+      - {fileID: 5121913496683130795}
+    transitions:
+      array:
+      - decision: {fileID: 3036669665220764978}
+        trueRandomStates: 0
+        trueState: Moving
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: Moving
+    actions:
+      array:
+      - {fileID: 4707002867952542380}
+    transitions:
+      array:
+      - decision: {fileID: 2759171852940800028}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 3036669665220764978}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 5186472232901086735}
+        trueRandomStates: 0
+        trueState: Attack Selection1
+        trueStates:
+        - TeleportAttack
+        - ShatterThrust
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+      - decision: {fileID: 393502601805140617}
+        trueRandomStates: 0
+        trueState: Attack Selection2
+        trueStates:
+        - DashAttacking
+        - SpinAttack
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+      - decision: {fileID: 4366131214821501777}
+        trueRandomStates: 0
+        trueState: Attack Selection3
+        trueStates:
+        - Attacking
+        - SpinAttack
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: DashAttacking
+    actions:
+      array:
+      - {fileID: 6819003614323508676}
+    transitions:
+      array:
+      - decision: {fileID: 8757303372636152953}
+        trueRandomStates: 0
+        trueState: Detecting
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: Attacking
+    actions:
+      array:
+      - {fileID: 4852260007083787858}
+    transitions:
+      array:
+      - decision: {fileID: 4300705200797165112}
+        trueRandomStates: 0
+        trueState: Detecting
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: TeleportAttack
+    actions:
+      array:
+      - {fileID: 796654194614560882}
+    transitions:
+      array:
+      - decision: {fileID: 5444952063996947272}
+        trueRandomStates: 0
+        trueState: Detecting
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: ShatterThrust
+    actions:
+      array:
+      - {fileID: 5397033914987484732}
+    transitions:
+      array:
+      - decision: {fileID: 225077951900814807}
+        trueRandomStates: 0
+        trueState: Detecting
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: SpinAttack
+    actions:
+      array:
+      - {fileID: 5651325180919463550}
+    transitions:
+      array:
+      - decision: {fileID: 8679738535899386250}
+        trueRandomStates: 0
+        trueState: Detecting
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: Attack Selection1
+    actions:
+      array:
+      - {fileID: 4707002867952542380}
+    transitions:
+      array:
+      - decision: {fileID: 2759171852940800028}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 3036669665220764978}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 5186472232901086735}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 6411645242589969264}
+        trueRandomStates: 0
+        trueState: TeleportAttack
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+      - decision: {fileID: 5002932193969816468}
+        trueRandomStates: 0
+        trueState: ShatterThrust
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: Attack Selection2
+    actions:
+      array:
+      - {fileID: 4707002867952542380}
+    transitions:
+      array:
+      - decision: {fileID: 2759171852940800028}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 3036669665220764978}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 393502601805140617}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 5511978980867718079}
+        trueRandomStates: 0
+        trueState: DashAttacking
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+      - decision: {fileID: 6495822272539063070}
+        trueRandomStates: 0
+        trueState: SpinAttack
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  - stateName: Attack Selection3
+    actions:
+      array:
+      - {fileID: 4707002867952542380}
+    transitions:
+      array:
+      - decision: {fileID: 2759171852940800028}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 3036669665220764978}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 4366131214821501777}
+        trueRandomStates: 0
+        trueState: 
+        trueStates: []
+        falseRandomStates: 0
+        falseState: Detecting
+        falseStates: []
+      - decision: {fileID: 5002932193969816468}
+        trueRandomStates: 0
+        trueState: ShatterThrust
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+      - decision: {fileID: 1332453459324130814}
+        trueRandomStates: 0
+        trueState: Attacking
+        trueStates: []
+        falseRandomStates: 0
+        falseState: 
+        falseStates: []
+    lastStateExecutionTime: 0
+  owner: {fileID: 0}
+  currentState: 
+  timeInThisState: 0
+  target: {fileID: 0}
+  lastKnownTargetPosition: {x: 0, y: 0, z: 0}
+  brainActive: 1
+  resetBrainOnStart: 1
+  resetBrainOnEnable: 0
+  actionDelay: 0
+  decisionDelay: 0
+  randomizeFrequencies: 0
+  randomActionFrequency: {x: 0.5, y: 1}
+  randomDecisionFrequency: {x: 0.5, y: 1}
+--- !u!114 &1332453459324130814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618261591580475772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1836624ac6fd4dbaac7914e4eba7e50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+--- !u!1 &1656072412316720762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4290964412470377104}
+  - component: {fileID: 5186472232901086735}
+  m_Layer: 0
+  m_Name: '[Decision] Distance To Target (4~6)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4290964412470377104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656072412316720762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5186472232901086735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656072412316720762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f967133e75be4580be0b46175ead2c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  comparisonMode: 5
+  distance: 6
+  minDistance: 4
+  ignoreTarget: 0
+  ignoreTargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!1 &1683718349819913000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7082320110882370447}
+  m_Layer: 0
+  m_Name: Actions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7082320110882370447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683718349819913000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2429694256619519614}
+  - {fileID: 7965650694714960279}
+  - {fileID: 8408183539306776922}
+  - {fileID: 6970558934129876728}
+  - {fileID: 7923957985960251409}
+  - {fileID: 6411909417148014129}
+  - {fileID: 6018265009780388121}
+  m_Father: {fileID: 264509610285203653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1740535870512983689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2289465474824911417}
+  - component: {fileID: 393502601805140617}
+  m_Layer: 0
+  m_Name: '[Decision] Distance To Target (2~4)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2289465474824911417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740535870512983689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &393502601805140617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740535870512983689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f967133e75be4580be0b46175ead2c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  comparisonMode: 5
+  distance: 4
+  minDistance: 2
+  ignoreTarget: 0
+  ignoreTargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!1 &1848526421856116429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6137364837791552715}
+  - component: {fileID: 2759171852940800028}
+  m_Layer: 0
+  m_Name: '[Decision] Target Active State'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6137364837791552715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848526421856116429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2759171852940800028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848526421856116429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b83de33b4d4bf68a007cbca83b7a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+--- !u!1 &1934058179234771286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7923957985960251409}
+  - component: {fileID: 796654194614560882}
+  m_Layer: 0
+  m_Name: '[Action] TeleportAttack'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7923957985960251409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934058179234771286}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &796654194614560882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934058179234771286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76a7ba07cb04ff688ee0d303dcf3135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+--- !u!1 &2626273357417828250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543473367771760452}
+  m_Layer: 0
+  m_Name: Decisions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1543473367771760452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2626273357417828250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6137364837791552715}
+  - {fileID: 8541916743175481560}
+  - {fileID: 4290964412470377104}
+  - {fileID: 2289465474824911417}
+  - {fileID: 564699133710541175}
+  - {fileID: 4056631571288935440}
+  - {fileID: 4239164584142956990}
+  - {fileID: 7772132774448362938}
+  - {fileID: 6426135507513103220}
+  - {fileID: 7706899160337839048}
+  - {fileID: 256765118903494266}
+  - {fileID: 8640975762798788172}
+  - {fileID: 4752786791752848046}
+  - {fileID: 5305303421103367525}
+  m_Father: {fileID: 264509610285203653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3046360687138452716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6970558934129876728}
+  - component: {fileID: 6819003614323508676}
+  m_Layer: 0
+  m_Name: '[Action] DashAttack'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6970558934129876728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046360687138452716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6819003614323508676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046360687138452716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fadf0c19334d1c9a540e0b5423af54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+  faceTargetWhenAttacking: 0
+  aimAtTargetWhenEnterState: 0
+  aimAtTargetDuringState: 0
+  weaponAimDirection: {x: 0, y: 0, z: 0}
+  dashDestinationTimeGap: 0
+  forceDashAbilitySetting: 1
+  dashDistance: 2.5
+  dashDuration: 0.2
+  dashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cooldown:
+    unlimited: 0
+    canInterrupt: 1
+    duration: 1.8
+    cooldownState: 0
+  delayBeforeDash: 0.2
+  dashAttackTiming: 0.2
+--- !u!1 &3492697146551062765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4056631571288935440}
+  - component: {fileID: 4300705200797165112}
+  m_Layer: 0
+  m_Name: '[Decision] Time In State (Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4056631571288935440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492697146551062765}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4300705200797165112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492697146551062765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: AttackingTimeInState
+  minDuration: 1.2
+  maxDuration: 1.2
+--- !u!1 &3678145016161587481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6426135507513103220}
+  - component: {fileID: 225077951900814807}
+  m_Layer: 0
+  m_Name: '[Decision] Time In State (Shatter Thrust)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6426135507513103220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678145016161587481}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &225077951900814807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678145016161587481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  minDuration: 1.5
+  maxDuration: 1.8
+--- !u!1 &4006814551940696353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6411909417148014129}
+  - component: {fileID: 5397033914987484732}
+  m_Layer: 0
+  m_Name: '[Action] ShatterThrust'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6411909417148014129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006814551940696353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5397033914987484732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006814551940696353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e93d68a4f6d4832b0a954ae48d33d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+--- !u!1 &4180337604576099520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6018265009780388121}
+  - component: {fileID: 5651325180919463550}
+  m_Layer: 0
+  m_Name: '[Action] SpinAttack'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6018265009780388121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180337604576099520}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5651325180919463550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180337604576099520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335944f40c034d66b0758a71985a1a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+--- !u!1 &4555606493844537940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564699133710541175}
+  - component: {fileID: 4366131214821501777}
+  m_Layer: 0
+  m_Name: '[Decision] Distance To Target (<=2)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564699133710541175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555606493844537940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4366131214821501777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555606493844537940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f967133e75be4580be0b46175ead2c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  comparisonMode: 1
+  distance: 2
+  minDistance: 2
+  ignoreTarget: 0
+  ignoreTargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!1 &4641225138842412083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752786791752848046}
+  - component: {fileID: 6411645242589969264}
+  m_Layer: 0
+  m_Name: '[Decision] Cooldown (Teleport Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752786791752848046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641225138842412083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6411645242589969264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641225138842412083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389b2cfb2269434b8679109878417024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  stateName: TeleportAttack
+  minCoolTime: 5
+  maxCoolTime: 8
+--- !u!1 &4689733165895151698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7706899160337839048}
+  - component: {fileID: 8679738535899386250}
+  m_Layer: 0
+  m_Name: '[Decision] Time In State (Spin Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7706899160337839048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689733165895151698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8679738535899386250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689733165895151698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  minDuration: 1
+  maxDuration: 1.2
+--- !u!1 &4964340541151299707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8640975762798788172}
+  - component: {fileID: 5002932193969816468}
+  m_Layer: 0
+  m_Name: '[Decision] Cooldown (Shatter Thrust)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8640975762798788172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4964340541151299707}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5002932193969816468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4964340541151299707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389b2cfb2269434b8679109878417024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  stateName: ShatterThrust
+  minCoolTime: 4
+  maxCoolTime: 6
+--- !u!1 &5048355175349635186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256765118903494266}
+  - component: {fileID: 6495822272539063070}
+  m_Layer: 0
+  m_Name: '[Decision] Cooldown (Spin Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &256765118903494266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048355175349635186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6495822272539063070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048355175349635186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389b2cfb2269434b8679109878417024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  stateName: SpinAttack
+  minCoolTime: 3
+  maxCoolTime: 5
+--- !u!1 &5315333471782937029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4239164584142956990}
+  - component: {fileID: 8757303372636152953}
+  m_Layer: 0
+  m_Name: '[Decision] Time In State (Dash Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4239164584142956990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315333471782937029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8757303372636152953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315333471782937029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  minDuration: 1.8
+  maxDuration: 2
+--- !u!1 &5609910970277429381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7965650694714960279}
+  - component: {fileID: 4707002867952542380}
+  m_Layer: 0
+  m_Name: '[Action] Following'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7965650694714960279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609910970277429381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4707002867952542380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609910970277429381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948257ccdaf34c26a2d723a5e11508e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+  minimumDistance: 2
+  currentDirection: {x: 0, y: 0}
+--- !u!1 &5744220294752713565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8541916743175481560}
+  - component: {fileID: 3036669665220764978}
+  m_Layer: 0
+  m_Name: '[Decision] Detect Target (<=12)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8541916743175481560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744220294752713565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3036669665220764978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744220294752713565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fe78438a8f458490beac464dad7bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 'Radius: 12 Degree: 360'
+  obstaclesDetectionMode: 1
+  radius: 12
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 394240
+  targetCheckFrequency: 1
+  overlapMaximum: 10
+  obstacleDetection: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &6712678643752803584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5305303421103367525}
+  - component: {fileID: 5511978980867718079}
+  m_Layer: 0
+  m_Name: '[Decision] Cooldown (Dash Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5305303421103367525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712678643752803584}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5511978980867718079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712678643752803584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389b2cfb2269434b8679109878417024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  stateName: DashAttacking
+  minCoolTime: 4
+  maxCoolTime: 6
+--- !u!1 &6800137925493810087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8408183539306776922}
+  - component: {fileID: 4852260007083787858}
+  m_Layer: 0
+  m_Name: '[Action] Attack'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8408183539306776922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800137925493810087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7082320110882370447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4852260007083787858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800137925493810087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d91857a0a341fbb5612b4959f156a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initializationMode: 0
+  label: 
+  faceTargetWhenAttacking: 1
+  aimAtTargetWhenEnterState: 0
+  aimAtTargetDuringState: 0
+  weaponAimDirection: {x: 0, y: 0, z: 0}
+--- !u!1 &8235176150945768189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7772132774448362938}
+  - component: {fileID: 5444952063996947272}
+  m_Layer: 0
+  m_Name: '[Decision] Time In State (Teleport Attack)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7772132774448362938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235176150945768189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543473367771760452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5444952063996947272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235176150945768189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6429b3933eb4612acfa93267941735f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  minDuration: 1
+  maxDuration: 1.2

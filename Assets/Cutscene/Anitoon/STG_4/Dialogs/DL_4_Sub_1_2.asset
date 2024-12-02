@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_4_Sub_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: a7dd3cfe3718fb84a86db9ed9c695a88, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5EC\uBCF4. "
+      en: Husband! Heaven is helping us.
+    readingTime:
+      kr: 1.2
+      en: 2.9
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAC10\uC0AC\uD569\uB2C8\uB2E4, \uC804\uC0AC\uB2D8."
+      en: She helped us, my love. Thank you, warrior.
+    readingTime:
+      kr: 2.1
+      en: 3.8

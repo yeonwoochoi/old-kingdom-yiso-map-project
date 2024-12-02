@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_19_Sub_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 7845497fd3841994da931e0f233b9bff, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uAC10\uD788 \uB204\uAD6C\uB0D0! \uD5C8\uB77D\uB3C4 \uC5C6\uC774... \uC5B4?
+        \uC124\uB9C8... \uBB34\uB518 \uC655\uC790?"
+      en: Who allows you to trespass? Huh? You, prince Mudin? It can't be possible.
+    readingTime:
+      kr: 4.9
+      en: 5.2
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC54C\uC544\uBD24\uC73C\uBA74, \uBB34\uAE30\uB97C \uBC84\uB824\uB77C."
+      en: You know who I am. Drop your weapons.
+    readingTime:
+      kr: 2.6
+      en: 3.4
+  - characterSo: {fileID: 11400000, guid: 7845497fd3841994da931e0f233b9bff, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB2F9\uC2E0 \uBAA9\uC744 \uAC00\uC838\uAC00\uBA74, \uC774\uBE44\uAED8\uC11C
+        \uC5BC\uB9C8\uB098 \uC8FC\uC2E4\uAE4C?"
+      en: How much would the 2nd queen pay for your head?
+    readingTime:
+      kr: 3.8
+      en: 4.1

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_4_Sub_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: c259c69d838246c4081c4e10174764cd, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC548\uB41C\uB2E4, \uC774\uB188\uB4E4\uC544. \uADF8\uAC74 5\uB300\uC9F8
+        \uB0B4\uB824\uC624\uB294 \uAC00\uBCF4\uB780 \uB9D0\uC774\uB2E4."
+      en: No, not this! This is a family heirloom passed down from generation to
+        generation.
+    readingTime:
+      kr: 4.6
+      en: 6.6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAC00\uBCF4\uB77C\uC796\uC544. \uAEBC\uC838\uB77C, \uC774\uB188\uB4E4!"
+      en: He said the heirloom is the most important thing to him. Get out of here!
+    readingTime:
+      kr: 2.7
+      en: 5.9

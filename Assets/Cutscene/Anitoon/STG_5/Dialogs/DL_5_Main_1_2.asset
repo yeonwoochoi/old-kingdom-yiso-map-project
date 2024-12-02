@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_5_Main_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC5C4\uB9C8! \uAD1C\uCC2E\uC544?"
+      en: Mom! Are you okay?
+    readingTime:
+      kr: 1.7
+      en: 2
+  - characterSo: {fileID: 11400000, guid: f4f31d30fd2b21e4aa4178b752d08a8c, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uAD1C\uCC2E\uC544. \uB0B4 \uB538. \uC704\uD5D8\uD55C\uB370 \uC5EC\uAE30
+        \uC65C \uC654\uC5B4?"
+      en: I'm fine, foxy. Thank you, Lady warrior!
+    readingTime:
+      kr: 3.6
+      en: 5.7

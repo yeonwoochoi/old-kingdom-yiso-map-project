@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_7_4
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b1c1ddee92ee42943b9a721bf9d942cd, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC628\uC870\uC57C, \uADF8\uB9CC \uCE7C\uC744 \uAC70\uB46C\uB77C."
+      en: Stop, Onjo!
+    readingTime:
+      kr: 2.6
+      en: 1.5
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB458\uC9F8\uC57C, \uC5B4\uBA85\uC774\uB2E4. \uC774\uC18C\uC57C, \uB108\uB3C4
+        \uADF8\uB9CC \uCE7C\uC744 \uAC70\uB46C\uB77C."
+      en: Stop, Little bro. It's a Queen's command. And you better lower your sword,
+        Yiso. You are now seeing your queen.
+    readingTime:
+      kr: 4.4
+      en: 8.6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uD558\uC9C0\uB9CC, \uC81C \uC0AC\uB78C\uB4E4\uC774 \uBAA8\uB450 \uBD99\uC7A1\uD614\uC5B4\uC694."
+      en: It's unfair! All my people are caught without reason.
+    readingTime:
+      kr: 3.3
+      en: 4.5
+  - characterSo: {fileID: 11400000, guid: b1c1ddee92ee42943b9a721bf9d942cd, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB108\uB3C4 \uB0B4 \uC7A5\uC218 \uB458\uC744 \uC7A1\uACE0 \uC788\uC9C0
+        \uC54A\uB2C8? \uADF8 \uB458\uC744 \uD480\uC5B4\uB2E4\uC624. \uC628\uC870,
+        \uB108\uB3C4 \uC774 \uC544\uC774\uC758 \uC0AC\uB78C\uB4E4\uC744 \uBAA8\uB450
+        \uD480\uC5B4\uC918\uB77C."
+      en: Two generals of mine are under your custody. Let them go. Onjo, release
+        the people of this lady.
+    readingTime:
+      kr: 8
+      en: 7.2

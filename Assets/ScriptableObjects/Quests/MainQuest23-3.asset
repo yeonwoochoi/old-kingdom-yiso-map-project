@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest23-3
+  m_EditorClassIdentifier: 
+  id: 90002303
+  type: 0
+  name:
+    kr: "\uD638 \uAC04\uBD80\uB97C \uCC3E\uC544 \uCC98\uCE58\uD558\uB77C."
+    en: Find and eliminate the Hoh pirate top brass.
+  autoComplete: 0
+  startRequirements:
+  - type: 4
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 11400000, guid: 87bc54252395b4649984bf5fa5ef255c, type: 2}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20002301
+      fieldName:
+        kr: "\uC791\uB2E8 \uBCF8\uBD80"
+        en: Zack Trading Company Headquarters
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 11400000, guid: 87bc54252395b4649984bf5fa5ef255c, type: 2}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

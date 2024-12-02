@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_7_Main_2_6
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC5EC\uAE30 \uC548\uC8FC\uAC00 \uB5A8\uC5B4\uC84C\uC5B4\uC694. \uC2DC\uB044\uB7EC\uC6CC\uC11C
+        \uC548 \uB4E4\uB9AC\uB098... \uAC8C\uD0D5 \uD558\uB098 \uB354 \uD574\uC904\uB798\uC694?!"
+      en: Excuse me, miss. We're out of side dishes. Can I get one more crab stew,
+        please?
+    readingTime:
+      kr: 6.1
+      en: 6.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB124, \uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB9AC\uC138\uC694. 5\uBC88 \uD0C1\uC790,
+        \uAC8C\uD0D5 \uD558\uB098 \uCD94\uAC00\uC694."
+      en: Coming right up. One crab stew for table five.
+    readingTime:
+      kr: 4.6
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uADF8\uB7F0\uB370, \uBB34\uC608\uB97C \uC544\uB294 \uC544\uAC00\uC528\uAC00
+        \uC65C \uC5EC\uAE30\uC11C \uC8FC\uBB38\uC744 \uBC1B\uACE0 \uC788\uC9C0\uC694?"
+      en: By the way, what brings you here to work? You seem well-trained.
+    readingTime:
+      kr: 5
+      en: 5.3
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uBB34\uC2A8 \uB9D0\uC500\uC774\uC138\uC694?"
+      en: I appreciate your interest, but I'm not interested in pursuing anything
+        further.
+    readingTime:
+      kr: 1.8
+      en: 5.4
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBCF4\uBC95\uC774 \uB9E4\uC6B0 \uC548\uC815\uB418\uC5B4 \uC788\uAD70\uC694.
+        \uD2C0\uB9BC\uC5C6\uC774 \uBB34\uC608\uB97C \uC54C \uAC70\uC5D0\uC694.\uB9DE\uC8E0?"
+      en: Your walking style is very stable. I bet you're a warrior.
+    readingTime:
+      kr: 5.1
+      en: 5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC5EC\uC790\uB97C \uAF80\uB294 \uBC29\uBC95\uC774 \uCC38 \uB3C5\uD2B9\uD558\uC2E0
+        \uBD84\uC774\uAD70\uC694. \uC804 \uBC14\uBE60\uC694."
+      en: Thank you for your interest, but I am not looking for anything right now.
+    readingTime:
+      kr: 4.5
+      en: 3.1

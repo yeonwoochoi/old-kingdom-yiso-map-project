@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_1_2_Fail_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 2b43e351e7e8fe94ca576e04d4324b9e, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC791\uB2E8 \uC5EC\uC8FC\uB294 \uB3C4\uB9DD\uAC04 \uB4EF \uD569\uB2C8\uB2E4.
+        \uC774\uACF3\uC5D0 \uB354 \uBA38\uBB34\uB294 \uAC74 \uBB34\uC758\uBBF8\uD569\uB2C8\uB2E4."
+      en: It seems that the Zack leader has escaped. It is meaningless to stay here
+        any longer.
+    readingTime:
+      kr: 6
+      en: 8
+  - characterSo: {fileID: 11400000, guid: 07f925a41e58abc41a98538ebccaf0b1, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uD558, \uBB34\uCC45\uC784\uD55C \uC5EC\uC8FC\uB85C\uAD70. \uD3EC\uB85C\uB4E4\uC744
+        \uB370\uB9AC\uACE0 \uB3CC\uC544\uAC00\uC790."
+      en: Ha, what a reckless leader. Let's take the prisoners and head back.
+    readingTime:
+      kr: 5
+      en: 7.7

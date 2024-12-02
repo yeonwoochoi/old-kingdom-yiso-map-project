@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_23_Sub_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uB10C \uB204\uAD6C\uB0D0?"
+      en: Who the heck are you?
+    readingTime:
+      kr: 1.4
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC800\uC2B9\uC0AC\uC790\uB294 \uB124\uAC8C \uB204\uAC00 \uB110 \uC8FD\uC600\uB294\uC9C0
+        \uBB3B\uC9C0 \uC54A\uC744\uAC70\uC57C."
+      en: Death won't ask you who killed you.
+    readingTime:
+      kr: 4.1
+      en: 3.2

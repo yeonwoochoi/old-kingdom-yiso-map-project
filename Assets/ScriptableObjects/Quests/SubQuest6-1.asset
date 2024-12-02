@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: SubQuest6-1
+  m_EditorClassIdentifier: 
+  id: 90000606
+  type: 1
+  name:
+    kr: "\uCCAD\uB144\uC758 \uBD80\uD0C1\uC744 \uB4E4\uC5B4\uC918."
+    en: Grant the young man's request.
+  autoComplete: 0
+  startRequirements: []
+  completeRequirements:
+  - type: 0
+    item:
+      itemSO: {fileID: 11400000, guid: ec12d2258bad9744185531e0bb533d9f, type: 2}
+      type: 2
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions:
+  - type: 5
+    exp: 0
+    itemSO: {fileID: 11400000, guid: ec12d2258bad9744185531e0bb533d9f, type: 2}
+    amount: 1
+    removeItemSO: {fileID: 0}
+    removeAll: 0
+    removeAmount: 1
+    addItemSO: {fileID: 11400000, guid: ec12d2258bad9744185531e0bb533d9f, type: 2}
+    addAmount: 1
+    money: 0
+    combatRating: 0
+  completeActions:
+  - type: 2
+    exp: 0
+    itemSO: {fileID: 0}
+    amount: 0
+    removeItemSO: {fileID: 0}
+    removeAll: 0
+    removeAmount: 1
+    addItemSO: {fileID: 0}
+    addAmount: 1
+    money: 1000
+    combatRating: 0
+  - type: 4
+    exp: 0
+    itemSO: {fileID: 0}
+    amount: 0
+    removeItemSO: {fileID: 11400000, guid: ec12d2258bad9744185531e0bb533d9f, type: 2}
+    removeAll: 1
+    removeAmount: 1
+    addItemSO: {fileID: 0}
+    addAmount: 1
+    money: 0
+    combatRating: 0

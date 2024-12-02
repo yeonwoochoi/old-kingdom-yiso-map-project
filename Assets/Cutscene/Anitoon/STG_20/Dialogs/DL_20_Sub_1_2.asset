@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_20_Sub_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 21df8f7838dc49241857b74b141382fc, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBB34\uB518 \uC655\uC790\uB2D8, \uBB34\uC0AC\uD558\uC168\uAD70\uC694.
+        \uC800\uB294 \uD0DC\uC790\uB2D8\uC744 \uD638\uC704\uD558\uB358 \uAC74\uCD94\uB77C\uACE0
+        \uD569\uB2C8\uB2E4."
+      en: 'I''m glad to find you safe, Prince Mudin. I''m Gunzu, the guard for the
+        crown prince. '
+    readingTime:
+      kr: 5.5
+      en: 6.7
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uCCAB\uC9F8 \uD615\uB2D8\uC740 \uC5B4\uB514 \uACC4\uC2DC\uC624?"
+      en: Where's my eldest brother?
+    readingTime:
+      kr: 2.5
+      en: 2.6
+  - characterSo: {fileID: 11400000, guid: 21df8f7838dc49241857b74b141382fc, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC548\uCC44\uC5D0 \uC788\uB2E4\uACE0 \uB4E4\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uD0DC\uC790\uB2D8\uC744 \uAD6C\uD574\uC8FC\uC2ED\uC2DC\uC624."
+      en: I heard he is in the main building. Please save him, Prince Mudin.
+    readingTime:
+      kr: 4.1
+      en: 5.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uCD5C\uC120\uC744 \uB2E4\uD560\uAC8C\uC694. \uC544\uC800\uC528\uB294
+        \uCE7C\uC744 \uB4E4\uACE0 \uC5B4\uC11C \uC5EC\uAE30\uC11C \uB300\uD53C\uD574\uC694."
+      en: I'll do my best. Just keep yourself safe from now.
+    readingTime:
+      kr: 4.9
+      en: 4.3

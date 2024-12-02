@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_5_Main_2_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 40934a5f75dc046498d267ac1d83190b, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uACE0\uB9D9\uC2B5\uB2C8\uB2E4, \uC804\uC0AC\uB2D8."
+      en: Heaven's hands you are! Thank you, warrior.
+    readingTime:
+      kr: 2.1
+      en: 3.8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC774\uB188\uB4E4\uC740 \uB3C4\uB300\uCCB4 \uC5B4\uB514\uC11C \uC628
+        \uAC81\uB2C8\uAE4C?"
+      en: I'd like to know the source of these evil men.
+    readingTime:
+      kr: 3.1
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 40934a5f75dc046498d267ac1d83190b, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC800\uB188\uB4E4 \uBB38\uC591\uC744 \uBCF4\uBA74..."
+      en: The attackers are identified as members of the Modo pirate crew, led by
+        Captain Latai.
+    readingTime:
+      kr: 2.4
+      en: 6.4
+  - characterSo: {fileID: 11400000, guid: 40934a5f75dc046498d267ac1d83190b, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB77C\uD0C0\uC774\uAC00 \uC774\uB044\uB294 '\uBAA8\uB3C4\uB77C'\uB77C\uB294
+        \uC218\uC801 \uB188\uB4E4\uC774\uC624."
+      en: Their distinctive tattoos serve as proof of their affiliation.
+    readingTime:
+      kr: 3
+      en: 5

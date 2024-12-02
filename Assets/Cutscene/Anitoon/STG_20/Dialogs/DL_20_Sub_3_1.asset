@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_20_Sub_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b2d1c75696bbca24ea306f434032307c, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC5EC\uAE30\uAC00 \uC5B4\uB518 \uC904 \uC54C\uACE0... \uACE7 \uB9C8\uD55C\uC758
+        \uC655\uC774 \uB418\uC2E4 \uBD84\uC758 \uC9D1\uC774\uC57C!"
+      en: You ignorant! I'll tell you what. It will be the born house of the future
+        king of Mahan.
+    readingTime:
+      kr: 5
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC54C\uC544. \uB0B4\uAC00 \uBAA8\uB974\uB294 \uAC78 \uC774\uC57C\uAE30\uD574."
+      en: I heard it's the birth house of a traitor.
+    readingTime:
+      kr: 3
+      en: 3.7

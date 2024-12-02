@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB2F9\uC2E0\uB4E4 \uBB50\uC57C? \uC65C \uB0A0 \uC8FD\uC774\uB824\uACE0
+        \uD558\uC9C0?"
+      en: Who are you and why are you trying to hurt me?
+    readingTime:
+      kr: 3.2
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 8bee6276ba5f93e49a272b38fca4400d, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC820\uC7A5. \uD3C9\uBC94\uD55C \uACC4\uC9D1\uC774\uB77C\uACE0 \uD588\uB294\uB370..."
+      en: This is frustrating. I was led to believe that you were just an ordinary
+        girl.
+    readingTime:
+      kr: 3.2
+      en: 6.5
+  - characterSo: {fileID: 11400000, guid: 8bee6276ba5f93e49a272b38fca4400d, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uB0B4 \uB9C8\uC9C0\uB9C9\uC774 \uC774\uB7F0 \uD558\uCC2E\uC740 \uACC4\uC9D1\uC5D0\uAC8C...
+        \uB108\uBB34 \uD5C8\uBB34\uD574."
+      en: It's disappointing to see my life come to an end because of a girl with
+        no name.
+    readingTime:
+      kr: 4.5
+      en: 6.6

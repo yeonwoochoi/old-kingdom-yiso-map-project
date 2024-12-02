@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_13_Sub_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC774\uAC74 \uB0B4 \uBB3C\uAC74\uC774 \uC544\uB2D9\uB2C8\uB2E4. \uC11D\uAC00\uC7A5\uC5D0
+        \uAC08 \uBB3C\uAC74\uC774\uB780 \uB9D0\uC785\uB2C8\uB2E4."
+      en: This doesn't belong to me, it belongs to the Suk manor.
+    readingTime:
+      kr: 4.7
+      en: 4.7
+  - characterSo: {fileID: 11400000, guid: f1da12bbc4f6e1e42b1a194f4fc1e973, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC11D\uAC00\uC7A5\uC774\uB77C\uBA74 \uAC81\uC774\uB77C\uB3C4 \uBA39\uC744
+        \uC904 \uC54C\uC558\uB290\uB0D0? \uC5BC\uB978 \uB0B4\uB194."
+      en: The Suk manor won't scare us. Give it to us.
+    readingTime:
+      kr: 4.4
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC774\uACF3\uC740 \uC815\uB9D0 \uCE58\uC548\uC774\uB77C\uB294 \uAC8C
+        \uC5C6\uB124\uC694, \uC5B8\uB2C8."
+      en: There's really no security here, sis.
+    readingTime:
+      kr: 3.6
+      en: 3.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uBBF8\uCD94\uD640\uC744 \uC218\uBAA8\uAC00 \uB2E4\uC2A4\uB9AC\uB2E4\uAC00
+        \uD3EC\uAE30\uD588\uB2E4\uACE0 \uD558\uC796\uC544."
+      en: They say Kahn Somo has given up ruling here.
+    readingTime:
+      kr: 3.8
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC774\uACF3 \uC218\uC801\uB4E4\uC774 \uC815\uB9D0 \uB9CC\uB9CC\uCE58
+        \uC54A\uB098\uBD10\uC694, \uC5B8\uB2C8."
+      en: They also say the pirates here are really tough, sis.
+    readingTime:
+      kr: 3.7
+      en: 4.5

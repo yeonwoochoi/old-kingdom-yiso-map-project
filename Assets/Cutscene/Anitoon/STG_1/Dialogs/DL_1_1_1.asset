@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_1_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 4fa67ed17c28c5c4a86351142c1d20a3, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4\uC774, \uC608\uC05C \uC544\uAC00\uC528. \uC65C \uC6B8\uACE0 \uADF8\uB798.
+        \uC624\uBE60\uB791 \uC88B\uC740 \uC2DC\uAC04 \uBCF4\uB0BC\uAE4C?"
+      en: Hey, pretty lady! Let me take away your worries and make you smile with
+        a night of fun.
+    readingTime:
+      kr: 5.1
+      en: 6.9
+  - characterSo: {fileID: 11400000, guid: 8b786ffaf176f10489f052c894449900, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uB9DE\uC544. \uC2AC\uD508 \uC77C\uC740 \uBAA8\uB450 \uC78A\uC5B4\uBC84\uB9AC\uACE0
+        \uC624\uBE60\uB4E4\uC774\uB791 \uB180\uC790."
+      en: Yeah, pretty lady. Fun is what you need right now.
+    readingTime:
+      kr: 4.2
+      en: 4.3
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC800\uB9AC \uAC00\uC694."
+      en: Stay out of my sight.
+    readingTime:
+      kr: 1.4
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: ebd00acab575ffa4da2c3bfd156ae339, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC758\uC678\uB85C \uC559\uCE7C\uC9C0\uB124? \uC18C\uBC15 \uB9DE\uC544\uC11C
+        \uADF8\uB7F0\uAC00? \uC800 \uBD07\uC9D0 \uC880 \uBD10\uBD10."
+      en: What a sharp lady! Look at her luggage. Got deserted?
+    readingTime:
+      kr: 4.7
+      en: 4.5
+  - characterSo: {fileID: 11400000, guid: 4fa67ed17c28c5c4a86351142c1d20a3, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uBA38\uB9AC\uB97C \uC548 \uC62C\uB9B0 \uAC70 \uBCF4\uBA74, \uCC98\uB140
+        \uAC19\uC740 \uB370? \uC5B4\uC774, \uC544\uAC00\uC528, \uAC00\uCD9C\uD55C
+        \uAC70\uC57C?"
+      en: As her hair's not put up, she doesn't seem married. Hey, prettie, running
+        away from home?
+    readingTime:
+      kr: 5.8
+      en: 7.1
+  - characterSo: {fileID: 11400000, guid: 8b786ffaf176f10489f052c894449900, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uBA38\uB9AC\uB97C \uC548 \uC62C\uB838\uC73C\uBA74, \uC624\uBE60\uAC00
+        \uC62C\uB824\uC904\uAE4C?"
+      en: I'll put your hair up tonight.
+    readingTime:
+      kr: 3.3
+      en: 2.9

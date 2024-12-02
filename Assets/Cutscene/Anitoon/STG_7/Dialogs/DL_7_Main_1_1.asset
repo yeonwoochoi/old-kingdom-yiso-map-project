@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_7_Main_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 0f275c3501c0cd04a83ea15970babf47, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uBB34\uC2A8 \uC77C\uC774\uC9C0, \uC5B4\uB9B0 \uCC98\uC790\uAC00?"
+      en: This isn't a place for a young woman.
+    readingTime:
+      kr: 2.6
+      en: 3.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC2EC\uBD80\uB984 \uC654\uC5B4\uC694. \uC774 \uC637\uB4E4\uC744 \uC5EC\uAE30\uB2E4
+        \uC8FC\uB77C\uB124\uC694."
+      en: I'm here to deliver these clothes. I was told I'd be paid for it here.
+    readingTime:
+      kr: 3.7
+      en: 5.7
+  - characterSo: {fileID: 11400000, guid: 0f275c3501c0cd04a83ea15970babf47, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4? \uBB34\uC2A8 \uC637\uC774\uC9C0? 10\uBC8C\uC774\uB098?"
+      en: 10 pieces? That's too many for us. Who hired you?
+    readingTime:
+      kr: 2.8
+      en: 4.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC800\uC57C \uBAA8\uB974\uC8E0. \uC800\uC57C \uADF8\uB0E5 \uC2EC\uBD80\uB984
+        \uC628 \uAC70\uB2C8\uAE4C\uC694."
+      en: Delivering is my job, which has just been completed.
+    readingTime:
+      kr: 3.8
+      en: 4.4
+  - characterSo: {fileID: 11400000, guid: 0f275c3501c0cd04a83ea15970babf47, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uADF8\uB807\uACA0\uAD70. \uADF8\uB7F0\uB370, \uB300\uC7A5\uAC04\uC5D0\uC11C
+        \uACE0\uC6A9\uD55C \uAC70\uC57C?"
+      en: You can say that again. Hired by the blacksmith himself?
+    readingTime:
+      kr: 3.7
+      en: 4.7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC544\uB1E8. \uC67C\uCABD \uC785\uAC00\uC5D0 \uC810 \uC788\uB294 \uC544\uAC00\uC528\uAC00
+        \uBD80\uD0C1\uD558\uB358\uB370\uC694. \uC5EC\uAE30\uB85C \uC774\uAC70 \uAC00\uC838\uB2E4\uC8FC\uBA74,
+        \uD488\uC0AF\uC744 \uBC1B\uC744 \uAC70\uB77C\uACE0..."
+      en: Nope, a pretty woman with a mole on the left side of her lips. She said
+        I could get paid here upon delivery.
+    readingTime:
+      kr: 7.8
+      en: 8
+  - characterSo: {fileID: 11400000, guid: 0f275c3501c0cd04a83ea15970babf47, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC9C0\uD5A5\uC774 \uBCF4\uB0C8\uAD6C\uB098. \uB9C8\uCE68 \uC5EC\uAE30\uB3C4
+        \uC190\uC774 \uBD80\uC871\uD55C\uB370, \uB098 \uC880 \uB3C4\uC640\uC8FC\uACA0\uC5B4?
+        \uC624\uB298 \uD488\uC0AF\uC73C\uB85C \uACE0\uB4F1\uC5B4 \uC138 \uC190 \uC904\uAC8C."
+      en: Ah, it was Jihyang who hired you. I'm short-handed today. Would you like
+        to work for me? I'll pay you three mackerels.
+    readingTime:
+      kr: 7.8
+      en: 9.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB450 \uC190\uB9CC \uB354 \uC8FC\uC2DC\uBA74 \uC548\uB418\uC694? \uC5F4\uC2EC\uD788
+        \uD560\uAC8C\uC694."
+      en: How about five mackerels? A bonus if I do well.
+    readingTime:
+      kr: 3.7
+      en: 5.1
+  - characterSo: {fileID: 11400000, guid: 0f275c3501c0cd04a83ea15970babf47, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC624\uD638! \uC7A5\uC0AC\uB97C \uD560 \uC904 \uC544\uB294 \uC544\uAC00\uC528\uAD70.
+        \uC88B\uC544. \uB2E4\uC12F \uC190\uC744 \uC904\uAC8C. \uC5F4\uC2EC\uD788
+        \uD558\uBA74 \uB354 \uC8FC\uACE0..."
+      en: You know how to negotiate. I love it, girl. Five mackerels it is.
+    readingTime:
+      kr: 6.9
+      en: 5.4

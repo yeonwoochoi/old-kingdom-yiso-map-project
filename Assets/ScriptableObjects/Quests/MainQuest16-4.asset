@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest16-4
+  m_EditorClassIdentifier: 
+  id: 90001604
+  type: 0
+  name:
+    kr: "\uC218\uBAA8 \uAD00\uB9AC\uAC00 \uC218\uBAA8 \uC5F0\uB77D\uC18C\uB97C \uB5A0\uB098\uAE30
+      \uC804\uC5D0 \uADF8 \uC0DD\uD3EC\uD558\uB77C"
+    en: Capture the Sumo Manager before he leaves the Sumo's liaison office.
+  autoComplete: 0
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001603
+      fieldName:
+        kr: "\uC218\uBAA8 \uC5F0\uB77D\uC18C"
+        en: Sumo's liaison office
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 1
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 11400000, guid: 2f6ab6dc8855ca049907fb082d26b792, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20001205
+      fieldName:
+        kr: "\uB0A8\uCC3D\uD45C\uAD6D \uAD00\uCCAD"
+        en: Headquarter of Namchang Logistics
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

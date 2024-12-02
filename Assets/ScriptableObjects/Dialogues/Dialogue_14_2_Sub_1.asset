@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87fe101b9274d269d9de197cbe0426e, type: 3}
+  m_Name: Dialogue_14_2_Sub_1
+  m_EditorClassIdentifier: 
+  id: 91420001
+  dialogues:
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 37c7ec52ff7ee5f4680f010ed440de5f, type: 2}
+    content:
+      kr: "\uB0A8\uCC3D\uD45C\uAD6D\uC744 \uB9E1\uB358 \uD45C\uB450\uAC00 \uC65C
+        \uC0AC\uB77C\uC84C\uB294\uC9C0 \uC544\uBB34\uB3C4 \uBAA8\uB974\uB354\uAD70.
+        \uCD5C\uADFC\uC5D0 \uCD1D\uD45C\uB450\uAC00 \uC654\uB2E4\uB358\uB370?"
+      en: No one knows why the former manager disappeared. I heard the top manager
+        has arrived recently.
+  - speaker: 2
+    npc: {fileID: 11400000, guid: 013e5b0cd8c7a3f4ab0645de1720feda, type: 2}
+    content:
+      kr: "\uBB34\uC2A8 \uD070\uC77C\uC774\uB77C\uB3C4 \uB098\uB824\uB098..."
+      en: I wonder if something big is about to happen...

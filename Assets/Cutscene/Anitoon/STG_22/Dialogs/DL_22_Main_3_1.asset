@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_22_Main_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uB3D9\uC0DD\uB4E4\uC744 \uAD6C\uD558\uC9C0\uB3C4 \uBABB\uD55C \uCC44,
+        \uC8FD\uB294 \uC904 \uC54C\uC558\uC5B4\uC694."
+      en: I thought I would die in vain, without saving my little sis and bros.
+    readingTime:
+      kr: 4
+      en: 5.7
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uBB34\uC0AC\uD574\uC11C \uB2E4\uD589\uC774\uAD6C\uB098. \uC57D\uC18D
+        \uC2DC\uAC04\uC5D0 \uC624\uC9C0 \uC54A\uC544 \uAC71\uC815\uD588\uB2E8\uB2E4."
+      en: I'm glad to see you in one piece. I've been worried that you didn't come
+        on time.
+    readingTime:
+      kr: 4.6
+      en: 6.5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB3D9\uC0DD\uB4E4\uC740 \uC5B4\uB5BB\uAC8C \uB418\uC5C8\uB294\uC9C0 \uC544\uC2DC\uB098\uC694?"
+      en: Do you happen to know where they are now?
+    readingTime:
+      kr: 3.1
+      en: 3.7
+  - characterSo: {fileID: 11400000, guid: 4294f51c34b230f489930cfa0e5e12a5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC77C\uB2E8 \uC548\uC804\uD55C \uACF3\uC73C\uB85C \uAC00\uC790\uAFB8\uB098.
+        \uB098\uC640 \uB9CC\uB098\uAE30\uB85C \uD55C \uC815\uBCF4\uAC00 \uC0DC\uB098\uBCF4\uB2E4."
+      en: Our appointment must have leaked. Let's find some safe place for now.
+    readingTime:
+      kr: 5.4
+      en: 5.7

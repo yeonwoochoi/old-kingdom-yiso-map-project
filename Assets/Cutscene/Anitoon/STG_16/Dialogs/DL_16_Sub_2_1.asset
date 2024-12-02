@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_16_Sub_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 7792aee5ac702fc4495174523c1b184a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB300\uAE08\uC774 \uBAA8\uC790\uB77C\uC9C0 \uC54A\uC2B5\uB2C8\uAE4C?
+        \uC57D\uC18D\uC744 \uC9C0\uCF1C\uC57C\uC9C0\uC694."
+      en: The full payment is required! The contract must be kept.
+    readingTime:
+      kr: 3.8
+      en: 4.7
+  - characterSo: {fileID: 11400000, guid: 536368d20d24a1644af5491b0c6646df, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB2E4\uC74C\uC5D0 \uC900\uB2E4\uACE0 \uD558\uC9C0 \uC54A\uB290\uB0D0?
+        \uD639\uC2DC \uB0B4\uAC00 \uB204\uAD70\uC9C0 \uC78A\uC5C8\uB290\uB0D0?"
+      en: As I said, the payment will be completed next month. Don't you know who
+        you're dealing with?
+    readingTime:
+      kr: 4.6
+      en: 7.3
+  - characterSo: {fileID: 11400000, guid: 7792aee5ac702fc4495174523c1b184a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC9C0\uB09C \uB2EC, \uC9C0\uC9C0\uB09C \uB2EC \uBB3C\uD488\uB3C4 \uACC4\uC18D
+        \uB300\uAE08\uC744 \uB2E4 \uCE58\uB974\uC9C0 \uC54A\uC558\uC796\uC18C. \uC774\uBC88\uC5D0\uB294
+        \uC548 \uB418\uC624. \uADF8\uB0E5 \uAC00\uC2DC\uC624."
+      en: You've delayed payment twice since 2 months ago. Not this time. I can't
+        provide you any goods from now.
+    readingTime:
+      kr: 7.4
+      en: 8.1

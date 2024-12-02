@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_6_Main_4_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uBB50\uB77C\uACE0? \uC804\uBA78\uD588\uB2E4\uACE0?"
+      en: Is everyone deceased?
+    readingTime:
+      kr: 2.1
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC804\uBD80 \uC8FD\uC5C8\uC2B5\uB2C8\uB2E4."
+      en: Yes, boss. All are dead.
+    readingTime:
+      kr: 1.8
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uADF8\uB7F4 \uB9AC\uAC00 \uC5C6\uB294 \uB370... \uADF8 \uB140\uC11D\uC774
+        \uC138\uC6B4 \uACC4\uB7B5\uC774\uC57C. \uACF5\uAED8\uC11C \uBB34\uCC99 \uC544\uB07C\uB294
+        \uB188\uC778\uB370..."
+      en: That can't be... He's the one who set it up. He's the man who Sir Hoh holds
+        in high regard.
+    readingTime:
+      kr: 6.5
+      en: 6.9
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uAC04\uC744 \uC815\uD655\uD788 \uAD00\uD1B5\uB2F9\uD574 \uC8FD\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uB9E4\uC11C\uC6B4 \uC19C\uC528\uB85C \uBCF4\uC544 \uB204\uAD70\uAC00 \uB3C4\uC6C0\uC744
+        \uC900 \uAC83\uC73C\uB85C \uBCF4\uC785\uB2C8\uB2E4."
+      en: He was fatally wounded. The precision of the attack suggests that the attacker
+        was not an amateur.
+    readingTime:
+      kr: 6.9
+      en: 8.3
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uBAA9\uD45C\uB294 \uC5B4\uB5BB\uAC8C \uB418\uC5C8\uC9C0?"
+      en: What about the objective?
+    readingTime:
+      kr: 2.2
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4\uBBF8\uB294 \uC81C\uAC70\uD588\uC73C\uB098, \uC544\uC9C1 \uADF8
+        \uB538\uC740..."
+      en: The mother was eliminated, but the daughter remains at large.
+    readingTime:
+      kr: 3.3
+      en: 5.1
+  - characterSo: {fileID: 11400000, guid: 6b8f44502c6132c40801b4d9c3cb0207, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC5B4\uBBF8\uB294 \uBAA9\uD45C\uAC00 \uC544\uB2C8\uB77C\uACE0 \uD588\uC9C0!
+        \uC5B4\uBBF8\uB294 \uB538\uC744 \uB193\uCCE4\uC744 \uACBD\uC6B0, \uB300\uBE44\uCC45\uC774\uC5C8\uB2E8
+        \uB9D0\uC774\uC57C!"
+      en: The mother was just a secondary target, as I previously informed you. She
+        was only a backup plan in case we failed to capture the daughter.
+    readingTime:
+      kr: 6.1
+      en: 10.6
+  - characterSo: {fileID: 11400000, guid: b2e2afe8015fa0242a1eb97260d8051a, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uADF8 \uBAA8\uB140\uB97C \uB3C4\uC6B4 \uC0AC\uB78C\uC774 \uC788\uC73C\uB9AC\uB77C\uACE0\uB294
+        \uAD6C\uC885 \uADF8 \uB188\uB3C4 \uC608\uC0C1\uC744 \uBABB\uD588\uB098 \uBD05\uB2C8\uB2E4."
+      en: Gujong did not expect any help from the unknown entity behind the curtain.
+    readingTime:
+      kr: 5.8
+      en: 6.6

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_10_Main_2_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uCC9C\uCC9C\uD788 \uC2DC\uAC04\uC744 \uAC16\uC790. \uBB3C\uC5B4\uBCFC
+        \uAC8C \uCC38 \uB9CE\uC544\uC11C \uB9D0\uC774\uC57C. \uAD1C\uCC2E\uC9C0?"
+      en: We're going to have a long conversation. I have a lot to ask. Will that
+        be okay with you?
+    readingTime:
+      kr: 4
+      en: 7
+  - characterSo: {fileID: 11400000, guid: be1732dc901d3a2499f0dc735b4e1ecd, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uAC10\uD788 \uB0B4\uAC00 \uB204\uAD70 \uC904 \uC54C\uACE0..."
+      en: If you dare say so, you don't even know who I am.
+    readingTime:
+      kr: 3
+      en: 4
+  - characterSo: {fileID: 11400000, guid: 7b8c1300cf1ed3349948e9ac481ed570, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uCC28\uCC28 \uC54C\uC544\uAC00\uC57C\uC9C0. \uB124\uB188\uB3C4 \uCC38
+        \uC785\uC774 \uAC00\uBCBC\uC6B4 \uB188\uC774\uAD6C\uB098. \uBC8C\uC368 \uC815\uCCB4\uB97C
+        \uC54C\uB824\uC8FC\uB824\uB294 \uAC78 \uBCF4\uB2C8..."
+      en: She'll learn all about you as you talk. Don't be too talkative yet. You
+        might lose her curiosity too soon.
+    readingTime:
+      kr: 7
+      en: 8

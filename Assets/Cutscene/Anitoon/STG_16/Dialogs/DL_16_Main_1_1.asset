@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_16_Main_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: d09f8c422c9820e429582aff83f3a3ee, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uAC10\uD788 \uC218\uC801 \uB188\uB4E4\uC774 \uC5EC\uAE30\uAC00 \uC5B4\uB518
+        \uC904 \uC54C\uACE0..."
+      en: Are you looking for your own tombs, pirates?
+    readingTime:
+      kr: 3.7
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC54C\uC9C0, \uC54C\uC9C0. \uC218\uBAA8 \uB3C4\uC801 \uC18C\uAD74\uC774\uC9C0."
+      en: I'm looking for yours, thief from Sumo.
+    readingTime:
+      kr: 3.1
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: d09f8c422c9820e429582aff83f3a3ee, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uBB50\uB77C? \uB0B4 \uCE7C\uC5D0 \uC790\uBE44\uAC00 \uC5C6\uB2E4\uACE0
+        \uC6D0\uB9DD\uD558\uC9C0 \uB9C8\uB77C."
+      en: What the heck! You've just driven away my mercy, if any.
+    readingTime:
+      kr: 3.8
+      en: 4.7

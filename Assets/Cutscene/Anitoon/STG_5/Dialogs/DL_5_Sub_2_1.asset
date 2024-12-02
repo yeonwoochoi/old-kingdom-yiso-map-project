@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_5_Sub_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 7ffd9aed0e94cd844bf0afd57449b282, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB0A8\uC790\uB4E4\uC740 \uC774\uC81C \uCDA9\uBD84\uD558\uB2E4. \uB098\uBA38\uC9C0\uB294
+        \uBAA8\uB450 \uC8FD\uC5EC\uB77C."
+      en: No more men. Capture only women and children.
+    readingTime:
+      kr: 4
+      en: 4.6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB0A8\uC790\uB85C \uD0DC\uC5B4\uB09C \uAC8C \uC8C4\uB0D0?"
+      en: Is it a sin to be born male?
+    readingTime:
+      kr: 2.3
+      en: 2.7
+  - characterSo: {fileID: 11400000, guid: 7ffd9aed0e94cd844bf0afd57449b282, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB10C \uC5EC\uC790\uC796\uC544."
+      en: You are a female.
+    readingTime:
+      kr: 1.6
+      en: 2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB9DE\uC544. \uADF8\uB9AC\uACE0, \uB108\uD770 \uC218\uC801 \uB188\uB4E4\uC774\uC9C0."
+      en: You're right, smart one. And you're pirates. Am I smart?
+    readingTime:
+      kr: 3.2
+      en: 4.7

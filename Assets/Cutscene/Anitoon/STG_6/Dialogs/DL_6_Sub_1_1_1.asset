@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_6_Sub_1_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBB34\uC2A8 \uC77C\uC774\uC57C?"
+      en: What's up, lad?
+    readingTime:
+      kr: 1.6
+      en: 1.8
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB300\uC7A5\uAC04\uC5D0\uC11C \uC77C\uD558\uB294 \uBD84\uC778\uAC00 \uBCF4\uB124\uC694.
+        \uC800... \uBD80\uD0C1 \uD558\uB098\uB9CC \uB4E4\uC5B4\uC8FC\uC2E4 \uC218
+        \uC788\uB098\uC694?"
+      en: You appear to be employed at the shop. Would it be possible for you to
+        assist me with something?
+    readingTime:
+      kr: 6
+      en: 7.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBB34\uC2A8 \uC77C\uC778\uB370?"
+      en: What is it that you need?
+    readingTime:
+      kr: 1.6
+      en: 2.5

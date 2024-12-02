@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_3_Main_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC5C4\uB9C8!"
+      en: Mom!
+    readingTime:
+      kr: 1.5
+      en: 1.5
+  - characterSo: {fileID: 11400000, guid: 7cd37f4b378cb2c4d8352172c7122e92, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC774\uBBF8 \uB2A6\uC5C8\uAD6C\uB098, \uC774\uC05C \uB538."
+      en: It's too late, Honey.
+    readingTime:
+      kr: 2.5
+      en: 2.2

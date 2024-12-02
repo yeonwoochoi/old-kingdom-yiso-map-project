@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b87631ddf54fe1b045cc5bdfe78ac9, type: 3}
+  m_Name: Thief1
+  m_EditorClassIdentifier: 
+  id: 50006000
+  name:
+    kr: "\uB3C4\uC8011"
+    en: Thief1
+  description:
+    kr: "\uB3C4\uC801\uC740 \uC740\uBC00\uD558\uAC8C \uC6C0\uC9C1\uC774\uBA70, \uC801\uC758
+      \uBB3C\uAC74\uC744 \uD6D4\uCE58\uAC70\uB098 \uBC29\uD574\uD558\uB294 \uC704\uD5D8\uD55C
+      \uC801\uC785\uB2C8\uB2E4."
+    en: A thief is a dangerous foe who moves stealthily, stealing or sabotaging the
+      possessions of others.
+  icon: {fileID: 21300000, guid: 76bdb8fe247a100409cf75b5c91681b5, type: 3}
+  type: 0
+  drops:
+  - money: 1
+    moneyValue: 100
+    probability: 0
+    itemSO: {fileID: 0}
+  - money: 0
+    moneyValue: 1
+    probability: 50
+    itemSO: {fileID: 11400000, guid: 4ca08e08e073f4eb7bbf2f4e82265b7c, type: 2}
+  - money: 0
+    moneyValue: 1
+    probability: 10
+    itemSO: {fileID: 11400000, guid: 0ee17897eb44a4190a3b0cc9f2a49b5c, type: 2}

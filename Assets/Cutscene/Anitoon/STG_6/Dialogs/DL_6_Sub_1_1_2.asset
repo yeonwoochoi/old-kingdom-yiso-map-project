@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_6_Sub_1_1_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC81C\uAC00 \uCD94\uBAA8\uD0DC\uC655\uC758 \uBA85\uC744 \uBC1B\uC544
+        \uAD70\uC5D0 \uC785\uB300\uD558\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uAD70\uC5D0
+        \uAC00\uAE30 \uC804\uC5D0 \uAF2D \uC81C \uB9C8\uC74C\uC744 \uC804\uD558\uACE0
+        \uC2F6\uC740 \uC0AC\uB78C\uC774 \uC788\uC5B4\uC11C\uC694."
+      en: I've been conscripted by Chumo the Great to serve in the army, and I'd
+        like to express my affection to a fair maiden at the shop before I depart.
+    readingTime:
+      kr: 8.7
+      en: 11
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uB204\uAD6C\uD55C\uD14C?"
+      en: To whom? Does she have any distinctive feature?
+    readingTime:
+      kr: 1.3
+      en: 3.4
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC67C\uCABD \uC785\uC220 \uC606\uC5D0 \uC810\uC774 \uC788\uB294 \uC608\uC05C
+        \uC544\uAC00\uC528\uB78D\uB2C8\uB2E4. \uAF2D \uB3CC\uC544\uC62C\uD14C\uB2C8
+        \uAE30\uB2E4\uB824\uB2EC\uB77C\uACE0..."
+      en: She has a distinctive mole on the left side of her lips, Let her wait for
+        me till I'm back...
+    readingTime:
+      kr: 6.1
+      en: 7.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC774\uAC83\uB9CC \uC804\uD574\uC8FC\uBA74 \uB418\uB294 \uAC70\uC57C?"
+      en: She will surely have your message.
+    readingTime:
+      kr: 2.6
+      en: 3.7
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB124. \uAF2D \uC880 \uBD80\uD0C1\uB4DC\uB824\uC694."
+      en: Yes, please make sure to do it.
+    readingTime:
+      kr: 2.6
+      en: 4

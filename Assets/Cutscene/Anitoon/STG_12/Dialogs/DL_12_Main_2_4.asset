@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_12_Main_2_4
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC544\uC545! \uC7A0\uAE50\uB9CC\uC694. \uC9C0\uAE08 \uB9D0\uD558\uB824\uACE0
+        \uD588\uC2B5\uB2C8\uB2E4, \uCE60\uC655\uC790\uB2D8."
+      en: Ouch! Stop! About to say, the 7th prince!
+    readingTime:
+      kr: 4.4
+      en: 3.7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uCE60\uC655\uC790?"
+      en: 7th what?
+    readingTime:
+      kr: 1.2
+      en: 1.4

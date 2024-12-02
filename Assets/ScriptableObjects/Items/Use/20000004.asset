@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec814b00fa534b728ee26554ef71360b, type: 3}
+  m_Name: 20000004
+  m_EditorClassIdentifier: 
+  icon: {fileID: -5962389079421231736, guid: e69e371799342494db1caffe159b653c, type: 3}
+  id: 20000004
+  name:
+    kr: "\uACF5\uACA9\uB825 \uBB3C\uC57D"
+    en: 
+  description:
+    kr: "\uC77C\uC815\uC2DC\uAC04 \uACF5\uACA9\uB825\uC744 \uC99D\uAC00\uC2DC\uD0A4\uB294
+      \uC2E0\uBE44\uD55C \uC57D\uC785\uB2C8\uB2E4. <b>10\uCD08\uB3D9\uC548</b> \uACF5\uACA9\uB825 
+      <b>10</b>\uC744 \uC99D\uAC00 \uC2DC\uD0B5\uB2C8\uB2E4. (\uCFE8\uD0C0\uC784
+      10\uCD08)"
+    en: 
+  inventoryType: 1
+  sellPrice: 0
+  effect:
+    buff: 1
+    buffStat: 8
+    value: 100
+    duration: 3
+    cool: 1
+    coolDown: 5
+    overlapEffect: 0
+    arrow: 0
+    arrowAttack: 5

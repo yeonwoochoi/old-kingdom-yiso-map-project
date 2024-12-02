@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_12_Main_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB2F9\uC2E0\uC740 \uB204\uAD6C\uC2ED\uB2C8\uAE4C? \uD639\uC2DC \uC6B0\uB9AC\uAC00
+        \uB2F9\uC2E0\uC758 \uD45C\uBB3C\uC744 \uC783\uC5B4\uBC84\uB9AC\uAC70\uB098
+        \uD30C\uC190\uD55C \uC801\uC774 \uC788\uC2B5\uB2C8\uAE4C?"
+      en: What's this for? Have we ever lost or damaged your package?
+    readingTime:
+      kr: 6.4
+      en: 4.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC544\uB2C8, \uBB50 \uC880 \uBB3C\uC5B4\uBCF4\uB824\uACE0..."
+      en: No, I have some questions.
+    readingTime:
+      kr: 2.7
+      en: 2.6
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBB50\uB77C\uACE0\uC694? \uADF8\uB0E5 \uBB3C\uC5B4\uBCFC\uAC8C \uC788\uB2E4\uACE0,
+        \uC774 \uB09C\uB9AC\uB97C \uCE5C \uAC81\uB2C8\uAE4C?"
+      en: Whaaat? You made all this fuss just for questions?
+    readingTime:
+      kr: 4.6
+      en: 4.3
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uADF8\uB0E5 \uAC00\uB974\uCCD0\uC8FC\uC9C0\uB294 \uC54A\uC744 \uAC83
+        \uAC19\uC544\uC11C \uB9D0\uC774\uC624."
+      en: I don't think you would have answered us quickly and truthfully.
+    readingTime:
+      kr: 3.6
+      en: 5.3
+  - characterSo: {fileID: 11400000, guid: 60f60b0803c899148bd52332498239d6, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAE30\uAC00 \uCC39\uB2C8\uB2E4. \uC77C\uB2E8 \uBA3C\uC800 \uBB3C\uC5B4\uBCF4\uC2DC\uC9C0..."
+      en: I can't believe it. Why didn't you ask me first?
+    readingTime:
+      kr: 3.5
+      en: 4.2
+  - characterSo: {fileID: 11400000, guid: 8759fc25e6ba1aa47a9179786c93ace5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB204\uAC00 \uB0A0 \uC8FD\uC774\uB77C\uACE0 \uD588\uB294\uC9C0, \uBB3C\uC5B4\uBCF4\uB294
+        \uAC83\uC774\uB77C..."
+      en: Who hired you to kill me?
+    readingTime:
+      kr: 4
+      en: 2.5

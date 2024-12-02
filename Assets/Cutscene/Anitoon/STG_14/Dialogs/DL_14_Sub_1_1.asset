@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_14_Sub_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: ca2d69f67f1238d4b8793f9ed9d1a0ed, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC800\uD76C\uB294 \uC9C4\uD55C\uC5D0\uC11C \uC7A1\uD600\uC628 \uC544\uC774\uB4E4\uC774\uC5D0\uC694.
+        \uC0B4\uB824\uC8FC\uC138\uC694."
+      en: Help us! We are being kidnapped from Jinhan.
+    readingTime:
+      kr: 4
+      en: 4
+  - characterSo: {fileID: 11400000, guid: aa1fc7ce3e02cb643b8f17e317b6a7fa, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC2DC\uB044\uB7EC\uC6CC. \uC5EC\uAE30\uB294 \uB124\uB188\uB4E4 \uC0B4\uB824\uC904
+        \uC0AC\uB78C \uB530\uC704\uB294 \uC874\uC7AC\uD558\uC9C0 \uC54A\uC544."
+      en: Scream louder! There's no one to help you in Michuhol.
+    readingTime:
+      kr: 5
+      en: 5
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC9C4\uC9DC?"
+      en: Are you sure?
+    readingTime:
+      kr: 2
+      en: 2
+  - characterSo: {fileID: 11400000, guid: aa1fc7ce3e02cb643b8f17e317b6a7fa, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uACC4\uC9D1\uC774 \uBB58 \uC548\uB2E4\uACE0 \uB098\uC11C\uB290\uB0D0!
+        \uAC00\uC11C \uC11C\uBC29\uB2D8 \uBC25\uC0C1\uC774\uB098 \uCC28\uB824\uB77C."
+      en: How dare a mere girl interfere with my business! Go prepare a meal for
+        your husband.
+    readingTime:
+      kr: 5
+      en: 7
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC774 \uC0AC\uB78C \uACE7 \uB9DE\uACA0\uB124\uC694, \uC5B8\uB2C8."
+      en: Oh, my... I can see his future, sis.
+    readingTime:
+      kr: 3
+      en: 3

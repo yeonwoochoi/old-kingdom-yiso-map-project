@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_8_Main_5_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 22cd66697b4390b4bbaf471dd1bea106, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC544\uAC00\uC528\uAC00 \uC544\uB2C8\uC5C8\uC73C\uBA74, \uC6B0\uB9AC\uB294
+        \uBAA8\uB450 \uBB3C\uACE0\uAE30 \uBC25\uC774 \uB418\uC5C8\uC744 \uAC83\uC785\uB2C8\uB2E4."
+      en: Without you, we would have all become fish food.
+    readingTime:
+      kr: 5.1
+      en: 4.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC544\uB2C8\uC5D0\uC694. \uBAA8\uB450 \uC6B4\uC774 \uC88B\uC544\uC11C
+        \uC0B4\uC544\uB0A8\uC740 \uAC70\uC9C0\uC694."
+      en: Don't mention it. You survived by luck.
+    readingTime:
+      kr: 3.8
+      en: 3.5
+  - characterSo: {fileID: 11400000, guid: 0feb2ed55054a724595b721bbef1ca69, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uC815\uB9D0 \uBB34\uC608\uAC00 \uB6F0\uC5B4\uB098\uC2ED\uB2C8\uB2E4.
+        \uC81C\uBC1C \uC800\uD76C \uB450\uBAA9\uC774 \uB418\uC5B4\uC8FC\uC2ED\uC2DC\uC624."
+      en: You are a god-sent warrior! Please, be my captain of pirates!
+    readingTime:
+      kr: 4.7
+      en: 5.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC544\uB2D9\uB2C8\uB2E4. \uC800\uB294 \uC9C0\uAE08 \uB530\uB85C \uD560
+        \uC77C\uC774 \uC788\uC5B4\uC11C \uBBF8\uCD94\uD640\uC5D0 \uAC00\uB294 \uAE38\uC774\uC5D0\uC694.
+        \uC5B4\uC11C \uBBF8\uCD94\uD640\uC5D0 \uAC00\uC57C\uD574\uC694."
+      en: I can't... I have to go to Michuhol for something else. I need to hurry.
+    readingTime:
+      kr: 7.2
+      en: 5.9
+  - characterSo: {fileID: 11400000, guid: 7b8c1300cf1ed3349948e9ac481ed570, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uADF8\uB7FC \uBE68\uB9AC \uB4B7\uC218\uC2B5\uD558\uACE0, \uBBF8\uCD94\uD640\uB85C
+        \uAC00\uC2DC\uC9C0\uC694. \uC740\uACF5\uC774 \uBC14\uB77C\uB294 \uBC14\uB97C
+        \uC774\uB904\uB4DC\uB824\uC57C\uC9C0\uC694."
+      en: Let's clean up this mess quickly and sail for Michuhol right away. We'll
+        make all your wishes come true.
+    readingTime:
+      kr: 6.1
+      en: 7.5

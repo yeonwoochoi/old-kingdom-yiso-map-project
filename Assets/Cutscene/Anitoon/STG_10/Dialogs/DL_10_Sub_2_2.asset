@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_10_Sub_2_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBB50\uC57C. \uC774\uB807\uAC8C \uBB34\uB518 \uCE7C\uC744 \uC65C \uADC0\uC911\uD558\uAC8C
+        \uC5EC\uAE30\uC9C0?"
+      en: What the heck... Why do they value such a dull sword?
+    readingTime:
+      kr: 3
+      en: 4.5
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uBD84\uBA85 \uBE44\uC2FC \uAC78 \uAC70\uC5D0\uC694. \uC5BC\uB978 \uCC59\uACA8\uC694,
+        \uC5B8\uB2C8."
+      en: You already know it's priceless. Take it, sis.
+    readingTime:
+      kr: 3
+      en: 4

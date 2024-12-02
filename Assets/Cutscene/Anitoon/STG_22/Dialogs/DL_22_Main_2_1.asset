@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_22_Main_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 0079b0a04ae9f7640b868de83aeb6b65, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC791\uB2E8 \uC5EC\uC8FC, \uC2E4\uB9DD\uC785\uB2C8\uB2E4. \uACA8\uC6B0
+        \uC774 \uC815\uB3C4\uC600\uC2B5\uB2C8\uAE4C?"
+      en: You've been disappointing me, Lady leader of Zack. Is that the extent of
+        your skills?
+    readingTime:
+      kr: 4
+      en: 6.8
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC820\uC7A5. \uC274 \uD2C8\uC774 \uC5C6\uB2E4\uB2C8..."
+      en: Just need time to breathe.
+    readingTime:
+      kr: 2.6
+      en: 2.6

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_5_Main_2_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 40934a5f75dc046498d267ac1d83190b, type: 2}
+    uiPosition: 3
+    message:
+      kr: "\uAC10\uCD94\uB2E4\uB2C8\uC624. \uAC10\uCD9C\uACE0 \uC790\uC2DC\uACE0
+        \uD560 \uAC8C \uC5B4\uB514 \uC788\uACA0\uC2B5\uB2C8\uAE4C. \uAC00\uC9C4 \uAC74
+        \uBCF4\uC774\uB294 \uAC83\uBFD0\uC785\uB2C8\uB2E4."
+      en: What you see is what you get, nothing hidden.
+    readingTime:
+      kr: 1.2
+      en: 3.9
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    uiPosition: 1
+    message:
+      kr: "\uC800 \uC0AC\uB78C\uC774 \uCD0C\uC7A5\uC774\uC5D0\uC694."
+      en: Behold, sis. That is the headman.
+    readingTime:
+      kr: 2.2
+      en: 3.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB0B4 \uB4A4\uB97C \uBC14\uC9DD \uB530\uB77C\uC640\uC57C\uD55C\uB2E4."
+      en: It would be wise to stay near me, as if we were attached.
+    readingTime:
+      kr: 2.6
+      en: 4.8

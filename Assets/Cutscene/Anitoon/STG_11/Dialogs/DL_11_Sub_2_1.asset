@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_11_Sub_2_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 03f6853cf58f8cd4283ba6c956590626, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uC800\uB9AC \uC548 \uAC00! \uC5EC\uAE34 \uB0B4 \uAD6C\uC5ED\uC774\uC57C. "
+      en: It's not my fault. I warned you.
+    readingTime:
+      kr: 3.5
+      en: 4.5
+  - characterSo: {fileID: 11400000, guid: 520ac52416e1c3a49b52431b9a0b01b2, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uADF8\uB0E5 \uCC98\uB9AC\uD558\uACE0 \uAC00\uC694, \uC5B8\uB2C8."
+      en: No time for a chat. Let's take care of them, sis.
+    readingTime:
+      kr: 3.1
+      en: 4.2

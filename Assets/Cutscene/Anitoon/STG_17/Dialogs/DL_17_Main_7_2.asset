@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_17_Main_7_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 07f925a41e58abc41a98538ebccaf0b1, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uB0A0 \uD480\uC5B4\uC8FC\uC9C0 \uC54A\uC73C\uBA74, \uC5F4\uC744 \uC13C
+        \uD6C4 \uD558\uB098\uC529 \uC8FD\uC5EC\uB77C."
+      en: Count ten and execute them, one by one, until I'm released.
+    readingTime:
+      kr: 4.1
+      en: 4.9
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uBB50\uB77C\uACE0?"
+      en: What the heck are you saying?
+    readingTime:
+      kr: 1.2
+      en: 2.8

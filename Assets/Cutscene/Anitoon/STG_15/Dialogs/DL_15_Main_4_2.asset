@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_15_Main_4_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC9C0\uAE08 \uC800 \uCABD\uC5D0 \uC5EC\uC790\uB4E4\uACFC \uC544\uC774\uB4E4\uC774
+        \uC788\uB2E4. \uADF8\uB4E4\uC744 \uBCF4\uD638\uD574."
+      en: Women and children are over there. It's better to protect them.
+    readingTime:
+      kr: 4.5
+      en: 5.2
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC548\uC5D0 \uB450\uC2DC\uB2D8\uC774 \uACC4\uC2ED\uB2C8\uB2E4. \uC6B0\uB9AC\uB294
+        \uB450\uC2DC\uB2D8\uC744..."
+      en: Sir Dushi is inside. We have to protect...
+    readingTime:
+      kr: 3.8
+      en: 3.7
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uB450\uC2DC\uAC00 \uB204\uAD70\uB370?"
+      en: Who is Dushi?
+    readingTime:
+      kr: 1.7
+      en: 1.7
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC11D\uAC00\uC7A5 \uC7A5\uC8FC\uC774\uC2ED\uB2C8\uB2E4. \uC5B4\uB5BB\uAC8C
+        \uC5EC\uAE30 \uC624\uC2E0 \uAC78 \uC54C\uACE0..."
+      en: He is the master of all the Suk Manors. How did they find out he was here...
+    readingTime:
+      kr: 4.4
+      en: 6.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uC54C\uC558\uB2E4. \uB0B4\uAC00 \uAD6C\uD560\uD14C\uB2C8, \uB108\uD76C\uB294
+        \uC5EC\uC790\uC640 \uC544\uC774\uB4E4\uC744 \uBCF4\uD638\uD574. \uB3C4\uC801\uB4E4\uC774
+        \uACC4\uC18D \uBAB0\uB824\uC628\uB2E4."
+      en: I'll rescue him. You, protect the women and children instead. The enemies
+        may keep coming.
+    readingTime:
+      kr: 6.4
+      en: 7.1
+  - characterSo: {fileID: 11400000, guid: 8c675143b96b781428180fc4515a1f2f, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uADF8\uB7FC, \uC7A5\uC8FC\uB2D8\uC744 \uAF2D \uAD6C\uD574\uC8FC\uC2ED\uC2DC\uC624."
+      en: I'll do as I'm told. Please save my master.
+    readingTime:
+      kr: 3
+      en: 3.8

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_11_Sub_1_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: b94cc360d582948479fefef56a5b3fb6, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB108\uB3C4 \uD6D4\uCE58\uB7EC\uC654\uB0D0? \uC5EC\uAE34 \uC6B0\uB9AC
+        \uAD6C\uC5ED\uC774\uC57C."
+      en: This isn't a place for everyone. Get out of here!
+    readingTime:
+      kr: 3.3
+      en: 4.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uBC14\uC05C\uB370, \uAEBC\uC838\uB77C."
+      en: I'm in a hurry. Get out of my way!
+    readingTime:
+      kr: 2.5
+      en: 3

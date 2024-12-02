@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_7_Main_4_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uD639\uC2DC \uC800 \uBC30\uAC00 \uC5B4\uB514\uB85C \uD5A5\uD558\uB294
+        \uC9C0 \uC54C\uACE0 \uACC4\uC138\uC694?"
+      en: Hello, sir. Do you happen to know where that ship is headed?
+    readingTime:
+      kr: 3.8
+      en: 5
+  - characterSo: {fileID: 11400000, guid: 0340f87745b8b794090f95eabbeefedf, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC800 \uBC30\uB294 \uBBF8\uCD94\uD640\uACFC \uBE44\uB958\uB098\uB97C
+        \uC624\uAC00\uB294 \uC0C1\uC120\uC774\uB780\uB2E4. \uAC00\uB054 \uB3C8\uC744
+        \uBC1B\uACE0 \uC0AC\uB78C\uB3C4 \uD0DC\uC6B0\uC9C0."
+      en: It's a merchant ship that sails between Michuhol and BiryuNa. Sometimes
+        they pick up passengers for a fee.
+    readingTime:
+      kr: 6
+      en: 8.3
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAC10\uC0AC\uD569\uB2C8\uB2E4, \uC5B4\uB974\uC2E0."
+      en: Thank you, mister.
+    readingTime:
+      kr: 2.1
+      en: 2

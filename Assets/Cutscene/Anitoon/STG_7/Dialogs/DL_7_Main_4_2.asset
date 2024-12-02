@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_7_Main_4_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uD639\uC2DC \uC774 \uBC30\uB294 \uC5B4\uB514\uB85C \uAC00\uB098\uC694?"
+      en: Where is it headed?
+    readingTime:
+      kr: 2.7
+      en: 2.1
+  - characterSo: {fileID: 11400000, guid: cca42447bc28ac64b8f6ac8c9bec4a67, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uC5B4\uB9B0 \uCC98\uC790\uAC00 \uB3D9\uC0DD\uC744 \uB370\uB9AC\uACE0
+        \uBBF8\uCD94\uD640\uC5D0 \uAC08 \uC77C\uC774 \uC788\uB098?"
+      en: Why does a young lady like you want to go to Michuhol with your younger
+        sister?
+    readingTime:
+      kr: 4.2
+      en: 6.4
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uBBF8\uCD94\uD640\uC5D0 \uAC00\uB098\uC694? \uC5BC\uB9C8\uBA74 \uC774
+        \uBC30\uB97C \uD0C8 \uC218 \uC788\uC8E0?"
+      en: Is it headed to Michuhol? How much, Sir? How much for a one-way trip to
+        Michuhol?
+    readingTime:
+      kr: 4
+      en: 6.5
+  - characterSo: {fileID: 11400000, guid: cca42447bc28ac64b8f6ac8c9bec4a67, type: 2}
+    uiPosition: 2
+    message:
+      kr: "\uB0B4\uAC8C \uB108\uD76C\uB4E4 \uAC19\uC740 \uB538\uC774 \uC788\uC5B4.
+        \uADF8\uB0E5 \uD0C0. \uC5B4\uCC28\uD53C \uC790\uB9AC\uAC00 \uB0A8\uC73C\uB2C8\uAE4C."
+      en: I have daughters like you. Just get on board. There's plenty of room left.
+    readingTime:
+      kr: 5.2
+      en: 6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    uiPosition: 0
+    message:
+      kr: "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uC5B4\uB9AC\uC57C, \uBE68\uB9AC \uD0C0\uC790."
+      en: Thank you, sir. Erry, hey, Noydoll, let's go.
+    readingTime:
+      kr: 3
+      en: 3.2

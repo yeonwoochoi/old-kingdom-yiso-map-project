@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest1-1
+  m_EditorClassIdentifier: 
+  id: 90000101
+  type: 0
+  name:
+    kr: "\uC57D\uD63C\uC790 \uAD6C\uC885\uACFC\uC758 \uC57D\uC18D \uC7A5\uC18C\uC5D0
+      \uB3C4\uB2EC\uD558\uB77C."
+    en: "Reach the Meeting Place with Gujong, the Fianc\xE9."
+  autoComplete: 0
+  startRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20000100
+      fieldName:
+        kr: "\uBE44\uB958\uB098 \uD56D\uAD6C \uBD81\uCABD"
+        en: Northern Biryuna Harbor
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20000101
+      fieldName:
+        kr: "\uBE44\uB958\uB098 \uD56D\uAD6C \uB0A8\uCABD"
+        en: Southern Biryuna Harbor
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions: []

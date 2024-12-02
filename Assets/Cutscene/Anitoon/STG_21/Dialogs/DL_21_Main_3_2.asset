@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_21_Main_3_2
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB124 \uB188\uC774 \uAC10\uD788!"
+      en: How dare!
+    readingTime:
+      kr: 2.2
+      en: 1.9
+  - characterSo: {fileID: 11400000, guid: 5607d7f56bff5bd4294386418d2645a1, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC11C\uB450\uB974\uC9C0 \uB9C8\uC2DC\uAC8C. \uC544\uC9C1 \uC800 \uB188\uC744
+        \uC8FD\uC5EC\uC11C\uB294 \uC548\uB41C\uB2E4\uB124."
+      en: Do not kill him yet, lady.
+    readingTime:
+      kr: 4.2
+      en: 2.6

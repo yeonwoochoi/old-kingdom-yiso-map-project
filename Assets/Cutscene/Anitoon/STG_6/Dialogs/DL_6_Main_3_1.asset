@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_6_Main_3_1
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uBB34\uC2A8 \uC77C \uC788\uC5B4\uC694?"
+      en: May I assist you in any way?
+    readingTime:
+      kr: 1.8
+      en: 2.7
+  - characterSo: {fileID: 11400000, guid: 0340f87745b8b794090f95eabbeefedf, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uB09A\uC2DC \uBC14\uB298\uC744 \uBAA8\uB450 \uBC14\uB2E4\uC5D0 \uBE60\uB728\uB824\uC11C
+        \uACE0\uAE30\uB97C \uB09A\uC9C0 \uBABB\uD558\uACE0 \uC788\uC5B4."
+      en: The sea has claimed all my fishing hooks, leaving me without a means to
+        provide for my family's dinner tonight.
+    readingTime:
+      kr: 4.9
+      en: 8.6
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB300\uC7A5\uAC04\uC5D0 \uBD80\uD0C1\uD574\uBD10\uC694."
+      en: Why don't you seek assistance from the Hoh blacksmith?
+    readingTime:
+      kr: 2.1
+      en: 4.6
+  - characterSo: {fileID: 11400000, guid: 0340f87745b8b794090f95eabbeefedf, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uBC8C\uC368 \uB9D0\uD574\uBD24\uC9C0."
+      en: I've already approached the Hoh blacksmith for assistance, but to no avail.
+    readingTime:
+      kr: 1.1
+      en: 6.1
+  - characterSo: {fileID: 11400000, guid: 0340f87745b8b794090f95eabbeefedf, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uADF8\uB7F0\uB370, \uC57D\uC18D\uD55C \uACE0\uAE30\uB97C \uAC00\uC838\uC624\uC9C0
+        \uBABB\uD558\uBA74, \uB09A\uC2DC \uBC14\uB298\uC740 \uBABB \uC900\uB2E4\uACE0
+        \uD558\uB124."
+      en: They refused to provide me with even a single hook unless I pay off the
+        tuna I owe them.
+    readingTime:
+      kr: 5
+      en: 6.1
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uB09A\uC2DC \uBC14\uB298\uC774 \uBA87 \uAC1C\uB098 \uD544\uC694\uD574\uC694?"
+      en: How many hooks you need?
+    readingTime:
+      kr: 2.8
+      en: 2.5
+  - characterSo: {fileID: 11400000, guid: 0340f87745b8b794090f95eabbeefedf, type: 2}
+    pause: 1
+    uiPosition: 0
+    message:
+      kr: "\uC801\uC5B4\uB3C4 \uC138 \uAC1C\uC778\uB370..."
+      en: At least three, but...
+    readingTime:
+      kr: 2.2
+      en: 2.2
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 1
+    message:
+      kr: "\uC5EC\uAE30\uC11C \uC870\uC6A9\uD788 \uAE30\uB2E4\uB9AC\uACE0 \uC788\uC5B4\uC694.
+        \uB0B4\uAC00 \uAD6C\uD560 \uC218 \uC788\uB098 \uC0B4\uD3B4\uBCF4\uACE0 \uC62C\uAC8C\uC694."
+      en: Let me see if I can assist you in obtaining the hooks. But you better explore
+        other options rather than succumbing to despair.
+    readingTime:
+      kr: 5.5
+      en: 9.9

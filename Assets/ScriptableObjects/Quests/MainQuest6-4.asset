@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d7ea01d3444de49f3efb3cb60500a4, type: 3}
+  m_Name: MainQuest6-4
+  m_EditorClassIdentifier: 
+  id: 90000604
+  type: 0
+  name:
+    kr: "\uB300\uC7A5\uAC04\uC5D0 \uC7A0\uC785\uD558\uC5EC \uC5FC\uD0D0\uD558\uBA70,
+      \uB09A\uC2DC \uBC14\uB298\uC744 \uD6D4\uCCD0\uB77C"
+    en: Sneak into the blacksmith's, spy around, and steal the fishing hook.
+  autoComplete: 0
+  startRequirements:
+  - type: 5
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 0
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 11400000, guid: c750438c493c841479113ffe350929aa, type: 2}
+    preCompleteQuest:
+      questSO: {fileID: 11400000, guid: fae9686410a1f2648a150214321760fb, type: 2}
+    npcSO: {fileID: 0}
+  completeRequirements:
+  - type: 0
+    item:
+      itemSO: {fileID: 11400000, guid: fed01efd2d771cf44948bfdbfde53cc8, type: 2}
+      type: 2
+      value: 3
+    enemy:
+      enemySO: {fileID: 11400000, guid: 31a4ef2de12974c44839fe302fd5c2a8, type: 2}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20000602
+      fieldName:
+        kr: 
+        en: 
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  - type: 3
+    item:
+      itemSO: {fileID: 0}
+      type: 0
+      value: 1
+    enemy:
+      enemySO: {fileID: 0}
+      count: 1
+      instantCutscene: 0
+      linkedPrefab: {fileID: 0}
+    field:
+      id: 20000604
+      fieldName:
+        kr: "\uB300\uC7A5\uAC04 \uC55E \uBC14\uB2F7\uAC00"
+        en: Seaside in front of the blacksmith
+    quest:
+      questSO: {fileID: 0}
+    preCompleteQuest:
+      questSO: {fileID: 0}
+    npcSO: {fileID: 0}
+  startActions: []
+  completeActions:
+  - type: 4
+    exp: 0
+    itemSO: {fileID: 0}
+    amount: 0
+    removeItemSO: {fileID: 11400000, guid: fed01efd2d771cf44948bfdbfde53cc8, type: 2}
+    removeAll: 0
+    removeAmount: 3
+    addItemSO: {fileID: 0}
+    addAmount: 1
+    money: 0
+    combatRating: 0

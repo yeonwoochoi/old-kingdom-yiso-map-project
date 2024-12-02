@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083fef15c2b047899099e6342e2f8683, type: 3}
+  m_Name: DL_16_Main_1_0
+  m_EditorClassIdentifier: 
+  messages:
+  - characterSo: {fileID: 11400000, guid: 8f4f62819cf86ae44b909f4c74da4ac5, type: 2}
+    pause: 1
+    uiPosition: 3
+    message:
+      kr: "\uC774\uACF3\uC774 \uAD00\uCCAD\uC774\uC5C8\uB2E4\uACE0\uC694? \uBB34\uC2A8
+        \uC655\uAD81\uAC19\uC774 \uD06C\uB124\uC694."
+      en: Was this just a city hall? Oh, my... No one would blame me for regarding
+        it as a palace.
+    readingTime:
+      kr: 3.8
+      en: 7
+  - characterSo: {fileID: 11400000, guid: f1c6b81e16eb9304ea167482ddc80387, type: 2}
+    pause: 1
+    uiPosition: 2
+    message:
+      kr: "\uADF8\uB7EC\uB2C8, \uC5BC\uB9C8\uB098 \uCC29\uCDE8\uAC00 \uC2EC\uD588\uACA0\uC2B5\uB2C8\uAE4C."
+      en: You can easily see how severely the Sumo has exploited us.
+    readingTime:
+      kr: 3.2
+      en: 4.9
