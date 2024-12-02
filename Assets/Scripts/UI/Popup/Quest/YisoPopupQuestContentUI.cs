@@ -8,7 +8,6 @@ using TMPro;
 using UI.Popup.Base;
 using UI.Popup.Quest.Detail;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 using Utils.Extensions;
 
