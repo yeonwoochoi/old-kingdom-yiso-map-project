@@ -30,6 +30,7 @@ namespace UI.Popup.Quest {
             base.Start();
             okButton.onClick.AddListener(() => args?.InvokeOkCallbacks());
             cancelButton.onClick.AddListener(() => args?.InvokeCancelCallbacks());
+            Debug.Log("");
         }
 
         protected override void HandleData(object data = null) {
