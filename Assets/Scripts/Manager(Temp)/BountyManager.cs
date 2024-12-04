@@ -241,10 +241,10 @@ namespace Manager_Temp_ {
                 // 새로 Instantiate할 Map이 이미 존재하면 제거
                 var mapControllers = FindObjectsOfType<YisoMapController>(true);
                 foreach (var controller in mapControllers) {
-                    if (controller.CurrenMap == null) {
+                    if (controller.CurrentMap == null) {
                         Destroy(controller.gameObject);
                     }
-                    else if (controller.CurrenMap.Id == newCurrentMap.Id) {
+                    else if (controller.CurrentMap.Id == newCurrentMap.Id) {
                         Destroy(controller.gameObject);
                     }
                 }

@@ -47,7 +47,7 @@ namespace Controller.Map {
         public YisoCharacterCheckPoint CurrentCheckPoint => currentCheckPoint;
         public YisoLogger LogService => YisoServiceProvider.Instance.Get<IYisoLogService>().GetLogger<YisoMapController>();
 
-        public YisoMap CurrenMap { get; protected set; }
+        public YisoMap CurrentMap { get; protected set; }
         public PolygonCollider2D CurrentCameraBoundary { get; protected set; }
 
         protected List<YisoCharacterCheckPoint> currentCheckPoints;
