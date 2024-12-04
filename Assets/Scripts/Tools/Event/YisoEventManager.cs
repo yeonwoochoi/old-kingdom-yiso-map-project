@@ -14,8 +14,7 @@ namespace Tools.Event {
         RespawnComplete,
         Pause,
         UnPause,
-        MoveNextStage, // Map 이동 없이 다음 Stage로
-        MoveNextStageMap // Map 이동 + 다음 스테이지
+        MoveNextStage
     }
 
     public struct YisoInGameEvent {
