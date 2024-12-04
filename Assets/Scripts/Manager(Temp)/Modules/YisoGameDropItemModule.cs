@@ -37,7 +37,7 @@ namespace Manager_Temp_.Modules {
 
         public void OnEvent(YisoInGameEvent e) {
             switch (e.eventType) {
-                case YisoInGameEventTypes.MoveNextStageMap:
+                case YisoInGameEventTypes.MoveNextStage:
                     ReleasePool();
                     break;
             }

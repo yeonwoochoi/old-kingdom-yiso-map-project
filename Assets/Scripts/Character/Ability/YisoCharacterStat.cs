@@ -192,7 +192,7 @@ namespace Character.Ability {
                     stageId = e.stage;
                     break;
                 // 소속된 Stage 정보와 다른 경우 캐릭터 삭제
-                case YisoInGameEventTypes.MoveNextStageMap:
+                case YisoInGameEventTypes.MoveNextStage:
                     if (roleType == CharacterRoleType.Player) break;
                     if (e.stage != stageId) {
                         Destroy(character.gameObject);
