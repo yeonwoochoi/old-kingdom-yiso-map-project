@@ -107,6 +107,7 @@ namespace Manager_Temp_ {
 
         protected override void Awake() {
             base.Awake();
+            isInitialMapLoad = true;
             StartCoroutine(InitializationCo());
         }
 
@@ -158,7 +159,6 @@ namespace Manager_Temp_ {
             
             // CheckPoint Assignment (체크 포인트에 IRespawnable 모두 등록)
             currentMapController.CheckpointAssignment();
-            LogService.Debug($"[StageManager.InitializationCo] Assign IRespawnable objects to check points.");
             
             // Trigger Stage ChangeEvent
             YisoInGameEvent.Trigger(YisoInGameEventTypes.StageStart, Player, currentStage);
@@ -301,12 +301,20 @@ namespace Manager_Temp_ {
         /// 다른 Map으로 바꿀 때 사용하는 Public API
         /// </summary>
         /// <param name="newMap"></param>
-        public virtual void SetNewMap(YisoMap newMap) {
+        public virtual void ChangeNewMap(YisoMap newMap, Vector2 playerSpawnPosition) {
             prevMap = currentMap;
             currentMap = newMap;
             
             InstantiateMap();
             InitializeMap();
+            
+            InstantiatePlayer();
+            InstantiatePets();
+            
+            SpawnPlayer(playerSpawnPosition);
+            SpawnPets();
+            
+            currentMapController.CheckpointAssignment();
             
             LogService.Debug($"[StageManager.SetNewMap] Change current map ({prevMap?.GetName(CurrentLocale)} => {currentMap?.GetName(CurrentLocale)}).");
         }
@@ -323,8 +331,7 @@ namespace Manager_Temp_ {
         }
 
         protected virtual void InitializeMap() {
-            currentMapController.Initialization(currentMap, savedPlayerPosition, savedCheckPointId, isInitialMapLoad,
-                currentStage.Id, currentStage.RelevantStageIds);
+            currentMapController.Initialization(currentMap, currentStage.Id, isInitialMapLoad, savedCheckPointId, currentStage.RelevantStageIds);
             LogService.Debug($"[StageManager.InitializeMap] Initialize current map.");
             
             if (IsMapChanged()) {
@@ -381,18 +388,38 @@ namespace Manager_Temp_ {
         }
 
         protected virtual void InstantiatePets() {
-            // TODO
+            // TODO: 이미 스폰 되어있으면 스킵하기
         }
 
         /// <summary>
         /// 정해진 위치에 스폰
         /// </summary>
         protected virtual void SpawnPlayer(bool isRespawn) {
+            // Event Trigger (In Game Event: Respawn Start)
             YisoInGameEvent.Trigger(isRespawn ? YisoInGameEventTypes.RespawnStarted : YisoInGameEventTypes.SpawnCharacterStarts, Player, currentStage);
             LogService.Debug($"[StageManager.SpawnPlayer] Start {(isRespawn ? "Respawn" : "Spawn")} Player.");
-            currentMapController.SpawnPlayer(Player, isRespawn);
+            
+            // Spawn
+            if (isRespawn) currentMapController.SpawnPlayer(Player, true); // Check point로 Spawn (ex. 죽었을 때, 마을 귀환)
+            else currentMapController.SpawnPlayer(Player, savedPlayerPosition, false); // 특정 Position으로 Spawn (ex. 초기 Story Scene 진입할때)
+            
+            // Event Trigger (In Game Event: Respawn Complete)
             YisoInGameEvent.Trigger(isRespawn ? YisoInGameEventTypes.RespawnComplete : YisoInGameEventTypes.SpawnComplete, Player, currentStage);
             LogService.Debug($"[StageManager.SpawnPlayer] Complete {(isRespawn ? "Respawn" : "Spawn")} Player.");
+        }
+
+        protected virtual void SpawnPlayer(Vector2 spawnPosition) {
+            // Event Trigger (In Game Event: Respawn Start)
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.RespawnStarted, Player, currentStage);
+            LogService.Debug($"[StageManager.SpawnPlayer] Start Respawn Player at {spawnPosition}.");
+            
+            // Spawn
+            currentMapController.SpawnPlayer(Player, spawnPosition, true); // 특정 Position으로 Spawn (ex. 초기 Story Scene 진입할때)
+            
+            // Event Trigger (In Game Event: Respawn Complete)
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.RespawnComplete, Player, currentStage);
+            LogService.Debug($"[StageManager.SpawnPlayer] Complete Respawn Player at {spawnPosition}.");
+            
         }
 
         protected virtual void SpawnPets() {
@@ -483,16 +510,17 @@ namespace Manager_Temp_ {
 
         #endregion
 
+        #region Event
+        
         public void OnEvent(YisoInGameEvent e) {
             switch (e.eventType) {
                 case YisoInGameEventTypes.PlayerDeath:
                     HandlePlayerDeath();
                     break;
-                case YisoInGameEventTypes.RespawnStarted:
-                    Restart();
-                    break;
             }
         }
+
+        #endregion
         
         protected virtual void OnEnable() {
             QuestModule.OnQuestEvent += CheckStageMainQuestsComplete;

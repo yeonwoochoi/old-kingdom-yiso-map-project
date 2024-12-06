@@ -61,6 +61,7 @@ namespace Manager_Temp_ {
         public int DeathCount => deathCount;
 
         protected YisoBounty currentBounty;
+        protected YisoMap prevMap;
         protected YisoMap currentMap;
         protected YisoMapController currentMapController;
         protected GameObject currentMapObj;
@@ -138,11 +139,11 @@ namespace Manager_Temp_ {
             // Check Condition (Map)
             if (currentMap == null) yield break;
 
+            // Initialize Current Map
+            InitializeMap();
+
             // Spawn Delay
             if (spawnDelay > 0) yield return new WaitForSeconds(spawnDelay);
-
-            // Initialize Current Map
-            currentMapController.Initialization(currentMap, currentBounty.Id);
 
             // Instantiate Character
             InstantiatePlayer();
@@ -155,12 +156,12 @@ namespace Manager_Temp_ {
             YisoServiceProvider.Instance.Get<IYisoCharacterService>().GetPlayer().PetModule.UnregisterAll();
 
             // Spawn Character
-            SpawnPlayer();
+            SpawnPlayer(false);
 
             // Checkpoint Assignment (Erry, Enemies)
             currentMapController.CheckpointAssignment();
 
-            YisoBountyChangeEvent.Trigger(currentBounty);
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.StageStart, Player, currentBounty);
 
             // Initialize Death Count
             deathCount = 0;
@@ -242,11 +243,28 @@ namespace Manager_Temp_ {
                 currentMapController.transform.localPosition = Vector3.zero;
             }
         }
+        
+        protected virtual void InitializeMap() {
+            currentMapController.Initialization(currentMap, currentBounty.Id);
+            LogService.Debug($"[BountyManager.InitializeMap] Initialize current map.");
+            
+            if (IsMapChanged()) {
+                YisoMapChangeEvent.Trigger(prevMap, currentMap, true);
+                LogService.Debug($"[BountyManager.InitializeMap] Trigger map change event.");
+            }
+        }
+
+        private bool IsMapChanged() {
+            return prevMap == null 
+                ? currentMap != null 
+                : currentMap != null && prevMap.Id != currentMap.Id;
+        }
 
         protected virtual void InstantiatePlayer() {
             // 이미 Player가 Scene 내에 있는 경우
             if (characterInScene != null) {
                 GameManager.Instance.Player = characterInScene;
+                LogService.Debug($"[BountyManager.InstantiatePlayer] Player already exists in the scene. Skipping spawn.");
                 return;
             }
 
@@ -255,6 +273,7 @@ namespace Manager_Temp_ {
                 newPlayer.name = playerPrefab.name;
                 GameManager.Instance.Player = newPlayer;
                 characterInScene = Player;
+                LogService.Debug($"[BountyManager.InstantiatePlayer] Instantiate new Player game object.");
 
                 if (playerPrefab.characterType != YisoCharacter.CharacterTypes.Player) {
                     LogService.Fatal("[BountyManager] The Character you've set in the BountyManager isn't a Player, which means it's probably not going to move. You can change that in the Character component of your prefab.");
@@ -262,11 +281,20 @@ namespace Manager_Temp_ {
             }
         }
 
-        protected virtual void SpawnPlayer() {
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnCharacterStarts, Player, currentBounty);
-            currentMapController.SpawnPlayer(Player, false);
-            Player.Freeze(YisoCharacterStates.FreezePriority.Default);
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnComplete, Player, currentBounty);
+        /// <summary>
+        /// 정해진 위치에 스폰
+        /// </summary>
+        protected virtual void SpawnPlayer(bool isRespawn) {
+            // Event Trigger (In Game Event: Respawn Start)
+            YisoInGameEvent.Trigger(isRespawn ? YisoInGameEventTypes.RespawnStarted : YisoInGameEventTypes.SpawnCharacterStarts, Player, currentBounty);
+            LogService.Debug($"[BountyManager.SpawnPlayer] Start {(isRespawn ? "Respawn" : "Spawn")} Player.");
+            
+            // Spawn
+            currentMapController.SpawnPlayer(Player, isRespawn);
+            
+            // Event Trigger (In Game Event: Respawn Complete)
+            YisoInGameEvent.Trigger(isRespawn ? YisoInGameEventTypes.RespawnComplete : YisoInGameEventTypes.SpawnComplete, Player, currentBounty);
+            LogService.Debug($"[BountyManager.SpawnPlayer] Complete {(isRespawn ? "Respawn" : "Spawn")} Player.");
         }
 
         protected virtual void InitializeEnemySpawner() {
@@ -320,35 +348,43 @@ namespace Manager_Temp_ {
 
         public virtual void Restart() {
             if (Player != null) {
-                StartCoroutine(RestartGame());
+                StartCoroutine(RestartGameCo());
             }
         }
 
-        protected virtual IEnumerator RestartGame() {
-            if (playerPrefab == null && characterInScene == null) yield break;
-
+        protected virtual IEnumerator RestartGameCo() {
+            if (playerPrefab == null && characterInScene == null) {
+                LogService.Error($"[BountyManager.RestartGameCo] Both 'playerPrefab' and 'characterInScene' are null. Unable to restart the game. Please ensure that a player prefab is assigned or a character exists in the scene.");
+                yield break;
+            }
+            
             // Camera Event (Stop Following)
             YisoCameraEvent.Trigger(YisoCameraEventTypes.StopFollowing);
+            LogService.Debug($"[BountyManager.RestartGameCo] Stop camera following.");
 
             // Fade out (어둡게)
             yield return StartCoroutine(Fade(true, 0.25f));
+            LogService.Debug($"[BountyManager.RestartGameCo] Fade out.");
 
             // Respawn Delay
             yield return new WaitForSeconds(delayBeforeRespawn);
 
-            // Respawn Player
+            // Check point
             currentMapController.RestartGame();
-            if (Player == null) InstantiatePlayer();
-            currentMapController.SpawnPlayer(Player, true);
-
+            
+            if (Player == null) {
+                InstantiatePlayer();
+                LogService.Debug($"[BountyManager.RestartGameCo] Player is null. Reinstantiating the Player.");
+            }
+            SpawnPlayer(true);
+            
             // Camera Event (Start Following)
             YisoCameraEvent.Trigger(YisoCameraEventTypes.StartFollowing);
-
+            LogService.Debug($"[BountyManager.RestartGameCo] Start camera following.");
+            
             // Fade In (밝게)
             yield return StartCoroutine(Fade(false, 0.25f));
-
-            // In Game Event (Respawn Complete)
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.RespawnComplete, Player, currentBounty);
+            LogService.Debug($"[BountyManager.RestartGameCo] Fade in.");
         }
 
         #endregion
@@ -442,9 +478,6 @@ namespace Manager_Temp_ {
                 case YisoInGameEventTypes.PlayerDeath:
                     deathCount++;
                     PlayerDead();
-                    break;
-                case YisoInGameEventTypes.RespawnStarted:
-                    Restart();
                     break;
             }
         }
