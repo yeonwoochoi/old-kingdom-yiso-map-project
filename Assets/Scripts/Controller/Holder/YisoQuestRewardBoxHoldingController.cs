@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace Controller.Holder {
     [AddComponentMenu("Yiso/Controller/Holder/QuestRewardBoxController")]
-    public class YisoQuestRewardBoxHoldingController : YisoHoldingController, IYisoEventListener<YisoMapChangeEvent>, IYisoEventListener<YisoBountyChangeEvent> {
+    public class YisoQuestRewardBoxHoldingController : YisoHoldingController, IYisoEventListener<YisoMapChangeEvent> {
         [SerializeField] private TextMeshPro objectText;
         [SerializeField] private Animator animator;
 
@@ -97,21 +97,14 @@ namespace Controller.Holder {
             Destroy(gameObject);
         }
 
-        public void OnEvent(YisoBountyChangeEvent e) {
-            if (e.currentBounty.Id == spawnMapId) return;
-            Destroy(gameObject);
-        }
-
         protected override void OnEnable() {
             base.OnEnable();
-            this.YisoEventStartListening<YisoMapChangeEvent>();
-            this.YisoEventStartListening<YisoBountyChangeEvent>();
+            this.YisoEventStartListening();
         }
 
         protected override void OnDisable() {
             base.OnDisable();
-            this.YisoEventStopListening<YisoMapChangeEvent>();
-            this.YisoEventStopListening<YisoBountyChangeEvent>();
+            this.YisoEventStopListening();
         }
     }
 }

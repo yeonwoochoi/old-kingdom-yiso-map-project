@@ -23,21 +23,6 @@ using UnityEngine;
 using Utils.Beagle;
 
 namespace Manager_Temp_ {
-    public struct YisoBountyChangeEvent {
-        public YisoBounty currentBounty;
-
-        public YisoBountyChangeEvent(YisoBounty bounty) {
-            currentBounty = bounty;
-        }
-
-        static YisoBountyChangeEvent e;
-
-        public static void Trigger(YisoBounty bounty) {
-            e.currentBounty = bounty;
-            YisoEventManager.TriggerEvent(e);
-        }
-    }
-
     public class BountyManager : YisoTempSingleton<BountyManager>, IYisoEventListener<YisoInGameEvent> {
         [Title("Character")] public YisoCharacter playerPrefab;
         public YisoCharacter characterInScene;

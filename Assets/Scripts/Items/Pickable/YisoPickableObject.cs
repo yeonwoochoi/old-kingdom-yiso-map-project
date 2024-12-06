@@ -36,7 +36,7 @@ namespace Items.Pickable {
     /// Initialization(Item, Money인 경우) => SetItem, SetMoney
     /// </summary>
     [AddComponentMenu("Yiso/Items/PickableObject")]
-    public class YisoPickableObject : RunIBehaviour, IYisoEventListener<YisoMapChangeEvent>, IYisoEventListener<YisoBountyChangeEvent> {
+    public class YisoPickableObject : RunIBehaviour, IYisoEventListener<YisoMapChangeEvent> {
         [Title("LifeTime")] public bool applyLifeTime = false;
         [ShowIf("applyLifeTime"), MinValue(0)] public float lifeTime = 200f;
 
@@ -70,8 +70,7 @@ namespace Items.Pickable {
 
         protected override void OnEnable() {
             base.OnEnable();
-            this.YisoEventStartListening<YisoMapChangeEvent>();
-            this.YisoEventStartListening<YisoBountyChangeEvent>();
+            this.YisoEventStartListening();
 
             isMovingToPicker = false;
             isBeingPicked = false;
@@ -96,8 +95,7 @@ namespace Items.Pickable {
 
         protected override void OnDisable() {
             base.OnDisable();
-            this.YisoEventStopListening<YisoMapChangeEvent>();
-            this.YisoEventStopListening<YisoBountyChangeEvent>();
+            this.YisoEventStopListening();
             moveTween?.Kill();
         }
 
@@ -247,16 +245,6 @@ namespace Items.Pickable {
 
         public void OnEvent(YisoMapChangeEvent e) {
             if (e.currentMap.Id == spawnMapId) return;
-            if (IsPooled) {
-                PoolService.ReleaseObject(gameObject);
-            }
-            else {
-                Destroy(gameObject);
-            }
-        }
-
-        public void OnEvent(YisoBountyChangeEvent e) {
-            if (e.currentBounty.Id == spawnStageId) return;
             if (IsPooled) {
                 PoolService.ReleaseObject(gameObject);
             }

@@ -36,7 +36,7 @@ namespace Controller.Map {
             YisoEventManager.TriggerEvent(e);
         }
     }
-    
+
     [Serializable]
     public class CutsceneTriggerMapper {
         public int gameModeId;
@@ -51,7 +51,7 @@ namespace Controller.Map {
     }
 
     [AddComponentMenu("Yiso/Controller/Map/Map Controller")]
-    public class YisoMapController : RunIBehaviour, IYisoEventListener<YisoInGameEvent>, IYisoEventListener<YisoBountyChangeEvent> {
+    public class YisoMapController : RunIBehaviour, IYisoEventListener<YisoInGameEvent> {
         [Title("Zones")] public List<YisoNavigationZoneController> navigationZones;
 
         [ShowIf("@navigationZones.Count == 0")]
