@@ -7,6 +7,7 @@ using UnityEngine;
 namespace Spawn {
     [AddComponentMenu("Yiso/Spawn/Checkpoint")]
     public class YisoCharacterCheckPoint : RunIBehaviour {
+        public int id;
         public Transform spawnPosition;
         public bool forceAssignation = false;
         public YisoCharacter.FacingDirections facingDirection = YisoCharacter.FacingDirections.East;
