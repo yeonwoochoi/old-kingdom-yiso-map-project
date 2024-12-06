@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Character.Core;
+using Core.Domain.Bounty;
+using Core.Domain.Stage;
 using UnityEngine;
 
 namespace Tools.Event {
+    [Flags]
     public enum YisoInGameEventTypes {
         SpawnCharacterStarts,
         SpawnComplete,
@@ -20,20 +23,35 @@ namespace Tools.Event {
     public struct YisoInGameEvent {
         public YisoInGameEventTypes eventType;
         public YisoCharacter character;
-        public int stage;
+        public YisoStage stage;
+        public YisoBounty bounty;
 
-        public YisoInGameEvent(YisoInGameEventTypes eventType, YisoCharacter character, int stage) {
+        public YisoInGameEvent(YisoInGameEventTypes eventType, YisoCharacter character, YisoStage stage, YisoBounty bounty) {
             this.eventType = eventType;
             this.character = character;
             this.stage = stage;
+            this.bounty = bounty;
         }
 
         private static YisoInGameEvent e;
 
-        public static void Trigger(YisoInGameEventTypes type, YisoCharacter character, int stage) {
+        public static void Trigger(YisoInGameEventTypes type, YisoCharacter character) {
+            e.eventType = type;
+            e.character = character;
+            YisoEventManager.TriggerEvent(e);
+        }
+
+        public static void Trigger(YisoInGameEventTypes type, YisoCharacter character, YisoStage stage) {
             e.eventType = type;
             e.character = character;
             e.stage = stage;
+            YisoEventManager.TriggerEvent(e);
+        }
+
+        public static void Trigger(YisoInGameEventTypes type, YisoCharacter character, YisoBounty bounty) {
+            e.eventType = type;
+            e.character = character;
+            e.bounty = bounty;
             YisoEventManager.TriggerEvent(e);
         }
     }

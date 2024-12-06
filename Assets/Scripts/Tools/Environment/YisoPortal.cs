@@ -35,7 +35,7 @@ namespace Tools.Environment {
 
         public enum PortalOption {
             GoToAnotherPortal,
-            GoToNextStage,
+            // GoToNextStage,
             GoToAnotherScene
         }
 
@@ -119,9 +119,9 @@ namespace Tools.Environment {
                     }
 
                     break;
-                case PortalOption.GoToNextStage:
-                    StartCoroutine(GoToNextStageSequenceCo(collider));
-                    break;
+                // case PortalOption.GoToNextStage:
+                //     StartCoroutine(GoToNextStageSequenceCo(collider));
+                //     break;
                 case PortalOption.GoToAnotherScene:
                     StartCoroutine(GoToAnotherSceneSequenceCo(collider));
                     break;
@@ -178,27 +178,27 @@ namespace Tools.Environment {
 
         #endregion
 
-        #region Go To Next Stage
-
-        protected virtual IEnumerator GoToNextStageSequenceCo(GameObject collider) {
-            // 1.Sequence Start
-            player?.Freeze(YisoCharacterStates.FreezePriority.Portal);
-
-            yield return new WaitForSeconds(initialDelay);
-
-            // 2.Show Pop up
-            if (!GameManager.HasInstance) yield break;
-            if (GameManager.Instance.CurrentGameMode == GameManager.GameMode.Story) {
-                if (!StageManager.HasInstance) yield break;
-                StageManager.Instance.ShowStageClearPopup();
-            }
-            else if (GameManager.Instance.CurrentGameMode == GameManager.GameMode.Bounty) {
-                if (!BountyManager.HasInstance) yield break;
-                BountyManager.Instance.ShowBountyClearPopup();
-            }
-        }
-
-        #endregion
+        // #region Go To Next Stage
+        //
+        // protected virtual IEnumerator GoToNextStageSequenceCo(GameObject collider) {
+        //     // 1.Sequence Start
+        //     player?.Freeze(YisoCharacterStates.FreezePriority.Portal);
+        //
+        //     yield return new WaitForSeconds(initialDelay);
+        //
+        //     // 2.Show Pop up
+        //     if (!GameManager.HasInstance) yield break;
+        //     if (GameManager.Instance.CurrentGameMode == GameManager.GameMode.Story) {
+        //         if (!StageManager.HasInstance) yield break;
+        //         StageManager.Instance.ShowStageClearPopup();
+        //     }
+        //     else if (GameManager.Instance.CurrentGameMode == GameManager.GameMode.Bounty) {
+        //         if (!BountyManager.HasInstance) yield break;
+        //         BountyManager.Instance.ShowBountyClearPopup();
+        //     }
+        // }
+        //
+        // #endregion
 
         #region Go To Another Scene
 

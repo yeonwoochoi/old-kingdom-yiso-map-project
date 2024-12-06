@@ -14,6 +14,8 @@ namespace Spawn {
 
         protected List<IRespawnable> listeners;
 
+        public Vector2 SpawnPosition => spawnPosition == null ? transform.position : spawnPosition.transform.position;
+
         protected override void Awake() {
             listeners = new List<IRespawnable>();
         }

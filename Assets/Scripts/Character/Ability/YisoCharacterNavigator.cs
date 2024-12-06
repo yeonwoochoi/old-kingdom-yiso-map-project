@@ -21,7 +21,7 @@ using Utils.Extensions;
 
 namespace Character.Ability {
     [AddComponentMenu("Yiso/Character/Abilities/CharacterNavigator")]
-    public class YisoCharacterNavigator : YisoCharacterAbility, IYisoEventListener<YisoStageChangeEvent>,
+    public class YisoCharacterNavigator : YisoCharacterAbility, IYisoEventListener<YisoMapChangeEvent>,
         IYisoEventListener<YisoNavigationZoneEnterEvent>, IYisoEventListener<YisoQuestTargetPositionRegisterEvent> {
         [Title("PathFinding")] public GameObject footprintPrefab;
         public float arrivalThreshold = 2f; // 해당 거리 이내면 navigation 종료
@@ -360,8 +360,8 @@ namespace Character.Ability {
             ActivateNavigation();
         }
 
-        public void OnEvent(YisoStageChangeEvent e) {
-            if (!e.isMapChanged) return;
+        public void OnEvent(YisoMapChangeEvent e) {
+            if (e.isInitialMapLoad) return;
             ClearPath();
             abilityPermitted = false;
             targetZone = null;
@@ -393,14 +393,14 @@ namespace Character.Ability {
 
         protected override void OnEnable() {
             base.OnEnable();
-            this.YisoEventStartListening<YisoStageChangeEvent>();
+            this.YisoEventStartListening<YisoMapChangeEvent>();
             this.YisoEventStartListening<YisoNavigationZoneEnterEvent>();
             this.YisoEventStartListening<YisoQuestTargetPositionRegisterEvent>();
         }
 
         protected override void OnDisable() {
             base.OnDisable();
-            this.YisoEventStopListening<YisoStageChangeEvent>();
+            this.YisoEventStopListening<YisoMapChangeEvent>();
             this.YisoEventStopListening<YisoNavigationZoneEnterEvent>();
             this.YisoEventStopListening<YisoQuestTargetPositionRegisterEvent>();
         }

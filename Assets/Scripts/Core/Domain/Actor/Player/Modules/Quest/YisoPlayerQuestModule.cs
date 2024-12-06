@@ -243,6 +243,26 @@ namespace Core.Domain.Actor.Player.Modules.Quest {
             quest.CompleteQuest(player);
         }
 
+        public void CompleteQuest(int stageId, int questId) {
+            if (!TryFindQuestIdIndex(YisoQuestStatus.PRE_COMPLETE, questId, out var questIndex)) 
+                throw new ArgumentException($"QuestID: {questId} not in pre complete states");
+            
+            progresses[YisoQuestStatus.PRE_COMPLETE].RemoveAt(questIndex);
+            var quest = quests[questId];
+            progresses[YisoQuestStatus.COMPLETE].Add(questId);
+            var args = new QuestStatusChangeEventArgs(quest, YisoQuestStatus.COMPLETE);
+            args.IsMainQuestsInStageAllComplete = IsMainQuestsInStageAllComplete(stageId);
+            quest.CompleteQuest(player);
+        }
+
+        private bool IsMainQuestsInStageAllComplete(int stageId) {
+            var questsInStage = YisoServiceProvider.Instance.Get<IYisoStageService>().GetQuestsInStage(stageId);
+            return questsInStage
+                .Where(quest => quest.Type == YisoQuest.Types.MAIN)
+                .Select(quest => progresses[YisoQuestStatus.COMPLETE].Contains(quest.Id))
+                .All(completed => completed);
+        }
+
         public bool IsQuestComplete(int questId) {
             return progresses[YisoQuestStatus.COMPLETE].Any(id => id == questId);
         }

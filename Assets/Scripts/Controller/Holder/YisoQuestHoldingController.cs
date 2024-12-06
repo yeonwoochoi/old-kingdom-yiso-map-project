@@ -7,7 +7,6 @@ using Core.Domain.Quest.SO;
 using Core.Domain.Stage;
 using Core.Service;
 using Core.Service.Character;
-using Manager_Temp_;
 using Sirenix.OdinInspector;
 using Tools.Cutscene;
 using Tools.Event;
@@ -16,7 +15,7 @@ using UnityEngine;
 
 namespace Controller.Holder {
     [AddComponentMenu("Yiso/Controller/Holder/QuestHoldingController")]
-    public class YisoQuestHoldingController : YisoHoldingController, IYisoEventListener<YisoStageChangeEvent> {
+    public class YisoQuestHoldingController : YisoHoldingController, IYisoEventListener<YisoInGameEvent> {
         public enum QuestNpcState {
             Idle,
             Ready,
@@ -124,8 +123,11 @@ namespace Controller.Holder {
 
         #region Event
 
-        public void OnEvent(YisoStageChangeEvent e) {
-            CheckQuestInCurrentStage(e.currentStage);
+        public void OnEvent(YisoInGameEvent e) {
+            if (e.stage == null) return;
+            if (e.eventType is YisoInGameEventTypes.StageStart or YisoInGameEventTypes.MoveNextStage) {
+                CheckQuestInCurrentStage(e.stage);
+            }
         }
 
         #endregion
@@ -149,7 +151,6 @@ namespace Controller.Holder {
             base.OnEnable();
             this.YisoEventStartListening();
             QuestModule.OnQuestEvent += CheckQuestStateChanged;
-            if (StageManager.HasInstance) CheckQuestInCurrentStage(StageManager.Instance.CurrentStage);
         }
 
         protected override void OnDisable() {

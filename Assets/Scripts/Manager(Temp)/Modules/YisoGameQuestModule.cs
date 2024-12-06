@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Controller.Holder;
 using Core.Domain.Actor.Player.Modules.Quest;
@@ -23,7 +24,7 @@ using UnityEngine.Events;
 using Utils.Beagle;
 
 namespace Manager_Temp_.Modules {
-    public class YisoGameQuestModule : YisoGameBaseModule, IYisoEventListener<YisoStageChangeEvent>,
+    public class YisoGameQuestModule : YisoGameBaseModule, IYisoEventListener<YisoInGameEvent>,
         IYisoEventListener<YisoFieldEnterEvent>, IYisoEventListener<YisoPickableObjectEvent>,
         IYisoEventListener<YisoCutsceneStateChangeEvent> {
         private YisoPlayerQuestModule QuestModule =>
@@ -60,10 +61,25 @@ namespace Manager_Temp_.Modules {
 
         #region Event Listener
 
-        public void OnEvent(YisoStageChangeEvent e) {
-            if (e.isMapChanged) QuestModule.DrawQuests(e.prevStage.Id);
-            YisoServiceProvider.Instance.Get<IYisoCharacterService>().GetPlayer().InventoryModule
-                .CheckStageQuestItemExist(e.currentStage.Id);
+        public void OnEvent(YisoInGameEvent e) {
+            if (manager.CurrentGameMode == GameManager.GameMode.Story && e.stage != null) {
+                ProcessEventByType(e.stage.Id);
+            }
+            else if (manager.CurrentGameMode == GameManager.GameMode.Bounty && e.bounty != null) {
+                ProcessEventByType(e.bounty.Id);
+            }
+
+            void ProcessEventByType(int id) {
+                switch (e.eventType) {
+                    case YisoInGameEventTypes.StageStart:
+                        YisoServiceProvider.Instance.Get<IYisoCharacterService>().GetPlayer().InventoryModule
+                            .CheckStageQuestItemExist(id);
+                        break;
+                    case YisoInGameEventTypes.StageClear:
+                        QuestModule.DrawQuests(id);
+                        break;
+                }
+            }
         }
 
         public void OnEvent(YisoFieldEnterEvent e) {
@@ -208,7 +224,7 @@ namespace Manager_Temp_.Modules {
             QuestModule.OnQuestEvent += UpdateQuestRequirement;
             SceneService.RegisterOnSceneChanged(OnSceneChanged);
             this.YisoEventStartListening<YisoFieldEnterEvent>();
-            this.YisoEventStartListening<YisoStageChangeEvent>();
+            this.YisoEventStartListening<YisoInGameEvent>();
             this.YisoEventStartListening<YisoPickableObjectEvent>();
             this.YisoEventStartListening<YisoCutsceneStateChangeEvent>();
         }
@@ -218,7 +234,7 @@ namespace Manager_Temp_.Modules {
             QuestModule.OnQuestEvent -= UpdateQuestRequirement;
             SceneService.UnregisterOnSceneChanged(OnSceneChanged);
             this.YisoEventStopListening<YisoFieldEnterEvent>();
-            this.YisoEventStopListening<YisoStageChangeEvent>();
+            this.YisoEventStopListening<YisoInGameEvent>();
             this.YisoEventStopListening<YisoPickableObjectEvent>();
             this.YisoEventStopListening<YisoCutsceneStateChangeEvent>();
         }

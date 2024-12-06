@@ -16,6 +16,27 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Controller.Map {
+    public struct YisoMapChangeEvent {
+        public YisoMap prevMap;
+        public YisoMap currentMap;
+        public bool isInitialMapLoad;
+
+        public YisoMapChangeEvent(YisoMap prevMap, YisoMap currentMap, bool isInitialMapLoad) {
+            this.prevMap = prevMap;
+            this.currentMap = currentMap;
+            this.isInitialMapLoad = isInitialMapLoad;
+        }
+
+        static YisoMapChangeEvent e;
+
+        public static void Trigger(YisoMap prevMap, YisoMap currentMap, bool isInitialMapLoad) {
+            e.prevMap = prevMap;
+            e.currentMap = currentMap;
+            e.isInitialMapLoad = isInitialMapLoad;
+            YisoEventManager.TriggerEvent(e);
+        }
+    }
+    
     [Serializable]
     public class CutsceneTriggerMapper {
         public int gameModeId;
@@ -30,7 +51,7 @@ namespace Controller.Map {
     }
 
     [AddComponentMenu("Yiso/Controller/Map/Map Controller")]
-    public class YisoMapController : RunIBehaviour, IYisoEventListener<YisoStageChangeEvent>, IYisoEventListener<YisoBountyChangeEvent> {
+    public class YisoMapController : RunIBehaviour, IYisoEventListener<YisoInGameEvent>, IYisoEventListener<YisoBountyChangeEvent> {
         [Title("Zones")] public List<YisoNavigationZoneController> navigationZones;
 
         [ShowIf("@navigationZones.Count == 0")]
@@ -52,21 +73,23 @@ namespace Controller.Map {
 
         protected List<YisoCharacterCheckPoint> currentCheckPoints;
         protected YisoCharacterCheckPoint initialCheckPoint;
-        protected YisoCharacterCheckPoint currentCheckPoint;
-        protected Vector2 initialSpawnPointPosition;
+        protected YisoCharacterCheckPoint currentCheckPoint; // 그 외 respawn시 사용됨
+        protected Vector2 initialSpawnPointPosition; // Story Mode에서 초기 로딩시 사용됨
         protected bool initialized = false;
 
         #region Initialization
 
         /// <summary>
-        /// Initialization
+        /// Initialization (매번 맵이 바뀔때 마다 호출됨)
+        /// Story
         /// </summary>
         /// <param name="map"></param>
         /// <param name="gameModeId"></param>
         /// <param name="relevantIds"></param>
-        public virtual void Initialization(YisoMap map, int gameModeId, List<int> relevantIds = null) {
+        public virtual void Initialization(YisoMap map, Vector2 savePlayerPosition, int saveCheckpointId, bool isFirstLoad, int gameModeId, List<int> relevantIds = null) {
             // Set Map
-            CurrenMap = map;
+            CurrentMap = map;
+            LogService.Debug($"[YisoMapController.Initialization] Set current map (Id : {CurrentMap.Id}).");
 
             // Activate Cutscene Triggers
             relevantIds ??= new List<int>();
@@ -83,26 +106,49 @@ namespace Controller.Map {
             InitializeNavigationZones();
         }
 
+        /// <summary>
+        /// Initialization
+        /// Bounty
+        /// </summary>
+        /// <param name="map"></param>
+        /// <param name="gameModeId"></param>
+        /// <param name="relevantIds"></param>
+        public virtual void Initialization(YisoMap map, int gameModeId, List<int> relevantIds = null) {
+            // Set Map
+            CurrentMap = map;
+
+            // Activate Cutscene Triggers
+            relevantIds ??= new List<int>();
+            relevantIds.Add(gameModeId);
+            InitializeCutsceneTriggers(relevantIds);
+
+            // Set Check Points
+            InitializeCheckPoints(gameModeId);
+
+            // Set Camera Boundary
+            InitializeCameraBoundaries();
+
+            // Initialize Navigation Zones
+            InitializeNavigationZones();
+        }
+
+        /// <summary>
+        /// Game Mode와 현재 Stage에 해당하는 cutscene trigger만 activate (나머진 inactivate)
+        /// </summary>
+        /// <param name="relevantIds"></param>
         protected virtual void InitializeCutsceneTriggers(List<int> relevantIds) {
-            void SetTriggersActive(CutsceneTriggerMapper[] triggers, bool active, ICollection<int> ids) {
-                if (triggers == null) return;
-
-                foreach (var trigger in triggers) {
-                    var shouldActivate = active && ids.Contains(trigger.gameModeId);
-                    trigger.cutsceneTrigger.SetActive(shouldActivate);
-                }
-            }
-
             switch (GameManager.Instance.CurrentGameMode) {
                 case GameManager.GameMode.Story:
-                    SetTriggersActive(stageCutsceneTriggers, true, relevantIds);
-                    SetTriggersActive(bountyCutsceneTriggers, false, relevantIds);
+                    ActivateStageTriggers(stageCutsceneTriggers, true, relevantIds);
+                    ActivateStageTriggers(bountyCutsceneTriggers, false, relevantIds);
                     break;
                 case GameManager.GameMode.Bounty:
-                    SetTriggersActive(stageCutsceneTriggers, false, relevantIds);
-                    SetTriggersActive(bountyCutsceneTriggers, true, relevantIds);
+                    ActivateStageTriggers(stageCutsceneTriggers, false, relevantIds);
+                    ActivateStageTriggers(bountyCutsceneTriggers, true, relevantIds);
                     break;
             }
+            
+            LogService.Debug($"[YisoMapController.InitializeCutsceneTriggers] Initialize Cutscene Triggers.");
         }
 
         protected virtual void InitializeCheckPoints(int gameModeId) {
@@ -136,9 +182,7 @@ namespace Controller.Map {
                 // Set checkpoints
                 if (currentCheckPoints != null && currentCheckPoints.Count > 0) {
                     initialCheckPoint = currentCheckPoints[0];
-                    initialSpawnPointPosition = initialCheckPoint.spawnPosition == null
-                        ? initialCheckPoint.transform.position
-                        : initialCheckPoint.spawnPosition.transform.position;
+                    initialSpawnPointPosition = initialCheckPoint.SpawnPosition;
                     currentCheckPoint = initialCheckPoint;
                 }
             }
@@ -237,14 +281,26 @@ namespace Controller.Map {
         }
 
         #endregion
-
+        
         public virtual void SpawnPlayer(YisoCharacter player, bool isRespawn) {
             if (player.characterType != YisoCharacter.CharacterTypes.Player) return;
             if (currentCheckPoint != null) {
+                LogService.Debug($"[MapController.SpawnPlayer] {(isRespawn ? "Respawn" : "Spawn")} Player in current check point.");
                 currentCheckPoint.SpawnPlayer(player, isRespawn);
             }
             else {
-                LogService.Warn("[MapController] No checkpoint or initial spawn point has been defined, can't respawn the Player.");
+                LogService.Warn("[MapController.SpawnPlayer] No checkpoint or initial spawn point has been defined, can't respawn the Player.");
+            }
+        }
+        
+        public virtual void SpawnPlayer(YisoCharacter player, Vector2 spawnPosition, bool isRespawn) {
+            if (player.characterType != YisoCharacter.CharacterTypes.Player) return;
+            if (currentCheckPoint != null) {
+                LogService.Debug($"[MapController.SpawnPlayer] {(isRespawn ? "Respawn" : "Spawn")} Player in current check point.");
+                currentCheckPoint.SpawnPlayer(player, isRespawn);
+            }
+            else {
+                LogService.Warn("[MapController.SpawnPlayer] No checkpoint or initial spawn point has been defined, can't respawn the Player.");
             }
         }
 
@@ -252,31 +308,60 @@ namespace Controller.Map {
             if (currentCheckPoint == null) {
                 currentCheckPoint = initialCheckPoint;
             }
+
+            if (currentCheckPoint == null) {
+                LogService.Warn(
+                    "[YisoMapController.RestartGame] Respawn Check: Current checkpoint is null. Player will respawn at the default starting position.");
+            }
+            else {
+                LogService.Debug(
+                    $"[YisoMapController.RestartGame] Respawn Check: Player will respawn at checkpoint '{currentCheckPoint.name}' at position {currentCheckPoint.SpawnPosition}.");
+            }
+        }
+        
+        private void ActivateStageTriggers(CutsceneTriggerMapper[] triggers, bool active, ICollection<int> ids) {
+            if (triggers == null) {
+                LogService.Warn($"[YisoMapController.ActivateStageTriggers] Triggers array is null. Exiting method.");
+                return;
+            }
+
+            foreach (var trigger in triggers) {
+                var shouldActivate = active && ids.Contains(trigger.gameModeId);
+                trigger.cutsceneTrigger.SetActive(shouldActivate);
+                LogService.Warn($"[YisoMapController.ActivateStageTriggers] Trigger for GameModeId {trigger.gameModeId} is now {(shouldActivate ? "active" : "inactive")}.");
+            }
         }
 
         #region Event
 
         /// <summary>
-        /// Stage id는 바뀌나 Map은 바뀌지 않는 경우
+        /// Stage 바뀌는 경우
         /// </summary>
         /// <param name="e"></param>
-        public void OnEvent(YisoStageChangeEvent e) {
-            if (e.isMapChanged || GameManager.Instance.CurrentGameMode != GameManager.GameMode.Story) return;
-
+        public void OnEvent(YisoInGameEvent e) {
+            if (e.eventType != YisoInGameEventTypes.MoveNextStage || GameManager.Instance.CurrentGameMode != GameManager.GameMode.Story) return;
+            if (e.stage == null) return;
+            
             // Initialize Cutscene Triggers
-            if (stageCutsceneTriggers == null) return;
-            var relevantIds = e.currentStage.RelevantStageIds;
-            relevantIds.Add(e.currentStage.Id);
-            foreach (var trigger in stageCutsceneTriggers) {
-                if (!relevantIds.Contains(trigger.gameModeId)) continue;
-                trigger.cutsceneTrigger.SetActive(true);
+            // TODO: 이부분 리팩토링 하기 (ActivateStageTriggers 사용하고 Bounty Mode일때도 적용 되게끔)
+            if (stageCutsceneTriggers != null) {
+                var relevantIds = e.stage.RelevantStageIds;
+                relevantIds.Add(e.stage.Id);
+                foreach (var trigger in stageCutsceneTriggers) {
+                    if (!relevantIds.Contains(trigger.gameModeId)) continue;
+                    trigger.cutsceneTrigger.SetActive(true);
+                }
             }
 
             // Initialize Checkpoints
-            InitializeCheckPoints(e.currentStage.Id);
+            InitializeCheckPoints(e.stage.Id);
             CheckpointAssignment();
         }
 
+        /// <summary>
+        /// Bounty 바뀌는 경우
+        /// </summary>
+        /// <param name="e"></param>
         public void OnEvent(YisoBountyChangeEvent e) {
             if (GameManager.Instance.CurrentGameMode != GameManager.GameMode.Bounty) return;
 
@@ -294,13 +379,13 @@ namespace Controller.Map {
 
         protected override void OnEnable() {
             base.OnEnable();
-            this.YisoEventStartListening<YisoStageChangeEvent>();
+            this.YisoEventStartListening<YisoInGameEvent>();
             this.YisoEventStartListening<YisoBountyChangeEvent>();
         }
 
         protected override void OnDisable() {
             base.OnDisable();
-            this.YisoEventStopListening<YisoStageChangeEvent>();
+            this.YisoEventStopListening<YisoInGameEvent>();
             this.YisoEventStopListening<YisoBountyChangeEvent>();
         }
 

@@ -1,4 +1,5 @@
 using Core.Behaviour;
+using Tools.Event;
 
 namespace Controller.Stage {
     public interface IYisoStageAction {
@@ -6,11 +7,12 @@ namespace Controller.Stage {
     }
 
     public abstract class YisoStageAction : RunIBehaviour, IYisoStageAction {
+        public YisoInGameEventTypes eventTypes;
         public int priority;
-        public abstract void PerformAction();
+        
         protected bool initialized = false;
-
-        public virtual void Initialization() {
-        }
+        
+        public abstract void PerformAction();
+        public virtual void Initialization() { }
     }
 }

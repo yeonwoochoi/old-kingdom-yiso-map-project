@@ -1,5 +1,6 @@
 using System;
 using Character.Core;
+using Controller.Map;
 using Core.Domain.Actor.Ally;
 using Core.Domain.Actor.Enemy;
 using Core.Domain.Actor.Erry;
@@ -13,12 +14,11 @@ using Core.Service.Temp;
 using Manager_Temp_;
 using Manager_Temp_.Modules;
 using Sirenix.OdinInspector;
-using Tools.Event;
 using UnityEngine;
 
 namespace Character.Ability {
     [AddComponentMenu("Yiso/Character/Abilities/Character Stat")]
-    public class YisoCharacterStat : YisoCharacterAbility, IYisoEventListener<YisoInGameEvent> {
+    public class YisoCharacterStat : YisoCharacterAbility {
         public enum CharacterRoleType {
             Player,
             Erry,
@@ -46,8 +46,6 @@ namespace Character.Ability {
         protected YisoEnemy enemyStat;
         protected YisoAlly allyStat;
         protected YisoNpc npcStat;
-
-        protected int stageId;
 
         public IYisoCombatableEntity CombatStat {
             get {
@@ -177,39 +175,6 @@ namespace Character.Ability {
 
                     break;
             }
-        }
-
-        /// <summary>
-        /// 스폰될 때 본인이 소속되었던 Stage와 현재 Stage와 다른 경우 Destroy
-        /// </summary>
-        /// <param name="e"></param>
-        public void OnEvent(YisoInGameEvent e) {
-            switch (e.eventType) {
-                // 소속된 Stage 정보 저장
-                case YisoInGameEventTypes.SpawnComplete:
-                case YisoInGameEventTypes.StageStart:
-                case YisoInGameEventTypes.RespawnComplete:
-                    stageId = e.stage;
-                    break;
-                // 소속된 Stage 정보와 다른 경우 캐릭터 삭제
-                case YisoInGameEventTypes.MoveNextStage:
-                    if (roleType == CharacterRoleType.Player) break;
-                    if (e.stage != stageId) {
-                        Destroy(character.gameObject);
-                    }
-
-                    break;
-            }
-        }
-
-        protected override void OnEnable() {
-            base.OnEnable();
-            this.YisoEventStartListening();
-        }
-
-        protected override void OnDisable() {
-            base.OnDisable();
-            this.YisoEventStopListening();
         }
     }
 }

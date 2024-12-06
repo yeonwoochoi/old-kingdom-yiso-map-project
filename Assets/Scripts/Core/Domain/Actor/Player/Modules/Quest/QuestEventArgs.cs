@@ -22,6 +22,8 @@ namespace Core.Domain.Actor.Player.Modules.Quest {
         
         public bool IsDraw { get; }
 
+        public bool IsMainQuestsInStageAllComplete { get; internal set; } = false;
+
         public bool IsProgress => To == YisoQuestStatus.PROGRESS;
 
         public bool StatusIs(YisoQuestStatus status) => status == To;
@@ -40,6 +42,7 @@ namespace Core.Domain.Actor.Player.Modules.Quest {
     public class QuestDrawEventArgs : QuestEventArgs {
         public QuestDrawEventArgs(YisoQuest quest) : base(quest) { }
     }
+    
 
     public class QuestOrderedEventArgs : IEnumerable<QuestEventArgs> {
         private readonly List<QuestEventArgs> argsList = new();

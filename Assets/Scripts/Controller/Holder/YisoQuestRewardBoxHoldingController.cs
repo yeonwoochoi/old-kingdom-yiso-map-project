@@ -1,4 +1,5 @@
 using Controller.Emoticon;
+using Controller.Map;
 using Core.Domain.Actor.Player.Modules.Quest;
 using Core.Domain.Locale;
 using Core.Service;
@@ -13,14 +14,14 @@ using UnityEngine;
 
 namespace Controller.Holder {
     [AddComponentMenu("Yiso/Controller/Holder/QuestRewardBoxController")]
-    public class YisoQuestRewardBoxHoldingController : YisoHoldingController, IYisoEventListener<YisoStageChangeEvent>, IYisoEventListener<YisoBountyChangeEvent> {
+    public class YisoQuestRewardBoxHoldingController : YisoHoldingController, IYisoEventListener<YisoMapChangeEvent>, IYisoEventListener<YisoBountyChangeEvent> {
         [SerializeField] private TextMeshPro objectText;
         [SerializeField] private Animator animator;
 
         protected int questId;
         protected YisoLocale inventoryFullMessage;
         protected bool opened = false;
-        protected int spawnStage;
+        protected int spawnMapId;
 
         private YisoPlayerQuestModule QuestModule =>
             YisoServiceProvider.Instance.Get<IYisoCharacterService>().GetPlayer().QuestModule;
@@ -35,7 +36,7 @@ namespace Controller.Holder {
                 kr = "인벤토리가 가득 차서 퀘스트 아이템을 받을 수 없습니다.",
                 en = "Inventory is full. You cannot receive the quest item."
             };
-            spawnStage = GameManager.Instance.CurrentStageId;
+            spawnMapId = GameManager.Instance.CurrentMapController.CurrentMap.Id;
             opened = false;
             initialized = true;
         }
@@ -90,26 +91,26 @@ namespace Controller.Holder {
             YisoServiceProvider.Instance.Get<IYisoGameUIService>().FloatingText(inventoryFullMessage[currentLocale]);
         }
 
-        public void OnEvent(YisoStageChangeEvent e) {
-            if (!e.isMapChanged) return;
-            if (e.currentStage.Id == spawnStage) return;
+        public void OnEvent(YisoMapChangeEvent e) {
+            if (!e.isInitialMapLoad) return;
+            if (e.currentMap.Id == spawnMapId) return;
             Destroy(gameObject);
         }
 
         public void OnEvent(YisoBountyChangeEvent e) {
-            if (e.currentBounty.Id == spawnStage) return;
+            if (e.currentBounty.Id == spawnMapId) return;
             Destroy(gameObject);
         }
 
         protected override void OnEnable() {
             base.OnEnable();
-            this.YisoEventStartListening<YisoStageChangeEvent>();
+            this.YisoEventStartListening<YisoMapChangeEvent>();
             this.YisoEventStartListening<YisoBountyChangeEvent>();
         }
 
         protected override void OnDisable() {
             base.OnDisable();
-            this.YisoEventStopListening<YisoStageChangeEvent>();
+            this.YisoEventStopListening<YisoMapChangeEvent>();
             this.YisoEventStopListening<YisoBountyChangeEvent>();
         }
     }

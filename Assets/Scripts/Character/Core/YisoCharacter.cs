@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Character.Ability;
 using Character.Health;
+using Controller.Map;
 using Core.Behaviour;
 using Manager_Temp_;
 using Sirenix.OdinInspector;
@@ -15,7 +16,7 @@ using Utils.Beagle;
 namespace Character.Core {
     [SelectionBase]
     [AddComponentMenu("Yiso/Character/Core/Character")]
-    public class YisoCharacter : RunIBehaviour {
+    public class YisoCharacter : RunIBehaviour, IYisoEventListener<YisoMapChangeEvent> {
         public enum FacingDirections {
             West,
             East,
@@ -43,6 +44,7 @@ namespace Character.Core {
         public bool activateOnInstantiate = false; // 바로 Activate시킬건지
         public bool playSpawnAnimation = true; // Spawn될때 Animation 재생할건지
         public bool runAnimatorSanityChecks = false; // 애니메이터 Parameter 있는지 체크할건지 말건지
+        public bool destroyOnMapChange = true; // 스폰될 때 맵에 소속되어 다른 맵으로 바뀔때 이전 맵과 같이 destory 시킬건지 여부
 
 #if UNITY_EDITOR
         [Title("Debug")] [ReadOnly] public YisoCharacterStates.MovementStates currentMovementState;
@@ -75,6 +77,7 @@ namespace Character.Core {
 
         protected float freezeDurationOnSpawn = 3f;
         protected FreezePriorityHandler freezePriorityHandler;
+        protected int associatedMapId; // Spawn될때 Map Id
 
         protected const string SpawnAnimationParameterName = "IsSpawn";
         protected const string DeathAnimationParameterName = "IsDeath";
@@ -530,7 +533,7 @@ namespace Character.Core {
             ResetAbilities();
 
             if (characterType == CharacterTypes.Player) {
-                YisoInGameEvent.Trigger(YisoInGameEventTypes.PlayerDeath, this, GameManager.Instance.CurrentStageId);
+                YisoInGameEvent.Trigger(YisoInGameEventTypes.PlayerDeath, this);
             }
 
             if (characterBrain != null) {
@@ -557,6 +560,7 @@ namespace Character.Core {
 
         protected override void OnEnable() {
             base.OnEnable();
+            this.YisoEventStartListening();
             if (characterHealth != null) {
                 characterHealth.onDeath += OnDeath;
                 characterHealth.onHit += OnHit;
@@ -565,6 +569,7 @@ namespace Character.Core {
 
         protected override void OnDisable() {
             base.OnDisable();
+            this.YisoEventStopListening();
             if (characterHealth != null) {
                 characterHealth.onDeath -= OnDeath;
                 characterHealth.onHit -= OnHit;
@@ -673,5 +678,16 @@ namespace Character.Core {
         }
 
         #endregion
+
+        public void OnEvent(YisoMapChangeEvent e) {
+            if (e.isInitialMapLoad) {
+                associatedMapId = e.currentMap.Id;
+            }
+            else {
+                if (destroyOnMapChange && associatedMapId != e.currentMap.Id) {
+                    Destroy(gameObject);
+                }
+            }
+        }
     }
 }

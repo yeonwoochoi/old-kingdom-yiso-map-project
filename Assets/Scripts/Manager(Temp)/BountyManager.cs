@@ -198,7 +198,7 @@ namespace Manager_Temp_ {
                 StartTimer(currentBounty.TimeLimit);
 
                 // In Game Event (Game Start)
-                YisoInGameEvent.Trigger(YisoInGameEventTypes.StageStart, Player, currentBounty.Id);
+                YisoInGameEvent.Trigger(YisoInGameEventTypes.StageStart, Player, currentBounty);
             });
 
             currentBountyID = currentBounty.Id;
@@ -267,7 +267,6 @@ namespace Manager_Temp_ {
 
             if (playerPrefab != null) {
                 var newPlayer = Instantiate(playerPrefab, playerAttachment);
-                newPlayer.transform.position = currentMapController.InitialSpawnPointPosition;
                 newPlayer.name = playerPrefab.name;
                 GameManager.Instance.Player = newPlayer;
                 characterInScene = Player;
@@ -279,10 +278,10 @@ namespace Manager_Temp_ {
         }
 
         protected virtual void SpawnPlayer() {
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnCharacterStarts, Player, currentBounty.Id);
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnCharacterStarts, Player, currentBounty);
             currentMapController.SpawnPlayer(Player, false);
             Player.Freeze(YisoCharacterStates.FreezePriority.Default);
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnComplete, Player, currentBounty.Id);
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.SpawnComplete, Player, currentBounty);
         }
 
         protected virtual void InitializeEnemySpawner() {
@@ -364,7 +363,7 @@ namespace Manager_Temp_ {
             yield return StartCoroutine(Fade(false, 0.25f));
 
             // In Game Event (Respawn Complete)
-            YisoInGameEvent.Trigger(YisoInGameEventTypes.RespawnComplete, Player, currentBounty.Id);
+            YisoInGameEvent.Trigger(YisoInGameEventTypes.RespawnComplete, Player, currentBounty);
         }
 
         #endregion
