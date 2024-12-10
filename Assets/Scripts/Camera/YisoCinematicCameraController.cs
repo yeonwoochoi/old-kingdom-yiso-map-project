@@ -5,7 +5,7 @@ using Core.Behaviour;
 using Core.Logger;
 using Core.Service;
 using Core.Service.Log;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Event;
 using UnityEngine;
@@ -50,7 +50,7 @@ namespace Camera {
         }
 
         public virtual void StartFollowing() {
-            if (!followPlayer) return;
+            if (!followPlayer || targetCharacter == null) return;
             isFollowing = true;
             virtualCamera.Follow = targetCharacter.CameraTarget.transform;
             virtualCamera.enabled = true;

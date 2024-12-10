@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd87544e0bc44e5bddc636c9efb590e, type: 3}
+  m_Name: Store
+  m_EditorClassIdentifier: 
+  id: 0
+  equipItems: []
+  useItems:
+  - itemSO: {fileID: 11400000, guid: 0d18804f3528d45ed9b5efe95b0a0dae, type: 2}
+    price: 1000
+  - itemSO: {fileID: 11400000, guid: 32b4bc0f649924b8f910554dfdbcfd1c, type: 2}
+    price: 1500
+  - itemSO: {fileID: 11400000, guid: 8f81185b6f0e24dabbb759d6b676f14e, type: 2}
+    price: 2000
+  - itemSO: {fileID: 11400000, guid: 90691c038c6c94b6fa58750b15cc4e98, type: 2}
+    price: 1450
+  - itemSO: {fileID: 11400000, guid: 1cbadd2cde50942b2a53212db85d30eb, type: 2}
+    price: 1550

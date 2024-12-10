@@ -5,11 +5,10 @@ using Core.Behaviour;
 using Core.Service;
 using Core.Service.ObjectPool;
 using DG.Tweening;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using TMPro;
 using Tools.Event;
-using Tools.Feedback;
 using Tools.Feedback.Core;
 using UnityEngine;
 

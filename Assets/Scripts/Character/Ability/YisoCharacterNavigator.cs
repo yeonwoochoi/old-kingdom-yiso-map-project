@@ -10,7 +10,7 @@ using Core.Service.Log;
 using Core.Service.ObjectPool;
 using Core.Service.UI.Game;
 using Core.Service.UI.HUD;
-using Manager_Temp_;
+using Manager;
 using Pathfinding;
 using Sirenix.OdinInspector;
 using Tools.Environment;
@@ -336,7 +336,7 @@ namespace Character.Ability {
         #region Getter
 
         protected virtual YisoNavigationZoneController FindZoneByPosition(Vector2 position) {
-            return GameManager.Instance.CurrentMapController?.navigationZones?.FirstOrDefault(zone =>
+            return GameManager.Instance.CurrentMapController?.AllNavigationZones?.FirstOrDefault(zone =>
                 zone.Contains(position));
         }
 

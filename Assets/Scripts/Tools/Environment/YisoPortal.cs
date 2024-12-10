@@ -11,7 +11,7 @@ using Core.Service.UI.Popup;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using UI.HUD.Interact;
 using UnityEngine;

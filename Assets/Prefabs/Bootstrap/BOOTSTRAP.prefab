@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7035658068732051948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4566734611399909948}
+  - component: {fileID: 6849954382977536316}
+  m_Layer: 0
+  m_Name: BOOTSTRAP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4566734611399909948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035658068732051948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6849954382977536316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035658068732051948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6edf6fed85743288a335bd1dc87a162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalUICanvas: {fileID: 4078466628674440524, guid: 668bd219263f743a1ad8b9029daa7d4b, type: 3}
+  gameSettings:
+    developMode: 0
+    saveData: 1
+  domainSettings:
+    questPackSO: {fileID: 11400000, guid: 713aca3f147f34384ad2f1eab9c1692a, type: 2}
+    wantedPackSO: {fileID: 11400000, guid: 43afeb95530ca4913b92e13e5c6434e2, type: 2}
+    storyLoadingCommentsSO: {fileID: 11400000, guid: f54de74610fb04c01ac1e921e5c8b652, type: 2}
+    flowsSO: {fileID: 11400000, guid: 7acd759bbdcd640c2aa9a05c7c6590d2, type: 2}
+    skillPackSO: {fileID: 11400000, guid: dbe533890932d429d89f758feec3667d, type: 2}
+    moneySprite: {fileID: 21300000, guid: 903c38ef014a34685b754f241f11fcbf, type: 3}
+    checkpointPackSO: {fileID: 11400000, guid: a73d8ad3e27c14d6aac230f91cd03ed3, type: 2}
+    expSprite: {fileID: 21300000, guid: 7e899fe3526c447db8677ecb796ee9a8, type: 3}
+    combatRatingSprite: {fileID: 5838143840175804579, guid: 11adb84dcb521429fabc0cf407e86135, type: 3}
+    cabinetPackSO: {fileID: 11400000, guid: 4880b058c7942417da380a6348e7c80e, type: 2}
+    dialoguePackSO: {fileID: 11400000, guid: 75a38f7d6e5d44010b96faa3c6049874, type: 2}
+    directionPackSO: {fileID: 11400000, guid: f6ae411a3899c416f9f5eac3be2b7593, type: 2}
+    yisoIcon: {fileID: 21300000, guid: e861aca1796cce3439d7a20627ccf64e, type: 3}
+    erryIcon: {fileID: 21300000, guid: d830656b354884b46be4992db0dccf41, type: 3}
+  dataSettings:
+    saveSettings: 19
+    dataVersionInfo:
+      major: 1
+      minor: 1
+      patch: 0
+  itemSettings:
+    equipItemPack: {fileID: 11400000, guid: d376594b40733402dbb8b477f0643e56, type: 2}
+    useItemPack: {fileID: 11400000, guid: b07fe9c73881f49a69f2e22592b65fec, type: 2}
+    etcItemPack: {fileID: 11400000, guid: 2a9293fc3e4c4461ea53ea7480ebf51a, type: 2}
+    setItemPack: {fileID: 11400000, guid: 5dac79a1b5291264e92b894d0d522dcd, type: 2}
+    storePackSO: {fileID: 11400000, guid: 37d8a5f751f0b40539b0814c9a937c4d, type: 2}
+  poolSettings:
+    objectPoolPrefab: {fileID: 8827939344238790607, guid: d0dc48e9226944e87a6354c9bb2f2aa5, type: 3}
+  mapSettings:
+    mapPackSO: {fileID: 11400000, guid: ae9dea63047ae4e3f816edc823a751e2, type: 2}
+  stageSettings:
+    stagePackSO: {fileID: 11400000, guid: c204daa0fb11740edb5608df9564dada, type: 2}
+  characterSettings:
+    errySO: {fileID: 0}
+    inventoryItemsSO: {fileID: 11400000, guid: 3b6fd705595a9458798baa0b3f06fe87, type: 2}
+  bountySettings:
+    packSO: {fileID: 11400000, guid: 3b450d9ade77a4cd5b9887d47adb8c73, type: 2}
+  logSettings:
+    enabledLevels: 000000000100000002000000030000000400000005000000
+    maxQueueSize: 1000
+    batchSize: 100
+    processInterval: 5
+    maintenanceInterval: 300
+    maxLogFiles: 30
+    logServerUrl: 
+    encryptionKey: q%7a6yP/Zy8Z*-0
+  currentScene: 1
+  attachUI: 1
+  logHelperPrefab: {fileID: 1323194474036016245, guid: 733bc252e31ab4dd4a0c3c7c898941cf, type: 3}
+  versionInfo:
+    major: 0
+    minor: 1
+    patch: 0

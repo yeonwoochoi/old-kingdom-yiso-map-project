@@ -1,6 +1,6 @@
 using Camera;
 using Core.Behaviour;
-using Manager_Temp_;
+using Manager;
 using UnityEngine;
 
 namespace Controller.Map {

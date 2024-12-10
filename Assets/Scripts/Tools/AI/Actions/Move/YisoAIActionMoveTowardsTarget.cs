@@ -1,6 +1,6 @@
 ﻿using Character.Ability;
 using Character.Core;
-using Manager_Temp_;
+using Manager;
 using Pathfinding;
 using Sirenix.OdinInspector;
 using UnityEngine;

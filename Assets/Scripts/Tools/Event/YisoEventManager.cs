@@ -50,6 +50,7 @@ namespace Tools.Event {
 
         public static void Trigger(YisoInGameEventTypes type, YisoCharacter character, YisoBounty bounty) {
             e.eventType = type;
+            
             e.character = character;
             e.bounty = bounty;
             YisoEventManager.TriggerEvent(e);

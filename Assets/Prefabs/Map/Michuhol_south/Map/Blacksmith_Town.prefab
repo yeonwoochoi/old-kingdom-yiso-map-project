@@ -689,8 +689,6 @@ MonoBehaviour:
   priority: 3
   questActionType: 0
   questSO: {fileID: 11400000, guid: 59deecfaa52d40d49afe1a038840b6b9, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &822198757281519138
@@ -847,8 +845,6 @@ MonoBehaviour:
   priority: 2
   questActionType: 1
   questSO: {fileID: 11400000, guid: 11fa85f79d96b1b4383b57aac5b9a43b, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &889322723252167847
@@ -1635,8 +1631,6 @@ MonoBehaviour:
   priority: 3
   questActionType: 0
   questSO: {fileID: 11400000, guid: fed2b77c9cd77f5408ffa17fd9d12a39, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &1267575080740636467
@@ -10787,7 +10781,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4859492294700962364}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7980872965745606674
 MonoBehaviour:
@@ -10801,6 +10795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 4859492294700962364}
   forceAssignation: 0
   facingDirection: 1
@@ -12106,8 +12101,6 @@ MonoBehaviour:
   priority: 0
   questActionType: 1
   questSO: {fileID: 11400000, guid: 36b0f6b528c128b4a9845d6168fbabac, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &2488170619419377230
@@ -14746,8 +14739,6 @@ MonoBehaviour:
   priority: 2
   questActionType: 1
   questSO: {fileID: 11400000, guid: b6132c6d77d2e6343830a9bb92667c4b, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 0
   delay: 0
 --- !u!1 &3807891250698052862
@@ -15372,8 +15363,6 @@ MonoBehaviour:
   priority: 0
   questActionType: 1
   questSO: {fileID: 11400000, guid: ca6d449ec29554043b9f9542923269e0, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &4015711793284621824
@@ -15408,7 +15397,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 30371289162180757}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2900625642010744585
 MonoBehaviour:
@@ -15422,6 +15411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 30371289162180757}
   forceAssignation: 0
   facingDirection: 2
@@ -15503,7 +15493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7381013207767439966}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6653041680837678373
 MonoBehaviour:
@@ -15517,6 +15507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 7381013207767439966}
   forceAssignation: 0
   facingDirection: 2
@@ -16097,8 +16088,6 @@ MonoBehaviour:
   priority: 4
   questActionType: 0
   questSO: {fileID: 11400000, guid: b6132c6d77d2e6343830a9bb92667c4b, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &4220413454298936931
@@ -16829,7 +16818,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7837509037211618345}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &927173333647572869
 MonoBehaviour:
@@ -16843,6 +16832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 7837509037211618345}
   forceAssignation: 0
   facingDirection: 2
@@ -17489,44 +17479,6 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
---- !u!1 &4878468268962619048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5399299573698958711}
-  m_Layer: 0
-  m_Name: Story Mode (Stage10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5399299573698958711
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878468268962619048}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8308326248351049508}
-  - {fileID: 345447988363153994}
-  - {fileID: 4647698287514465301}
-  - {fileID: 2064220893898498998}
-  - {fileID: 2306964171553834367}
-  - {fileID: 4322814508049053423}
-  - {fileID: 4074634266315318018}
-  m_Father: {fileID: 8359846951505536615}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4895123280228704500
 GameObject:
   m_ObjectHideFlags: 0
@@ -17574,8 +17526,6 @@ MonoBehaviour:
   priority: 0
   questActionType: 1
   questSO: {fileID: 11400000, guid: b3ca2cab15a615f4399dd5ad866bf2cb, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &4929356247280055804
@@ -17692,7 +17642,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8172846188967942565}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3109232323281248428
 MonoBehaviour:
@@ -17706,6 +17656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 8172846188967942565}
   forceAssignation: 0
   facingDirection: 1
@@ -17979,7 +17930,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5921552008248700896}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7107991779203132358
 MonoBehaviour:
@@ -17993,6 +17944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 5921552008248700896}
   forceAssignation: 0
   facingDirection: 2
@@ -18430,8 +18382,6 @@ MonoBehaviour:
   priority: 3
   questActionType: 0
   questSO: {fileID: 11400000, guid: 36b0f6b528c128b4a9845d6168fbabac, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &5270863377620816788
@@ -48052,8 +48002,6 @@ MonoBehaviour:
   priority: 1
   questActionType: 0
   questSO: {fileID: 11400000, guid: 11fa85f79d96b1b4383b57aac5b9a43b, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &5420407559304698602
@@ -50801,7 +50749,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5399299573698958711}
+  - {fileID: 8308326248351049508}
+  - {fileID: 345447988363153994}
+  - {fileID: 4647698287514465301}
+  - {fileID: 2064220893898498998}
+  - {fileID: 2306964171553834367}
+  - {fileID: 4322814508049053423}
+  - {fileID: 4074634266315318018}
   m_Father: {fileID: 5487577128341204377}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7025765323343236130
@@ -50985,7 +50939,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6950004831044509250}
-  m_Father: {fileID: 5399299573698958711}
+  m_Father: {fileID: 8359846951505536615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4136516254084164399
 MonoBehaviour:
@@ -50999,6 +50953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7e375d6316456e8a736ace60c06435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   spawnPosition: {fileID: 6950004831044509250}
   forceAssignation: 0
   facingDirection: 1
@@ -51487,15 +51442,13 @@ MonoBehaviour:
   cameraBoundaries:
   - {fileID: 3972904438521082210}
   checkPoints:
-  - gameModeId: 10
-    checkPoints:
-    - {fileID: 7980872965745606674}
-    - {fileID: 927173333647572869}
-    - {fileID: 2900625642010744585}
-    - {fileID: 7107991779203132358}
-    - {fileID: 6653041680837678373}
-    - {fileID: 3109232323281248428}
-    - {fileID: 4136516254084164399}
+  - {fileID: 7980872965745606674}
+  - {fileID: 927173333647572869}
+  - {fileID: 2900625642010744585}
+  - {fileID: 7107991779203132358}
+  - {fileID: 6653041680837678373}
+  - {fileID: 3109232323281248428}
+  - {fileID: 4136516254084164399}
   stageCutsceneTriggers:
   - gameModeId: 10
     cutsceneTrigger: {fileID: 3520793170020743884}
@@ -51671,8 +51624,6 @@ MonoBehaviour:
   priority: 0
   questActionType: 1
   questSO: {fileID: 11400000, guid: fed2b77c9cd77f5408ffa17fd9d12a39, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 0
   delay: 0
 --- !u!1 &7565003862983487949
@@ -107344,8 +107295,6 @@ MonoBehaviour:
   priority: 0
   questActionType: 1
   questSO: {fileID: 11400000, guid: 59deecfaa52d40d49afe1a038840b6b9, type: 2}
-  isStart: 0
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &8461560688575599242
@@ -107395,8 +107344,6 @@ MonoBehaviour:
   priority: 3
   questActionType: 0
   questSO: {fileID: 11400000, guid: ca6d449ec29554043b9f9542923269e0, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &8466670531603828157
@@ -107943,8 +107890,6 @@ MonoBehaviour:
   priority: 3
   questActionType: 0
   questSO: {fileID: 11400000, guid: b3ca2cab15a615f4399dd5ad866bf2cb, type: 2}
-  isStart: 1
-  isFail: 0
   showPopup: 1
   delay: 0
 --- !u!1 &8835846713600641491

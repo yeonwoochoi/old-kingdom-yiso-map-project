@@ -1,6 +1,6 @@
 using Controller.Map;
 using Core.Behaviour;
-using Manager_Temp_;
+using Manager;
 using Tools.Event;
 using UnityEngine;
 

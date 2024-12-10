@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Manager_Temp_ {
+namespace Manager {
     public static class LayerManager {
         private static int MapLayer = 6;
         private static int ObstaclesLayer = 8;

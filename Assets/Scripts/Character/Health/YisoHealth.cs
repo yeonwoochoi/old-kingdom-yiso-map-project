@@ -7,7 +7,7 @@ using Character.Health.Damage;
 using Character.Health.Damage.Resistance;
 using Core.Behaviour;
 using Core.Domain.Actor.Attack;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using Spawn;
 using Tools.Event;

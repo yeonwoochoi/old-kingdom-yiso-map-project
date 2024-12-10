@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b87631ddf54fe1b045cc5bdfe78ac9, type: 3}
+  m_Name: Scarecrow1(Temp)
+  m_EditorClassIdentifier: 
+  id: 50009999
+  name:
+    kr: "\uC5F0\uC2B5\uC6A9 \uD5C8\uC218\uC544\uBE441"
+    en: Scarecrow 1
+  description:
+    kr: "\uC5F0\uC2B5\uC6A9 \uD5C8\uC218\uC544\uBE441"
+    en: Scarecrow 1
+  type: 0
+  drops:
+  - money: 1
+    moneyValue: 200
+    probability: 0
+    itemSO: {fileID: 0}
+  - money: 0
+    moneyValue: 1
+    probability: 80
+    itemSO: {fileID: 11400000, guid: 21d91878f7c434af6abffba520b93aba, type: 2}
+  - money: 0
+    moneyValue: 1
+    probability: 70
+    itemSO: {fileID: 11400000, guid: a75b617aae9eb492ea934f33c28c6b9e, type: 2}

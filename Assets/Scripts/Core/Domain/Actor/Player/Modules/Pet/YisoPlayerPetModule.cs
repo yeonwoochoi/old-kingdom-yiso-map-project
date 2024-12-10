@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Core.Domain.Actor.Player.Modules.Base;
+using Core.Domain.Data;
 using Core.Domain.Entity;
 using UnityEngine.Events;
 
@@ -35,6 +36,10 @@ namespace Core.Domain.Actor.Player.Modules.Pet {
             }
             
             pets.Clear();
+        }
+
+        public void SaveData(ref YisoPlayerData data) {
+            data.gameData.petIds = pets.Values.Select(p => p.GetId()).ToList();
         }
 
         public IReadOnlyList<int> GetPetIds() => pets.Keys.ToList();

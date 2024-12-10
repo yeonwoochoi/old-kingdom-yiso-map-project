@@ -1,5 +1,5 @@
 ﻿using Core.Domain.Locale;
-using Manager_Temp_;
+using Manager;
 using Tools.Cutscene;
 using Tools.Event;
 using UnityEngine;

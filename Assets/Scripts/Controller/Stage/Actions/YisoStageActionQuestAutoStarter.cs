@@ -5,7 +5,7 @@ using Core.Domain.Quest.SO;
 using Core.Service;
 using Core.Service.Character;
 using Core.Service.Temp;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using UnityEngine;
 
 namespace Controller.Stage.Actions {

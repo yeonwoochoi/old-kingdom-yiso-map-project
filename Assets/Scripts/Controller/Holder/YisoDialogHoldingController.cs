@@ -4,7 +4,7 @@ using Core.Domain.Actor.Npc;
 using Core.Domain.Dialogue;
 using Core.Domain.Quest;
 using Cutscene.Scripts.Control.Cutscene.Trigger;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using Tools.Cutscene;
 using UnityEngine;

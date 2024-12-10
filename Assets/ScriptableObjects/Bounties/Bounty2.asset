@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e667aa566b458aa703b0e52163b4c7, type: 3}
+  m_Name: Bounty2
+  m_EditorClassIdentifier: 
+  id: 2
+  targetImage: {fileID: 21300000, guid: 6a10c05b187f3414cb7b3f0df51688e8, type: 3}
+  target: {fileID: 11400000, guid: 57c7eef47ee05a74ebf41bdc9f8d9fac, type: 2}
+  targetName:
+    kr: "\uB0A8\uCC3D \uD45C\uB450"
+    en: Manager of Namchang
+  description:
+    kr: "\uB0A8\uCC3D\uD45C\uAD6D\uC774 \uC774\uC18C\uC5D0\uAC8C \uB450 \uBC88\uC774\uB098
+      \uD568\uB77D\uB41C \uCC45\uC784\uC744 \uC9C0\uACE0 \uBB3C\uB7EC\uB09C \uC804\uB300\uC640
+      \uC804\uC804\uB300 \uB0A8\uCC3D \uD45C\uB450\uC758 \uB9C9\uB0B4 \uB3D9\uC0DD\uC73C\uB85C\uC11C,
+      \uADF8\uB294 \uD615\uB4E4\uC758 \uBCF5\uC218\uB97C \uAFC8\uAFB8\uBA70 \uBCD1\uB825\uC744
+      \uD0A4\uC6B0\uACE0 \uC788\uB2E4."
+    en: As the youngest brother of the former and previous leaders of Namchang Escort
+      Agency, who were forced to step down after the agency was defeated twice by
+      Yiso, he dreams of avenging his brothers and is building up his forces.
+  useTimeLimit: 1
+  timeLimit: 300
+  bountyReward: 1350000
+  rewards:
+  - {fileID: 11400000, guid: c533feb4e84244dcd8259f84061df69c, type: 2}
+  - {fileID: 11400000, guid: d139ea0bb76524bd78b3a6ff5fe37d60, type: 2}
+  mapSO: {fileID: 11400000, guid: 5ce1ffcfb9b6b4240bea7a84fbfbae93, type: 2}
+  enemySpawnerPrefab: {fileID: 6561053225040281364, guid: fb9532c87a2b18b429bb65f4d947291e, type: 3}

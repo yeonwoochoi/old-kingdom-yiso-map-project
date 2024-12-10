@@ -2,7 +2,7 @@ using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public class YisoGameAssetModule : YisoGameBaseModule {
         private readonly Settings settings;
 

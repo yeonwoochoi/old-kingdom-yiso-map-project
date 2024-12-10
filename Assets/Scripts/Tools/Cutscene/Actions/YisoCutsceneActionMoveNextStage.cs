@@ -1,4 +1,4 @@
-using Manager_Temp_;
+using Manager;
 using UnityEngine;
 
 namespace Tools.Cutscene.Actions {

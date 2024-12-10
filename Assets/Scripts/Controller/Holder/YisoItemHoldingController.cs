@@ -3,7 +3,7 @@ using Core.Domain.Item;
 using Core.Domain.Quest;
 using Core.Service;
 using Core.Service.Character;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using Tools.Cool;
 using UnityEngine;

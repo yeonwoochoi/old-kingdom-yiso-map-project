@@ -10,9 +10,10 @@ namespace Core.Domain.Data {
         public YisoPlayerStorageData storageData = new();
         public YisoPlayerSkillData skillData = new();
         public YisoPlayerUIData uiData = new();
+        public YisoPlayerGameData gameData = new();
         public bool initData = true;
         public DataVersionInfo version = new();
-
+        
         public void Reset() {
             stageId = 1;
             inventoryData.Reset();

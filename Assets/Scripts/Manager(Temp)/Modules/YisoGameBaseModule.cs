@@ -1,4 +1,4 @@
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public abstract class YisoGameBaseModule {
         protected readonly GameManager manager;
 

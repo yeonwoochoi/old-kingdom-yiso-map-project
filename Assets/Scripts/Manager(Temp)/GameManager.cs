@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Linq;
 using Character.Core;
 using Controller.Map;
@@ -14,7 +13,7 @@ using Core.Service.UI;
 using Core.Service.UI.Global;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using Tools.Event;
 using UnityEngine;
@@ -24,7 +23,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 
-namespace Manager_Temp_ {
+namespace Manager {
     public class GameManager : RunISingleton<GameManager>, IYisoEventListener<YisoGameEvent>,
         IYisoEventListener<YisoInGameEvent> {
         public enum GameMode {

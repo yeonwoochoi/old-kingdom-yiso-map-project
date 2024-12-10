@@ -9,7 +9,7 @@ using Core.Service;
 using Core.Service.Bounty;
 using Core.Service.Log;
 using Core.Service.ObjectPool;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Event;
 using UnityEngine;
@@ -96,6 +96,9 @@ namespace Controller.Map {
         public int maxCurrentSpawnCount = 15;
         public bool limitTotalSpawnCount = false;
         [ShowIf("limitTotalSpawnCount")] public int maxTotalSpawnCount = 15;
+        
+        [Title("Debug")]
+        public bool testMode = false;
 
         private bool initialized = false;
         private List<YisoCharacter> spawnObjects;
@@ -160,7 +163,8 @@ namespace Controller.Map {
 
             spawnObjects = new List<YisoCharacter>();
             spawnCoroutine ??= StartCoroutine(SpawnCoroutine());
-            if (!canSpawnDuringStage) isSpawnReady = true;
+            if (testMode) isSpawnReady = true;
+            else if (!canSpawnDuringStage) isSpawnReady = true;
             initialized = true;
         }
         
@@ -202,7 +206,7 @@ namespace Controller.Map {
         
         private bool CanSpawn(SpawnablePrefab spawnablePrefab) {
             if (!canSpawn) return false;
-            if (canSpawnDuringStage && !isSpawnReady) return false;
+            if (!testMode && canSpawnDuringStage && !isSpawnReady) return false;
             if (onlySpawnWhenPlayerInArea && !isPlayerInArea) return false;
             if (spawnablePrefab.spawnOnce) {
                 return spawnablePrefab.CanSpawn;

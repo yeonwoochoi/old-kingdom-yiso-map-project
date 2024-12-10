@@ -7,7 +7,7 @@ using Core.Service;
 using Core.Service.Character;
 using Tools.Event;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public struct YisoPetEvent {
         public bool isRegistered;
         public YisoCharacter character;

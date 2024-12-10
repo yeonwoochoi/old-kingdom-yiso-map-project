@@ -3,7 +3,7 @@ using Character.Core;
 using Core.Domain.Actor.Player.Modules.Pet;
 using Core.Service;
 using Core.Service.Character;
-using Manager_Temp_.Modules;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

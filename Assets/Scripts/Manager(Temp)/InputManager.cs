@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Controller.UI;
 using Core.Domain.Types;
 using Core.Service;
 using Core.Service.UI;
@@ -9,7 +8,7 @@ using Tools.Singleton;
 using UnityEngine;
 using Utils.Beagle;
 
-namespace Manager_Temp_ {
+namespace Manager {
     /// <summary>
     /// 등록된 버튼의 State를 관리해줌 -> 그에 맞는 Action은 Button State를 Get해서 각 script에서 짜야함.
     /// </summary>

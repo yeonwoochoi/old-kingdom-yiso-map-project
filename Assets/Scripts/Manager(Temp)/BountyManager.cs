@@ -22,7 +22,7 @@ using Tools.Singleton;
 using UnityEngine;
 using Utils.Beagle;
 
-namespace Manager_Temp_ {
+namespace Manager {
     public class BountyManager : YisoTempSingleton<BountyManager>, IYisoEventListener<YisoInGameEvent> {
         [Title("Character")] public YisoCharacter playerPrefab;
         public YisoCharacter characterInScene;

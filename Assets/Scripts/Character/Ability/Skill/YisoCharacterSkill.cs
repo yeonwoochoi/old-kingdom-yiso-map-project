@@ -6,7 +6,7 @@ using Core.Logger;
 using Core.Service;
 using Core.Service.Log;
 using Cutscene.Scripts.Control.Cutscene;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Cutscene;
 using Tools.Event;

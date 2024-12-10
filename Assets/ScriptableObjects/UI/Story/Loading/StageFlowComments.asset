@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809eb1107ae24d8293008286b2047bbb, type: 3}
+  m_Name: StageFlowComments
+  m_EditorClassIdentifier: 
+  contents:
+  - stage: 1
+    flow:
+      kr: "\uAD6C\uC885\uACFC \uD568\uAED8 \uC57C\uBC18\uB3C4\uC8FC \uACC4\uD68D
+        \uC218\uB9BD"
+      en: Planning a nighttime escape with Gujong
+  - stage: 2
+    flow:
+      kr: "\uAD6C\uC885 \uCC3E\uAE30"
+      en: Finding Gujong
+  - stage: 3
+    flow:
+      kr: "\uC5B4\uBA38\uB2C8 \uAD6C\uCD9C\uC744 \uC704\uD55C \uC9D1\uC73C\uB85C\uC758
+        \uADC0\uD5A5"
+      en: Returning home to rescue mother
+  - stage: 4
+    flow:
+      kr: "\uB178\uC608\uB85C \uD314\uB824\uAC00\uB294 \uC5B4\uB9AC \uAD6C\uCD9C"
+      en: Rescuing Eori from being sold into slavery
+  - stage: 5
+    flow:
+      kr: "\uC5B4\uB9AC\uC758 \uC5B4\uBA38\uB2C8 \uAD6C\uCD9C"
+      en: Rescuing Eori's mother
+  - stage: 6
+    flow:
+      kr: "\uD6C4\uC9D5\uC758 \uB300\uC7A5\uAC04 \uAE09\uC2B5"
+      en: Raiding Hujing's blacksmith
+  - stage: 7
+    flow:
+      kr: "\uD6C4\uC9D5 \uCD94\uACA9"
+      en: Pursuing Hujing
+  - stage: 8
+    flow:
+      kr: "\uC218\uC801\uC120 \uD0C8\uCD9C"
+      en: Escaping from the pirate ship
+  - stage: 9
+    flow:
+      kr: "\uC218\uC801\uB2E8 \uD0C8\uCDE8"
+      en: Capturing the pirate group
+  - stage: 10
+    flow:
+      kr: "\uBBF8\uCD94\uD640\uC5D0\uC11C \uD6C4\uC9D5 \uC9C0\uBD80 \uC18C\uD0D5"
+      en: Eliminating Hujing's branch in Michuhol
+  - stage: 11
+    flow:
+      kr: "\uC704\uD5D8\uC5D0 \uBE60\uC9C4 \uBB34\uB518 \uAD6C\uCD9C"
+      en: Rescuing Mudin from danger
+  - stage: 12
+    flow:
+      kr: "\uAD6C\uC57C\uC758 \uB77C\uD0C0\uC774 \uC9C0\uBD80 \uC18C\uD0D5"
+      en: Clearing the Ratai branch in Guya
+  - stage: 13
+    flow:
+      kr: "\uD6C4\uC9D5 \uC794\uB2F9 \uC18C\uD0D5 \uBC0F \uD761\uC218"
+      en: Eliminating and absorbing Hujing's remnants
+  - stage: 14
+    flow:
+      kr: "\uB77C\uD0C0\uC774 \uC9C0\uBD80 \uC18C\uD0D5 \uBC0F \uC138\uB825 \uD761\uC218"
+      en: Clearing the Ratai branch and absorbing its forces
+  - stage: 15
+    flow:
+      kr: "\uC11D\uAC00\uC7A5\uC758 \uB450\uC2DC\uC640 \uC5F0\uD569"
+      en: Forming an alliance with Dusi of Seokgajang
+  - stage: 16
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uB0A8\uBD80 \uC218\uC801 \uC5F0\uD569 \uACB0\uC131"
+      en: Forming a pirate alliance in southern Michuhol
+  - stage: 17
+    flow:
+      kr: "\uC18C\uC11C\uB178\uC640\uC758 \uB9CC\uB0A8"
+      en: Meeting Soseno
+  - stage: 18
+    flow:
+      kr: "\uBB34\uB518\uC758 \uACE0\uD5A5 \uC9D1 \uD68C\uBCF5"
+      en: Restoring Mudin's hometown
+  - stage: 19
+    flow:
+      kr: "\uBB34\uB518\uC758 \uC5B4\uBA38\uB2C8 \uAD6C\uCD9C"
+      en: Rescuing Mudin's mother
+  - stage: 20
+    flow:
+      kr: "\uBB34\uB518\uC758 \uCCAB\uC9F8 \uD615 \uAD6C\uCD9C"
+      en: Rescuing Mudin's eldest brother
+  - stage: 21
+    flow:
+      kr: "\uBB34\uB518\uC758 \uC885\uC219\uBD80 \uAD6C\uCD9C"
+      en: Rescuing Mudin's granduncle
+  - stage: 22
+    flow:
+      kr: "\uBE44\uB958 \uC655\uC790\uC640\uC758 \uC7AC\uD68C"
+      en: Reuniting with Prince Biryu
+  - stage: 23
+    flow:
+      kr: "\uBCF8\uAC70\uC9C0 \uD68C\uBCF5"
+      en: Reclaiming the headquarters
+  - stage: 24
+    flow:
+      kr: "\uC6D0\uC8FC \uAD6C\uCD9C"
+      en: Rescuing Wonju
+  - stage: 25
+    flow:
+      kr: "\uD328\uB9AC \uAD6C\uCD9C"
+      en: Rescuing Paeri
+  - stage: 26
+    flow:
+      kr: "\uC5B4\uB9AC \uAD6C\uCD9C"
+      en: Rescuing Eori
+  - stage: 27
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uBD81\uBD80 \uB9C8\uC744 \uAD6C\uCD9C"
+      en: Liberating the northern villages of Michuhol
+  - stage: 28
+    flow:
+      kr: "\uB3C4\uBB34\uCD0C\uC5D0\uC11C \uC628\uC870\uC640\uC758 \uB300\uACB0"
+      en: Confronting Onjo at Domuchon
+  - stage: 29
+    flow:
+      kr: "\uBE44\uB958\uC640 \uC774\uC18C\uC758 \uC628\uC870 \uD654\uD574 \uC2DC\uB3C4"
+      en: Biryu and Iso attempt to reconcile with Onjo
+  - stage: 30
+    flow:
+      kr: "\uAD6C\uC57C \uC218\uC801 \uC12C \uACF5\uACA9 1: \uC9C0\uB77C\uB3C4 \uACF5\uB7B5"
+      en: 'Pirate Island Attack 1 in Guya: Conquering Jirado'
+  - stage: 31
+    flow:
+      kr: "\uAD6C\uC57C \uC218\uC801 \uC12C \uACF5\uACA9 2: \uBD80\uC11C\uB3C4 \uACF5\uB7B5"
+      en: 'Pirate Island Attack 2 in Guya: Conquering Buseodo'
+  - stage: 32
+    flow:
+      kr: "\uAD6C\uC57C \uC218\uC801 \uC12C \uACF5\uACA9 3: \uAD6C\uB9B0\uB3C4 \uACF5\uB7B5"
+      en: 'Pirate Island Attack 3 in Guya: Conquering Gurindo'
+  - stage: 33
+    flow:
+      kr: "\uAD6C\uC57C \uC218\uC801 \uC12C \uACF5\uACA9 4: \uB450\uB098\uB3C4 \uACF5\uB7B5"
+      en: 'Pirate Island Attack 4 in Guya: Conquering Dunado'
+  - stage: 34
+    flow:
+      kr: "\uC218\uBAA8\uAD6D \uAD70\uB7C9 \uC218\uC1A1\uC120 \uD0C8\uCDE8"
+      en: Seizing Sumoguk's military supply ships
+  - stage: 35
+    flow:
+      kr: "\uBAA8\uB3C4\uB77C \uC218\uC801 \uC12C \uACF5\uACA9 1: \uC6D0\uC0B0\uB3C4
+        \uACF5\uB7B5"
+      en: 'Pirate Island Attack 1 in Modora: Conquering Wonsando'
+  - stage: 36
+    flow:
+      kr: "\uBAA8\uB3C4\uB77C \uC218\uC801 \uC12C \uACF5\uACA9 2: \uB9E4\uAD6C\uB9AC\uB3C4
+        \uACF5\uB7B5"
+      en: 'Pirate Island Attack 2 in Modora: Conquering Maegurido'
+  - stage: 37
+    flow:
+      kr: "\uB099\uB791 \uC0AC\uC2E0 \uAD6C\uCD9C"
+      en: Rescuing the envoy from Nakrang
+  - stage: 38
+    flow:
+      kr: "\uB9C8\uD55C \uC655\uC758 \uD638\uCD9C\uC5D0 \uC751\uB2F5"
+      en: Responding to the summons of the Mahan king
+  - stage: 39
+    flow:
+      kr: "\uB9C8\uD55C\uACFC\uC758 \uB3D9\uB9F9 \uCCB4\uACB0"
+      en: Forming an alliance with Mahan
+  - stage: 40
+    flow:
+      kr: "\uBB34\uB518\uC758 \uCD08\uB300\uB85C \uB9C8\uD55C \uB3C4\uCC29"
+      en: Arriving in Mahan by Mudin's invitation
+  - stage: 41
+    flow:
+      kr: "\uACE0\uAD6C\uB824 \uADFC\uC704\uB300 \uD22C\uD56D \uC720\uB3C4"
+      en: Inducing the Goguryeo royal guards to surrender
+  - stage: 42
+    flow:
+      kr: "\uBC18\uB780\uAD70 \uD1A0\uBC8C"
+      en: Suppressing the rebel forces
+  - stage: 43
+    flow:
+      kr: "\uC6D0\uC0B0 \uD638\uACF5 \uC138\uB825 \uD1A0\uBC8C"
+      en: Eliminating Hogoong's forces in Wonsan
+  - stage: 44
+    flow:
+      kr: "\uD638 \uB300\uC624 \uC18C\uBD88 \uD3EC\uD68D"
+      en: Capturing Ho Dae-oh Sobul
+  - stage: 45
+    flow:
+      kr: "\uC8FC\uC9C4\uC758 \uCE5C\uAD6C \uAD6C\uCD9C"
+      en: Rescuing Jujin's friend
+  - stage: 46
+    flow:
+      kr: "\uAD00\uCCAD \uC815\uBCF4 \uC218\uC9D1"
+      en: Gathering information at the government office
+  - stage: 47
+    flow:
+      kr: "\uADFC\uC704\uB300 \uBAA8\uC778 \uBCF4\uB9AC\uBBF8\uC131 \uAD6C\uCD9C"
+      en: Liberating Borimi Fortress where the guards are gathered
+  - stage: 48
+    flow:
+      kr: "\uB0A8\uBD80 \uB300\uAC00 \uAD6C\uCD9C \uBC0F \uB3C4\uC870\uC640\uC758
+        \uB9CC\uB0A8"
+      en: Rescuing the southern nobles and meeting Dojo
+  - stage: 49
+    flow:
+      kr: "\uBD80\uD604 \uC810\uB839"
+      en: Occupying Buhyeon
+  - stage: 50
+    flow:
+      kr: "\uC744\uC74C \uAD6C\uCD9C"
+      en: Rescuing Eul-eum
+  - stage: 51
+    flow:
+      kr: "\uB099\uB791 \uAD70\uC0AC \uD1A0\uBC8C"
+      en: Defeating Nakrang's military forces
+  - stage: 52
+    flow:
+      kr: "\uD638\uACF5 \uC138\uB825 \uD1A0\uBC8C"
+      en: Suppressing Hogoong's faction
+  - stage: 53
+    flow:
+      kr: "\uC18C\uC11C\uB178 \uAD6C\uCD9C"
+      en: Rescuing Soseno
+  - stage: 54
+    flow:
+      kr: "\uC18C\uC11C\uB178\uC640 \uC2DC\uB85C\uC758 \uC778\uC5F0 \uC774\uC57C\uAE30"
+      en: Soseno shares the story of her connection with Shiro
+  - stage: 55
+    flow:
+      kr: "\uC220\uCC9C\uC131\uC5D0\uC11C\uC758 \uCCAB \uC784\uBB34 \uC218\uD589"
+      en: Completing the first mission at Sulcheon Fortress
+  - stage: 56
+    flow:
+      kr: "\uAC74\uCD95 \uC790\uC7AC \uB3C4\uB09C \uC0AC\uAC74 \uD574\uACB0"
+      en: Solving the building material theft case
+  - stage: 57
+    flow:
+      kr: "\uACE4\uBBF8\uC131 \uC778\uADFC \uD3EC\uAD6C \uC815\uBC8C"
+      en: Conquering the harbor near Gonmi Fortress
+  - stage: 58
+    flow:
+      kr: "\uC18C\uBAA8\uC758 \uC220\uCC9C\uC131 \uAE09\uC2B5 \uBC0F \uD1A0\uBC8C"
+      en: Raiding and defeating Somo's forces at Sulcheon Fortress
+  - stage: 59
+    flow:
+      kr: "\uC220\uCC9C\uC131 \uB0B4 \uD638\uB2E8 \uC18C\uD0D5"
+      en: Eliminating Hodan within Sulcheon Fortress
+  - stage: 60
+    flow:
+      kr: "\uBD80\uD604\uC131 \uBD81\uBD80 \uAC70\uC810 \uC18C\uD0D5"
+      en: Clearing the northern base of Buhyeon Fortress
+  - stage: 61
+    flow:
+      kr: "\uAC08\uCD0C\uC5D0\uC11C \uBD80\uB2E8\uC8FC 2\uCC28 \uC0DD\uD3EC"
+      en: Second capture of Budanju at Galchon
+  - stage: 62
+    flow:
+      kr: "\uCCA0\uC0B0\uC5D0\uC11C \uBD80\uB2E8\uC8FC 3\uCC28 \uC0DD\uD3EC"
+      en: Third capture of Budanju at Cheolsan
+  - stage: 63
+    flow:
+      kr: "\uBC15\uB450\uC5D0\uC11C \uBD80\uB2E8\uC8FC 4\uCC28 \uC0DD\uD3EC"
+      en: Fourth capture of Budanju at Bakdu
+  - stage: 64
+    flow:
+      kr: "\uB9C8\uD55C\uC5D0\uC11C \uBD80\uB2E8\uC8FC 5\uCC28 \uC0DD\uD3EC"
+      en: Fifth capture of Budanju in Mahan
+  - stage: 65
+    flow:
+      kr: "\uB9C8\uD55C\uC5D0\uC11C \uBD80\uB2E8\uC8FC 6\uCC28 \uC0DD\uD3EC"
+      en: Sixth capture of Budanju in Mahan
+  - stage: 66
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uB3D9\uBD81\uC9C0\uC5ED\uC5D0\uC11C \uBD80\uB2E8\uC8FC
+        7\uCC28 \uC0DD\uD3EC"
+      en: Seventh capture of Budanju in northeastern Michuhol
+  - stage: 67
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uC11C\uBD80\uC9C0\uC5ED\uC5D0\uC11C \uBD80\uB2E8\uC8FC
+        8\uCC28 \uC0DD\uD3EC"
+      en: Eighth capture of Budanju in western Michuhol
+  - stage: 68
+    flow:
+      kr: "\uC11D\uAC00\uC7A5 \uC601\uC5ED\uC5D0\uC11C \uBD80\uB2E8\uC8FC 9\uCC28
+        \uC0DD\uD3EC"
+      en: Ninth capture of Budanju in the Seokgajang area
+  - stage: 69
+    flow:
+      kr: "\uB9C8\uD55C\uC758 \uC8FC\uADFC \uAD6C\uCD9C"
+      en: Rescuing Jugun of Mahan
+  - stage: 70
+    flow:
+      kr: "\uB9C8\uD55C\uC758 \uB9F9\uD638 \uAD6C\uCD9C"
+      en: Rescuing Maengho of Mahan
+  - stage: 71
+    flow:
+      kr: "\uC720\uAC15 \uAD6C\uCD9C"
+      en: Rescuing Yugang
+  - stage: 72
+    flow:
+      kr: "\uBB34\uB518 \uAD6C\uCD9C"
+      en: Rescuing Mudin
+  - stage: 73
+    flow:
+      kr: "\uBCD1\uC0B0 \uC2DD\uB7C9 \uD0C8\uCDE8 \uB3C4\uC801 \uD1A0\uBC8C"
+      en: Defeating bandits who stole food in Byeongsan
+  - stage: 74
+    flow:
+      kr: "\uC218\uBAA8\uAD6D \uCE68\uC785 \uACC4\uD68D \uC785\uC218"
+      en: Obtaining the invasion plans of Sumoguk
+  - stage: 75
+    flow:
+      kr: "\uC801\uAD70 \uAD70\uB7C9 \uC18C\uAC01"
+      en: Burning the enemy's provisions
+  - stage: 76
+    flow:
+      kr: "\uC218\uBAA8\uAD6D \uBD80\uB300 \uD1A0\uBC8C (8\uB144 2\uC6D4)"
+      en: Defeating Sumoguk's forces (February, Year 8)
+  - stage: 77
+    flow:
+      kr: "\uB0A8\uC6D4\uACFC\uC758 \uC300 \uAD50\uC5ED\uB85C \uD655\uBCF4"
+      en: Securing the rice trade route with Namwol
+  - stage: 78
+    flow:
+      kr: "\uD55C 6\uC7A5 \uAD6C\uCD9C"
+      en: Rescuing Han's Sixth Captain
+  - stage: 79
+    flow:
+      kr: "\uBB34\uB518 \uAD6C\uCD9C"
+      en: Rescuing Mudin
+  - stage: 80
+    flow:
+      kr: "\uC18C\uB098 \uACF5\uACA9"
+      en: Attacking Sona
+  - stage: 81
+    flow:
+      kr: "\uBBF8\uC57C\uC131\uC5D0\uC11C \uBD88\uB77C \uC655\uC790 \uAD6C\uCD9C"
+      en: Rescuing Prince Bulla at Miyaseong
+  - stage: 82
+    flow:
+      kr: "\uBD88\uB098 \uACF5\uACA9"
+      en: Attacking Bulna
+  - stage: 83
+    flow:
+      kr: "\uD6C8 6\uC7A5\uACFC \uD568\uAED8 \uC54C\uB098 \uACF5\uC2B5"
+      en: Raiding Alna with Hun's Sixth Captain
+  - stage: 84
+    flow:
+      kr: "\uC54C\uB098 \uACF5\uACA9"
+      en: Attacking Alna
+  - stage: 85
+    flow:
+      kr: "\uD6C8 5\uC7A5\uACFC \uD568\uAED8 \uBA54\uB098 \uACF5\uC2B5"
+      en: Raiding Mena with Hun's Fifth Captain
+  - stage: 86
+    flow:
+      kr: "\uBA54\uB098 \uD574\uBC29"
+      en: Liberating Mena
+  - stage: 87
+    flow:
+      kr: "\uD6C8 2\uC7A5\uACFC \uD568\uAED8 \uD0C1\uB098 \uACF5\uC2B5"
+      en: Raiding Takna with Hun's Second Captain
+  - stage: 88
+    flow:
+      kr: "\uD0C1\uB098 \uD574\uBC29"
+      en: Liberating Takna
+  - stage: 89
+    flow:
+      kr: "\uD6C8 1\uC7A5 \uD568\uC815\uC5D0\uC11C \uAD6C\uCD9C"
+      en: Rescuing Hun's First Captain from a trap
+  - stage: 90
+    flow:
+      kr: "\uB77C\uD0C0\uC774 \uCDA9\uC2E0 \uAD6C\uCD9C"
+      en: Rescuing the loyalists of Ratai
+  - stage: 91
+    flow:
+      kr: "\uB9C8\uD55C \uADC0\uD658 \uC911\uC778 \uD638\uACF5 \uB0A9\uCE58"
+      en: Kidnapping Hogoong returning from Mahan
+  - stage: 92
+    flow:
+      kr: "\uB77C\uD0C0\uC774 \uC815\uBC8C"
+      en: Conquering Ratai
+  - stage: 93
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uCD9C\uC9C4"
+      en: Marching towards Michuhol
+  - stage: 94
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uB0A8\uBD80 \uACB0\uC804"
+      en: Final battle in southern Michuhol
+  - stage: 95
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uC11C\uBD80 \uACB0\uC804"
+      en: Final battle in western Michuhol
+  - stage: 96
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uBD81\uBD80 \uACB0\uC804"
+      en: Final battle in northern Michuhol
+  - stage: 97
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uB3D9\uBD80 \uACB0\uC804"
+      en: Final battle in eastern Michuhol
+  - stage: 98
+    flow:
+      kr: "\uBBF8\uCD94\uD640 \uC911\uBD80 \uACB0\uC804"
+      en: Final battle in central Michuhol
+  - stage: 99
+    flow:
+      kr: "\uC628\uC870\uC640\uC758 \uCD5C\uD6C4 \uB300\uACB0"
+      en: Ultimate confrontation with Onjo
+  - stage: 100
+    flow:
+      kr: "\uC624\uD0A4\uB098\uC640\uB85C\uC758 \uC5EC\uC815"
+      en: Journey to Okinawa

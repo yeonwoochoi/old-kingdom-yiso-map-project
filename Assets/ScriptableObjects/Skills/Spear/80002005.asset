@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3982e3c3224086b064bc1647aed45a, type: 3}
+  m_Name: 80002005
+  m_EditorClassIdentifier: 
+  id: 80002005
+  icon: {fileID: 21300000, guid: 25360a4462c44433cb5782ca949d46a0, type: 3}
+  name:
+    kr: "\uCCA0\uBCBD\uBC29\uC5B4"
+    en: Ironclad Defense
+  description:
+    kr: "\uCCA0\uBCBD \uAC19\uC740 \uBC29\uC5B4\uB85C \uC2A4\uD0AC \uC7AC\uC0AC\uC6A9
+      \uB300\uAE30\uC2DC\uAC04\uC774 \uAC10\uC18C\uD569\uB2C8\uB2E4."
+    en: With an ironclad defense, reduce your skill cooldown time
+  unlockStageId: 1
+  masterLevel: 10
+  requiredSkillSO: {fileID: 0}
+  type: 0
+  attackType: 2
+  requiredSkillLevel: 0
+  passiveEffects:
+  - type: 6
+    initValue: 6
+    increasePerLevelValue: 4
+  active:
+    attackCount: 1
+    damageRate: 0
+    criticalRate: 0
+    criticalDamageRate: 0
+    cooldown: 0

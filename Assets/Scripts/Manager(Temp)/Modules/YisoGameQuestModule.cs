@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Controller.Holder;
 using Core.Domain.Actor.Player.Modules.Quest;
@@ -23,7 +22,7 @@ using Tools.Event;
 using UnityEngine.Events;
 using Utils.Beagle;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public class YisoGameQuestModule : YisoGameBaseModule, IYisoEventListener<YisoInGameEvent>,
         IYisoEventListener<YisoFieldEnterEvent>, IYisoEventListener<YisoPickableObjectEvent>,
         IYisoEventListener<YisoCutsceneStateChangeEvent> {

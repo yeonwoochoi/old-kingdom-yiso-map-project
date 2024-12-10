@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6561053225040281364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8886355330158294302}
+  - component: {fileID: 8509563209363834671}
+  - component: {fileID: 5839321358114497516}
+  m_Layer: 0
+  m_Name: pfModoEnemySpawner (Stg2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8886355330158294302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561053225040281364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8509563209363834671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561053225040281364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dcefdfac8db4bb3bc1eb13bd2fe4e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoInitialize: 0
+  parent: {fileID: 0}
+  canSpawn: 1
+  onlySpawnWhenPlayerInArea: 0
+  spawnablePrefabs:
+  - prefab: {fileID: 7193772264686889853, guid: 382ec900826b1e94b82db92067481cd1, type: 3}
+    spawnInterval: 20
+    minSpawnCount: 1
+    maxSpawnCount: 2
+    spawnOnStart: 0
+    spawnOnce: 0
+    lastSpawnTime: 0
+    isSpawned: 0
+  - prefab: {fileID: 7376059161557768595, guid: c215a07171d49544ab115deaeff3bd66, type: 3}
+    spawnInterval: 30
+    minSpawnCount: 1
+    maxSpawnCount: 2
+    spawnOnStart: 0
+    spawnOnce: 0
+    lastSpawnTime: 0
+    isSpawned: 0
+  - prefab: {fileID: 6057783510341988184, guid: 95b92bc535c1d8b4882ed1280633a098, type: 3}
+    spawnInterval: 40
+    minSpawnCount: 1
+    maxSpawnCount: 2
+    spawnOnStart: 0
+    spawnOnce: 0
+    lastSpawnTime: 0
+    isSpawned: 0
+  - prefab: {fileID: 6881431759287798775, guid: c4f4582719a58a6489f0bccd71f3d7b4, type: 3}
+    spawnInterval: 60
+    minSpawnCount: 1
+    maxSpawnCount: 1
+    spawnOnStart: 0
+    spawnOnce: 0
+    lastSpawnTime: 0
+    isSpawned: 0
+  spawnArea: {fileID: 5839321358114497516}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 511296
+  maxCurrentSpawnCount: 15
+  limitTotalSpawnCount: 0
+  maxTotalSpawnCount: 100
+--- !u!58 &5839321358114497516
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561053225040281364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 8

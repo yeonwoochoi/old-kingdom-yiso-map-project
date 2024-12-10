@@ -8,7 +8,7 @@ using Tools.Event;
 using UnityEngine;
 using Utils.Beagle;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public class YisoGameDropItemModule : YisoGameBaseModule, IYisoEventListener<YisoInGameEvent> {
         private readonly Settings settings;
         private bool poolInitialized = false;

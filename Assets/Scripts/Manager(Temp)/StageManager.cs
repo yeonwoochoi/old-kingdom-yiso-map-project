@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Camera;
@@ -11,7 +10,6 @@ using Core.Domain.Stage;
 using Core.Logger;
 using Core.Service;
 using Core.Service.Character;
-using Core.Service.Effect;
 using Core.Service.Game;
 using Core.Service.Log;
 using Core.Service.Map;
@@ -21,12 +19,11 @@ using Core.Service.UI.Game;
 using Core.Service.UI.Popup;
 using DG.Tweening;
 using Sirenix.OdinInspector;
-using Spawn;
 using Tools.Event;
 using Tools.Singleton;
 using UnityEngine;
 
-namespace Manager_Temp_ {
+namespace Manager {
     public class StageManager : YisoTempSingleton<StageManager>, IYisoEventListener<YisoInGameEvent> {
         [Title("Character")] public YisoCharacter playerPrefab;
         public YisoCharacter characterInScene;
@@ -159,6 +156,7 @@ namespace Manager_Temp_ {
             
             // CheckPoint Assignment (체크 포인트에 IRespawnable 모두 등록)
             currentMapController.CheckpointAssignment();
+            LogService.Debug($"[StageManager.InitializationCo] Assign IRespawnable objects to check points.");
             
             // Trigger Stage ChangeEvent
             YisoInGameEvent.Trigger(YisoInGameEventTypes.StageStart, Player, currentStage);
@@ -289,7 +287,6 @@ namespace Manager_Temp_ {
                 prevMap = null;
                 currentMap = savedMap;
             }
-            isInitialMapLoad = false;
             
             // isInitialMapLoad 가 아닌 경우 (ex. NPC 통한 이동) => currentMap을 미리 설정해놨을 것임
 
@@ -307,13 +304,8 @@ namespace Manager_Temp_ {
             
             InstantiateMap();
             InitializeMap();
-            
-            InstantiatePlayer();
-            InstantiatePets();
-            
             SpawnPlayer(playerSpawnPosition);
             SpawnPets();
-            
             currentMapController.CheckpointAssignment();
             
             LogService.Debug($"[StageManager.SetNewMap] Change current map ({prevMap?.GetName(CurrentLocale)} => {currentMap?.GetName(CurrentLocale)}).");
@@ -338,6 +330,8 @@ namespace Manager_Temp_ {
                 YisoMapChangeEvent.Trigger(prevMap, currentMap, isInitialMapLoad);
                 LogService.Debug($"[StageManager.InitializeMap] Trigger map change event.");
             }
+            
+            isInitialMapLoad = false;
         }
 
         private bool IsMapChanged() {
@@ -388,7 +382,7 @@ namespace Manager_Temp_ {
         }
 
         protected virtual void InstantiatePets() {
-            // TODO: 이미 스폰 되어있으면 스킵하기
+            // TODO
         }
 
         /// <summary>

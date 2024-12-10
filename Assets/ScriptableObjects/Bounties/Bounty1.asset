@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e667aa566b458aa703b0e52163b4c7, type: 3}
+  m_Name: Bounty1
+  m_EditorClassIdentifier: 
+  id: 1
+  targetImage: {fileID: 21300000, guid: 1eb243cc367907841877e82d1de9b3d6, type: 3}
+  target: {fileID: 11400000, guid: ee79f61baa0c738468347ca9007fede8, type: 2}
+  targetName:
+    kr: "\uC791 \uC218\uC801\uB2E8 \uC120\uC7A5"
+    en: Zack Top Brass Pirate
+  description:
+    kr: "\uC774\uC18C\uC640 \uBD80\uC120\uC7A5 \uC77C\uD30C\uC5D0\uAC8C \uB824 \uD604\uC7AC
+      \uBBF8\uCD94\uD640 \uB3D9\uBD80 \uCC3D\uACE0 \uADFC\uCC98\uC5D0 \uC740\uC2E0
+      \uC911\uC774\uB77C\uB294 \uC18C\uBB38\uC774 \uC788\uC74C. \uC591\uBBFC\uB4E4\uC758
+      \uC7AC\uC0B0\uC744 \uAC08\uCDE8\uD558\uBA70 \uBCF5\uC218\uB97C \uAFC8\uAFB8\uBA70
+      \uB2E4\uC2DC \uC138\uB825\uC744 \uD0A4\uC6B0\uACE0 \uC788\uC74C."
+    en: "There are rumors that the former captain of the '\uC791' Pirates, driven
+      out by Yiso and the Vice-Captain's faction, is currently hiding near the eastern
+      warehouse of Michuhol. He has been plundering the property of commoners and
+      is rebuilding his power while dreaming of revenge."
+  useTimeLimit: 1
+  timeLimit: 300
+  bountyReward: 1350000
+  rewards:
+  - {fileID: 11400000, guid: c533feb4e84244dcd8259f84061df69c, type: 2}
+  - {fileID: 11400000, guid: d139ea0bb76524bd78b3a6ff5fe37d60, type: 2}
+  mapSO: {fileID: 11400000, guid: 34091b4be8539cc41ba64504aecc9aec, type: 2}
+  enemySpawnerPrefab: {fileID: 6561053225040281364, guid: 33613828b1405fd44ba272f4eaf80b94, type: 3}

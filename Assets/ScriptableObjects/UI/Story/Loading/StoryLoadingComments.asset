@@ -1,0 +1,775 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f715a05c5e154d07893c4381ef40e7ca, type: 3}
+  m_Name: StoryLoadingComments
+  m_EditorClassIdentifier: 
+  comments:
+  - stage: 1
+    comments:
+    - kr: "BC19\uB144, 16\uC0B4\uC774 \uB41C \uC774\uC18C\uB294 \uAD6C\uC885\uACFC
+        \uACB0\uD63C\uC744 \uC57D\uC18D\uD55C\uB2E4. \uC5C4\uB9C8 \uC2DC\uB85C\uAC00
+        \uBC18\uB300\uD558\uC790, \uBD07\uC9D0\uC744 \uCC59\uACA8 \uC9D1\uC744 \uB098\uC628\uB2E4."
+      en: In the year 19 BC, a 16-year-old Yiso made a vow to marry Gujong, but her
+        mother Xiro strongly opposed the union.
+  - stage: 2
+    comments:
+    - kr: "\uC57D\uD63C\uC790 \uAD6C\uC885\uC774 \uC704\uD5D8\uC5D0 \uBE60\uC9C4
+        \uAC78 \uAE68\uB2EC\uC740 \uC774\uC18C\uB294 \uB2E4\uCE5C \uAC83\uB3C4 \uC78A\uACE0,
+        \uAD6C\uC885\uC758 \uC9D1\uC744 \uD5A5\uD574 \uB2EC\uB824\uAC04\uB2E4."
+      en: With the realization that Gujong may be in danger, Yiso races towards his
+        house, ignoring her own wounds.
+  - stage: 3
+    comments:
+    - kr: "\uC0AC\uB791\uD558\uB294 \uAD6C\uC885\uC758 \uB0AF\uC120 \uBAA8\uC2B5\uC5D0
+        \uB180\uB784 \uD2C8\uB3C4 \uC5C6\uC774 \uC774\uC18C\uB294 \uD568\uC815\uC5D0
+        \uBE60\uC9C4 \uC5C4\uB9C8 \uC2DC\uB85C\uB97C \uAD6C\uD558\uB7EC \uC9D1\uC73C\uB85C
+        \uB2EC\uB824\uAC04\uB2E4."
+      en: "Yiso springs into action, undeterred by the shock of her fianc\xE9's betrayal,
+        rushing home to save her mother Xiro who has fallen into a trap."
+  - stage: 4
+    comments:
+    - kr: "\uC790\uAC1D\uB4E4\uC758 \uC2DC\uC2E0\uC5D0\uC11C \uAD6C\uC885\uC758 \uC5B4\uAE68\uC5D0
+        \uC788\uB294 \uBB38\uC2E0\uACFC \uB611\uAC19\uC740 \uBB38\uC2E0\uC744 \uBC1C\uACAC\uD55C
+        \uC774\uC18C\uB294 \uAC00\uC2B4\uC744 \uB450\uB4DC\uB9B0\uB2E4."
+      en: Every assassin, including Gujong, had the exact same tattoos on their shoulders,
+        which makes Yiso outraged.
+  - stage: 5
+    comments:
+    - kr: "\uC218\uC801\uB4E4\uC740 \uBC30\uB97C \uD0C0\uACE0 \uBC14\uB2E4\uC640
+        \uAC15\uC744 \uC624\uAC00\uBA70 \uB178\uB7B5\uC9C8\uC744 \uD558\uB294 \uC9D1\uB2E8\uC744
+        \uB9D0\uD569\uB2C8\uB2E4."
+      en: Pirates often target both river and coastal areas during raids.
+  - stage: 6
+    comments:
+    - kr: "\uC774\uC18C\uB294 \uC5B4\uB9B4 \uC801\uBD80\uD130 \uD640\uC5B4\uBA38\uB2C8
+        \uC2DC\uB85C\uC5D0\uAC8C \uBB34\uC608\uB97C \uC804\uC218\uBC1B\uC558\uB2E4."
+      en: Yiso's single mother, Xiro, had been training her in sword and martial
+        skills since she was a child.
+  - stage: 7
+    comments:
+    - kr: "\uC774\uC18C\uB294 \uB204\uAC00 \uC790\uC2E0\uACFC \uC5B4\uBA38\uB2C8\uB97C
+        \uC8FD\uC774\uB824\uD588\uB294\uC9C0 \uAD81\uAE08\uD568\uC744 \uCC38\uC9C0
+        \uBABB\uD558\uACE0, \uD3EC\uAD6C\uC758 \uC120\uC220\uC9D1\uC73C\uB85C \uD5A5\uD55C\uB2E4."
+      en: Yiso headed to the pub at the port under the urge to trace who killed her
+        mom.
+  - stage: 8
+    comments:
+    - kr: "\uC5B4\uB9AC\uB294 \uC8FD\uC744 \uBAA9\uC228\uC744 \uAD6C\uD574\uC900
+        \uC740\uD61C\uB97C \uAC1A\uACE0 \uC2F6\uB2E4\uACE0 \uC5B4\uBA38\uB2C8\uB97C
+        \uC124\uB4DD\uD558\uACE0, \uC774\uC18C\uC758 \uB4A4\uB97C \uB530\uB790\uB2E4.
+        \uC774\uC18C\uB294 \uC138 \uC0B4 \uC5B4\uB9B0 \uC5B4\uB9AC\uC5D0\uAC8C \uB9E4\uC77C
+        \uBB34\uC608\uB97C \uAC00\uB974\uCE5C\uB2E4."
+      en: Erry was able to follow Yiso because she convinced her mother that she
+        would repay Yiso for her help. Ever since then, Yiso has been teaching Erry
+        martial skills every day.
+  - stage: 9
+    comments:
+    - kr: "\uD328\uB9AC\uC640 \uC6D0\uC8FC\uB294 \uBCC0\uD55C \uCD9C\uC2E0\uC73C\uB85C
+        \uC5B4\uB9B4 \uC801\uC5D0 \uB0A9\uCE58\uB418\uC5B4 \uC5B4\uCA54 \uC218 \uC5C6\uC774
+        \uC218\uC801 \uC0DD\uD65C\uC744 \uD588\uC74C\uC744 \uC774\uC18C\uC5D0\uAC8C
+        \uB9D0\uD55C\uB2E4."
+      en: Felie and Wonju are from Bunhan, where they were kidnapped and forced to
+        live as pirates.
+  - stage: 10
+    comments:
+    - kr: "\uC218\uC801\uB2E8\uC758 \uB450\uBAA9\uC774 \uB41C \uC774\uC18C\uB294
+        \uC218\uC801\uB2E8\uC758 \uC774\uB984\uC744 '\uC791'\uC73C\uB85C \uC0C8\uB85C
+        \uC815\uD55C\uB2E4."
+      en: Yiso, the newly appointed boss of the pirates, renames the crew as Zack.
+  - stage: 11
+    comments:
+    - kr: "\uBD99\uC7A1\uC740 \uB300\uC624 \uC77C\uC9C0\uB97C \uD1B5\uD574 '\uD638'\uB77C\uACE0
+        \uBD88\uB9AC\uB294, \uC0C8\uB85C\uC6B4 \uC218\uC801\uC774 \uB4F1\uC7A5\uD588\uC74C\uC744
+        \uC774\uC18C\uB294 \uC54C\uAC8C \uB41C\uB2E4."
+      en: Yiso discovers that a new pirate group called "Hoh" has emerged, thanks
+        to Yilzi the Raven.
+  - stage: 12
+    comments:
+    - kr: "\uBB34\uB518\uC740 \uBAA8\uB3C4\uB77C \uC790\uAC1D\uC758 \uBC30\uD6C4\uB97C
+        \uD30C\uD5E4\uCE58\uACE0 \uC2F6\uC5B4\uD558\uC790, \uC774\uC18C\uB294 \uBD80\uD558\uB4E4\uC5D0\uAC8C
+        \uBBF8\uCD94\uD640\uC758 \uBAA8\uB3C4\uB77C \uC9C0\uBD80\uB97C \uC54C\uC544\uBCF4\uB77C\uACE0
+        \uD55C\uB2E4."
+      en: As Mudin wants to find out who is behind the assassination, Yiso asks her
+        men to locate the Modo branch in Michuhol.
+  - stage: 13
+    comments:
+    - kr: "\uBB34\uB518\uC740 \uB9C8\uD55C\uC73C\uB85C \uB3CC\uC544\uAC00\uC9C0 \uC54A\uACE0,
+        '\uC791' \uB9C8\uC744\uC5D0 \uBA38\uBB38\uB2E4. \uC774\uC18C\uB294 \uBB34\uB518\uC758
+        \uC2E0\uBD84\uC744 \uC548 \uD6C4, \uADF8\uC640 \uAC70\uB9AC\uB97C \uB454\uB2E4."
+      en: Mudin's stayed in Zack village without returning home. Yiso's kept a distance
+        from Mudin since his identity was uncovered.
+  - stage: 14
+    comments:
+    - kr: "\uBE44\uB958\uB294 \uC18C\uC11C\uB178\uC640 \uC628\uC870\uC5D0\uAC8C \uC774\uC18C
+        \uC77C\uC744 \uC774\uC57C\uAE30\uD55C\uB2E4. \uC628\uC870\uB294 \uC774\uC18C\uB97C
+        \uAD74\uBCF5\uC2DC\uD0A4\uC9C0 \uC54A\uC740 \uD615\uC744 \uB098\uBB34\uB780\uB2E4."
+      en: Biryu informed SosuNo and Onjo about Yiso, but Onjo criticized his brother
+        for not forcing Yiso to comply.
+  - stage: 15
+    comments:
+    - kr: "\uC544\uBC84\uC9C0\uC758 \uB458\uC9F8 \uBE44\uC758 \uCCAD\uBD80\uC600\uB2E4\uB294
+        \uAC83\uC744 \uC54C\uAC8C \uB41C \uBB34\uB518\uC740 \uC790\uB9AC\uC5D0 \uB215\uB294\uB2E4.
+        \uB458\uC9F8 \uBE44\uB294 \uC544\uBC84\uC9C0\uC640 \uD568\uAED8 \uD604\uC7AC
+        \uB9C8\uD55C\uC758 \uC2E4\uAD8C\uC744 \uAF49 \uC954 \uC0AC\uB78C\uC774\uC5C8\uAE30
+        \uB54C\uBB38\uC774\uC5C8\uB2E4."
+      en: Mudin is shocked to discover that the person who wants him dead is the
+        Second Queen, who holds a great deal of power in Mahan.
+  - stage: 16
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uC5D0\uAC8C \uBBF8\uCD94\uD640\uC744 \uBE7C\uC557\uACBC\uB2E4\uACE0
+        \uC0DD\uAC01\uD55C \uC218\uBAA8\uC655 \uC18C\uBAA8\uB294 \uBBF8\uCD94\uD640\uC744
+        \uB418\uCC3E\uAE30 \uC704\uD574 \uC220\uC218\uB97C \uD3BC\uCCE4\uB2E4."
+      en: Somo, the kahn of Sumo, has tried dirty tricks to get Michuhol back, for
+        he thought SosuNo had taken Michuhol away from him.
+  - stage: 17
+    comments:
+    - kr: "\uC218\uBAA8\uB97C \uBAB0\uC544\uB0B8 \uC774\uC18C\uC640 \uB450\uC2DC\uB294
+        \uB3D9\uB9F9\uC744 \uB9FA\uACE0, \uB450\uC2DC\uB294 \uC790\uC2E0\uC758 \uBCF8\uAC70\uC9C0\uB85C
+        \uB3CC\uC544\uAC04\uB2E4."
+      en: After Yiso drove Sumo out of Michuhol, she formed an alliance with Dushi.
+  - stage: 18
+    comments:
+    - kr: "\uC774\uC18C\uB294 \uC18C\uC11C\uB178\uC758 \uCCAD\uC744 \uAC70\uC808\uD55C
+        \uAC8C \uB9C8\uC74C\uC5D0 \uAC78\uB824, \uD3EC\uB85C\uB85C \uC7A1\uC740 \uC218\uBAA8
+        \uAD00\uB9AC\uB97C \uC18C\uC11C\uB178\uC5D0\uAC8C \uB118\uACA8\uC900\uB2E4."
+      en: Yiso handed over the captive official of Sumo to Queen, as she had been
+        sorry to refuse her request.
+  - stage: 19
+    comments:
+    - kr: "\uB9C8\uD55C \uC655\uC740 \uC18C\uC11C\uB178\uC5D0\uAC8C \uBC31\uC81C\uB97C
+        \uC138\uC6B0\uB294 \uB300\uC2E0, \uC790\uC2E0\uACFC \uACB0\uD63C\uD558\uC5EC
+        \uD568\uAED8 \uB9C8\uD55C\uC744 \uD0A4\uC6B0\uC790\uACE0 \uC81C\uC548\uD588\uB2E4.
+        \uD558\uC9C0\uB9CC, \uC18C\uC11C\uB178\uAC00 \uAC70\uC808\uD558\uC790, \uB9C8\uD55C
+        \uC655\uC740 \uBB34\uCC99 \uC2E4\uB9DD\uD588\uB2E4."
+      en: The king of Mahan proposed to SosuNo that she marry him before he'd give
+        Michuhol to her. However, she refused it to establish BaekJae, causing disappointment
+        to him.
+  - stage: 20
+    comments:
+    - kr: "\uB9C8\uD55C \uC655\uC774 \uC18C\uC11C\uB178\uC5D0\uAC8C \uCCAD\uD63C\uD588\uB2E4\uB294
+        \uC18C\uC2DD\uC5D0 \uBD84\uB178\uD55C \uC774\uBE44\uB294 \uC790\uC2E0\uC758
+        \uC544\uB4E4\uC744 \uC655\uC704\uC5D0 \uC62C\uB9B4 \uAC83\uC744 \uACB0\uC2EC\uD588\uB2E4."
+      en: The 2nd queen got outraged by the news that his husband had proposed to
+        SosuNo, which made her decide to crown her own son.
+  - stage: 21
+    comments:
+    - kr: "\uBB34\uB518\uC758 \uC885\uC219\uBD80 \uC720\uAC15\uC740 \uBB34\uB518\uC758
+        \uC5B4\uBA38\uB2C8\uB97C \uB9C8\uD55C \uC655\uC5D0\uAC8C \uD6C4\uAD81\uC73C\uB85C
+        \uB9DE\uC774\uD558\uB77C\uACE0 \uCD94\uCC9C\uD55C \uC0AC\uB78C\uC774\uB2E4."
+      en: 20 years ago, Yugang, a cousin of the king, recommended Mudin's mother
+        as a new concubine.
+  - stage: 22
+    comments:
+    - kr: "\uD638 \uC218\uC801\uC740 \uC774\uC18C\uAC00 \uC790\uB9AC\uB97C \uBE44\uC6E0\uB2E4\uB294
+        \uC18C\uC2DD\uC744 \uB4E3\uACE0, \uACE7\uBC14\uB85C \uC791\uB2E8\uC758 \uBCF8\uAC70\uC9C0\uB97C
+        \uC2B5\uACA9\uD55C\uB2E4."
+      en: The Hoh pirates attacked the Zack, upon receiving the news of Yiso's absence.
+  - stage: 23
+    comments:
+    - kr: "\uCD94\uBAA8\uD0DC\uC655\uC758 \uBE44\uBCF4\uB97C \uC811\uD55C \uC18C\uC11C\uB178\uB294
+        \uBC24\uB9C8\uB2E4 \uB208\uBB3C\uC744 \uD758\uB9AC\uBA70, \uC220\uC794\uC744
+        \uAE30\uC6B8\uC778\uB2E4."
+      en: Since receiving the news of the death of Chumo the Great, SosuNo sheds
+        hidden tears every night.
+  - stage: 24
+    comments:
+    - kr: "\uD638\uB294 \uBCF5\uC218\uB97C \uC704\uD574 \uB77C\uD0C0\uC774\uC758
+        \uBAA8\uB3C4\uB77C\uC640 \uC218\uBAA8\uAD6D\uC758 \uB04C\uC5B4\uB4E4\uC600\uACE0,
+        \uBAA8\uB3C4\uB77C\uC640 \uC218\uBAA8\uB294 \uC791\uB2E8 \uC9C0\uBC30 \uAD6C\uC5ED\uC744
+        \uB098\uB204\uAE30\uB85C \uD558\uACE0 \uC2B5\uACA9\uC5D0 \uCC38\uAC00\uD588\uB2E4."
+      en: Seeking revenge, Hoh signs treaties with Modo and Sumo. Hoh and Modo form
+        an alliance to divide Zack equally.
+  - stage: 25
+    comments:
+    - kr: "\uD638\uC758 \uCCAD\uD574\uAC1D\uC794\uC774 \uACA9\uD30C\uB418\uC5C8\uB2E4\uB294
+        \uC18C\uC2DD\uC774 \uC218\uBAA8 \uC5F0\uB77D\uC18C\uC640 \uB0A8\uCC3D\uD45C\uAD6D\uC5D0
+        \uB3C4\uB2EC\uD55C\uB2E4."
+      en: The news of Hotel Blue Sea's recapture quickly spread to the Sumo Liaison
+        Office and Namchang Logistics.
+  - stage: 26
+    comments:
+    - kr: "\uBE44\uB958\uB294 \uAD70\uC0AC\uB97C \uBAB0\uACE0 \uB0A8\uCC3D\uD45C\uAD6D\uC744
+        \uC810\uB839\uD558\uB824\uACE0 \uD588\uC73C\uB098, \uB0A8\uCC3D\uD45C\uAD6D\uC740
+        \uC774\uBBF8 \uD145 \uBE44\uC5B4\uC788\uC5C8\uB2E4."
+      en: Biryu tried to take over Namchang Logistics with his troops, but it was
+        already empty.
+  - stage: 27
+    comments:
+    - kr: "\uC791\uB2E8 \uC0AC\uB78C\uB4E4\uC744 \uBAA8\uB450 \uAD6C\uCD9C\uD55C
+        \uC774\uC18C\uB294 \uBCD1\uB825\uC744 \uB0B4\uC5B4\uC900 \uC18C\uC11C\uB178\uC5D0\uAC8C
+        \uAC10\uC0AC \uC778\uC0AC\uB97C \uD55C\uB2E4. \uC18C\uC11C\uB178\uB294 \uC774\uC18C\uB97C
+        \uC218\uC591\uB538\uB85C \uC0BC\uB294\uB2E4."
+      en: After rescuing all the members of Zack, Yiso accepted SosuNo's request
+        to become her daughter.
+  - stage: 28
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uAC00 \uBBF8\uCD94\uD640 \uB3D9\uBD80 \uC218\uC801
+        \uC18C\uD0D5\uC744 \uC774\uC18C\uC5D0\uAC8C \uB9E1\uAE30\uC790, \uC628\uC870\uB294
+        \uBD84\uB178\uD55C\uB2E4. \uADF8\uB294 \uC790\uC2E0\uC758 \uBD80\uB300\uB97C
+        \uC774\uB04C\uACE0 \uBBF8\uCD94\uD640 \uB3D9\uBD80\uB85C \uCD9C\uC9C4\uD55C\uB2E4."
+      en: As Onjo got upset at the news that SosuNo entrusted Yiso to wipe out the
+        pirates of eastern Michuhol, he mobilized his own troop there.
+  - stage: 29
+    comments:
+    - kr: "\uC628\uC870\uC640 \uC774\uC18C\uAC00 \uB3D9\uBD80\uC5D0\uC11C \uB2E4\uD25C\uB2E4\uB294
+        \uC18C\uC2DD\uC744 \uB4E4\uC740 \uC18C\uC11C\uB178\uB294 \uBC14\uB85C \uBE44\uB958\uB97C
+        \uD30C\uACAC\uD558\uC5EC \uB3D9\uBD80 \uC18C\uD0D5 \uC791\uC804\uC744 \uCD1D\uC9C0\uD718\uD558\uAC8C
+        \uD55C\uB2E4."
+      en: Upon hearing that Onjo and Yiso had an argument in Domu, SosuNo dispatched
+        Biryu to command the Eastern Campaign.
+  - stage: 30
+    comments:
+    - kr: "\uBE44\uB958\uB294 \uC628\uC870\uC758 \uAC70\uCE60\uC5B4\uC9C4 \uC131\uD488\uC744
+        \uB2EC\uB798\uAE30 \uC704\uD574 \uCD94\uBAA8\uD0DC\uC655\uC744 \uAE30\uB9AC\uB294
+        \uC0AC\uB2F9\uC744 \uBBF8\uCD94\uD640\uC5D0 \uC9C0\uC5B4\uB2EC\uB77C\uACE0
+        \uC18C\uC11C\uB178\uC5D0\uAC8C \uBD80\uD0C1\uD55C\uB2E4."
+      en: Biryu suggested SosuNo to build a royal shrine in honor of Chumo the Great,
+        in order to appease Onjo's loss of his father.
+  - stage: 31
+    comments:
+    - kr: "\uCD94\uBAA8\uD0DC\uC655\uC758 \uC0AC\uB2F9\uC774 \uC644\uACF5\uB418\uC790,
+        \uC18C\uC11C\uB178\uB294 \uC628\uC870\uC640 \uD568\uAED8 \uCC38\uBC30\uD55C\uB2E4."
+      en: After building the royal shrine in honor of Chumo the Great, SosuNo joined
+        Onjo in worshiping him.
+  - stage: 32
+    comments:
+    - kr: "\uCD94\uBAA8\uD0DC\uC655 \uCC38\uBC30\uB97C \uB9C8\uCE5C \uC628\uC870\uB294
+        \uC790\uC2E0\uC758 \uC9C4\uC601\uC73C\uB85C \uB3CC\uC544\uC624\uC790\uB9C8\uC790,
+        \uC218\uBAA8\uAD6D \uCCA9\uC790\uB4E4\uC744 \uCC28\uB840\uB85C \uCC98\uD615\uD55C\uB2E4."
+      en: Onjo executed the Sumo spies one after another, upon returning to his camp
+        after worshiping his father.
+  - stage: 33
+    comments:
+    - kr: "\uC218\uBAA8 \uCE78 \uC18C\uBAA8\uAC00 \uBBF8\uCD94\uD640\uC758 \uBCF8\uAC70\uC9C0\uB97C
+        \uB418\uCC3E\uAE30 \uC704\uD574 \uAD70\uB300\uB97C \uC9D5\uBC1C\uD55C\uB2E4\uB294
+        \uC18C\uC2DD\uC774 \uC18C\uC11C\uB178\uC5D0\uAC8C \uC804\uD574\uC9C4\uB2E4."
+      en: It's reported to SosuNo that Somo, Sumo kahn, is conscripting troops to
+        reclaim Michuhol's liaison office.
+  - stage: 34
+    comments:
+    - kr: "\uBBF8\uCD94\uD640\uAE4C\uC9C0 \uAD70\uC0AC\uB97C \uC774\uB04C\uACE0 \uC628
+        \uC218\uBAA8 \uCE78 \uC18C\uBAA8\uC5D0\uAC8C \uC18C\uC11C\uB178\uB294 \uD68C\uAD70\uD558\uB77C\uACE0
+        \uACBD\uACE0\uD558\uC9C0\uB9CC, \uC18C\uBAA8\uB294 \uC8FC\uC800\uC5C6\uC774
+        \uACF5\uC2B5\uC744 \uAC1C\uC2DC\uD55C\uB2E4."
+      en: As Kahn Somo had led troops to Michuhol, SosuNo warned him to retreat.
+        However, Somo did not hesitate to order attack.
+  - stage: 35
+    comments:
+    - kr: "\uBCD1\uB7C9\uC744 \uBAA8\uB450 \uBE7C\uC557\uAE34 \uC218\uBAA8 \uAD70\uC0AC\uB294
+        \uD1F4\uAC01\uD558\uACE0, \uC774\uC18C\uB294 \uC218\uBAA8 \uAD70\uB7C9\uACFC
+        \uBC30\uB97C \uBE7C\uC557\uC544 \uBBF8\uCD94\uD640\uB85C \uB3CC\uC544\uC628\uB2E4."
+      en: While Sumo forces retreated, Yiso brought the Sumo ships with food to Michuhol.
+  - stage: 36
+    comments:
+    - kr: "\uB099\uB791\uC655 \uCD5C\uACBD\uC740 \uB9C9\uB0B4\uB3D9\uC0DD \uCD5C\uD6C8\uC744
+        \uACE0\uAD6C\uB824 \uC0AC\uC2E0\uC73C\uB85C \uD30C\uACAC\uC744 \uD588\uC73C\uB098,
+        \uB3C4\uC911\uC5D0 \uD638 \uC218\uC801\uB2E8\uC5D0 \uBD99\uC7A1\uD600 \uD3EC\uB85C\uB85C
+        \uC7A1\uD600\uC788\uC5C8\uB2E4."
+      en: Choi Kyoung, the king of Nakrang, sent his youngest brother to Korea as
+        an envoy. But Hoh pirates captured him on the way.
+  - stage: 37
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uCD5C\uD6C8\uC758 \uC544\uB0B4\uC758 \uC7A5\uB840\uB97C
+        \uCE58\uB904\uC900 \uD6C4, \uCD5C\uD6C8\uACFC \uADF8\uC758 \uC544\uB4E4 \uCD5C\uBB38\uC744
+        \uB099\uB791\uAE4C\uC9C0 \uD638\uC704\uD558\uB77C\uB294 \uC784\uBB34\uB97C
+        \uC774\uC18C\uC5D0\uAC8C \uB9E1\uAE34\uB2E4."
+      en: After the funeral of Choi Hun's wife, SosuNo asked Yiso to take Choi Hun
+        and his son to Nakrang.
+  - stage: 38
+    comments:
+    - kr: "\uC0AC\uC2E0\uC73C\uB85C \uD30C\uACAC\uB418\uC5B4 \uB9C8\uD55C\uC744 \uBC29\uBB38\uD558\uB824\uB358
+        \uCD5C\uB7C9\uC758 \uACF5\uACA9\uC744 \uBC1B\uACE0, \uCD5C\uB7C9\uC758 \uC544\uB0B4\uAC00
+        \uC8FD\uC5C8\uB2E4\uB294 \uC18C\uC2DD\uC774 \uB9C8\uD55C \uC655\uC758 \uADC0\uAE4C\uC9C0
+        \uB4E4\uC5B4\uAC14\uB2E4."
+      en: The news came to the king of Mahan that the envoy of Nakrang had been attacked
+        on the way to Mahan.
+  - stage: 39
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uD654\uB824\uD55C \uC120\uBB3C\uC744 \uC900\uBE44\uD558\uACE0,
+        \uBE44\uB958\uC640 \uC628\uC870\uB294 \uBCC4\uB3D9\uB300 500\uBA85\uACFC
+        \uD568\uAED8 \uB9C8\uD55C \uC0AC\uC2E0\uB2E8\uC744 \uAFB8\uB9B0\uB2E4."
+      en: While SosuNo prepared lavish gifts, Biryu and Onjo collected 500 commandos
+        to disguise as envoy.
+  - stage: 40
+    comments:
+    - kr: "\uB9C8\uD55C\uC5D0\uC11C \uD558\uB8FB\uBC24\uC744 \uBCF4\uB0B8 \uC774\uC18C\uAC00
+        \uB5A0\uB0A0 \uC0DD\uAC01\uC744 \uD558\uC9C0 \uC54A\uC790, \uBE44\uB958\uB294
+        \uBB34\uB518\uC5D0\uAC8C \uC774\uC18C\uB97C \uBD80\uD0C1\uD558\uACE0 \uBC31\uC81C\uB85C
+        \uB3CC\uC544\uC628\uB2E4."
+      en: After spending a night with Mudin, Yiso didn't have even thought of returning.
+        Biryu asked Mudin to take care of her, and returned with all BaekJae warriors.
+  - stage: 41
+    comments:
+    - kr: "\uB9C8\uD55C\uC5D0\uC11C \uC77C\uC5B4\uB09C \uC77C\uC744 \uBCF4\uACE0
+        \uBC1B\uC740 \uC18C\uC11C\uB178\uB294 \uD55C\uCC38 \uC6C3\uC740 \uD6C4, \uBE44\uB958\uC5D0\uAC8C
+        \uC218\uAD70\uC744 \uB9E1\uAE34\uB2E4."
+      en: SosuNo burst into laughter upon a debrief about what happened in Mahan.
+        Afterwards, she tasked Biryu commanding with the navy.
+  - stage: 42
+    comments:
+    - kr: "\uC8FC\uC9C4\uC740 \uCD94\uBAA8\uD0DC\uC655\uC744 \uC12C\uAE30\uB358 \uADFC\uC704\uB300\uB85C
+        \uCD94\uBAA8\uD0DC\uC655\uC758 \uAC11\uC791\uC2A4\uB7EC\uC6B4 \uC8FD\uC74C\uC774
+        \uC720\uB9AC\uC655 \uB54C\uBB38\uC774\uB77C\uBA70 \uBC18\uB780\uC744 \uC77C\uC73C\uCF30\uC73C\uB098,
+        \uC2E4\uD328\uD588\uB2E4."
+      en: The Royal guards, including Juzin, had rebelled in Korea, suspecting King
+        Yuri, the son of Chumo, for his sudden death. However, their rebellion failed,
+        and they were forced to flee Korea.
+  - stage: 43
+    comments:
+    - kr: "\uD638\uB2E8\uC774 \uC6D0\uC0B0\uC744 \uC7A5\uC545\uD558\uACE0, \uC790\uC2E0\uC5D0\uAC8C
+        \uBC18\uB780\uC744 \uD68D\uCC45\uD588\uB2E4\uACE0 \uAE08\uD604\uC131\uC8FC\uAC00
+        \uC2E4\uD1A0\uD55C\uB2E4. \uBB34\uB518\uC774 \uB9D0\uB838\uC9C0\uB9CC, \uC774\uC18C\uB294
+        \uC6D0\uC0B0\uC73C\uB85C \uD5A5\uD55C\uB2E4."
+      en: The castellan confessed that he had planned a rebelling with Hoh corps
+        based in Mt. Won. Yiso headed there, despite Mudin asking her to stay the
+        night.
+  - stage: 44
+    comments:
+    - kr: "\uB5A0\uB098\uB824\uB294 \uC774\uC18C\uB97C \uBB34\uB518\uC740 \uBD99\uC7A1\uACE0
+        \uC2F6\uC5C8\uC9C0\uB9CC, \uC5B4\uBA38\uB2C8\uB97C \uC8FD\uC778 \uC6D0\uC218\uB97C
+        \uCC3E\uAE30 \uC704\uD574 \uB5A0\uB098\uB294 \uAC78 \uC54C\uAE30 \uB54C\uBB38\uC5D0
+        \uC774\uC18C\uB97C \uBCF4\uB0B4\uC900\uB2E4."
+      en: Mudin had to let Yiso go, because she was leaving to find the mastermind
+        who wanted to kill her and her mother.
+  - stage: 45
+    comments:
+    - kr: "\uC18C\uBD88\uB85C\uBD80\uD130 \uC6D0\uC218\uAC00 \uACE0\uAD6C\uB824 \uB3C4\uC870\uC784\uC744
+        \uC54C\uACE0, \uC774\uC18C\uB294 \uACE0\uAD6C\uB824\uB85C \uD5A5\uD55C\uB2E4.
+        \uB300\uC2E0 \uBB34\uB518\uC5D0\uAC8C \uC790\uC2E0\uC758 \uC18C\uC2DD\uC744
+        \uC54C\uB9AC\uB77C\uACE0 \uC8FC\uC9C4\uC744 \uBCF4\uB0B8\uB2E4."
+      en: Yiso decided to go to Korea after Sobul revealed the identity of her hidden
+        enemy. She sent Juzin and his squad to Mudin to inform him of this.
+  - stage: 46
+    comments:
+    - kr: "\uD604\uC7AC \uACE0\uAD6C\uB824\uB294 \uC815\uC801\uC744 \uC219\uCCAD
+        \uC911\uC774\uC5C8\uB2E4. \uC625\uC9C0\uAC00 \uC608\uC804 \uC18C\uC11C\uB178\uD30C\uB97C,
+        \uB3C4\uC870\uAC00 \uC120\uC655\uD30C\uB97C \uC0C9\uCD9C\uC744 \uB9E1\uC558\uB2E4."
+      en: King Yuri and his associates are currently purging their political opponents
+        in Korea. Okji is targeting the remaining followers of SosuNo, while Dojo
+        is going after those who supported Chumo.
+  - stage: 47
+    comments:
+    - kr: "\uB3C4\uC870\uB294 \uC7A1\uC544\uB4E4\uC778 \uC120\uC655\uD30C\uB4E4\uC744
+        \uACE0\uBB38\uD558\uC5EC \uAC00\uB2F4\uC790\uB97C \uC0C9\uCD9C\uD558\uB098,
+        \uBB34\uACE0\uD55C \uC0AC\uB78C\uB4E4\uAE4C\uC9C0 \uAC10\uC625\uC5D0 \uC7A1\uD600\uAC04\uB2E4."
+      en: For Dojo's ruthless investigations, countless innocent people were imprisoned
+        and tortured to death.
+  - stage: 48
+    comments:
+    - kr: "\uBCF4\uB9AC\uBBF8\uC131\uC5D0\uC11C \uB300\uADDC\uBAA8 \uD0C8\uC625 \uC0AC\uAC74\uC774
+        \uC77C\uC5B4\uB098\uC790, \uB3C4\uC870\uB294 \uBC30\uD6C4\uB97C \uB0A8\uBD80
+        \uB300\uAC00 \uACF5\uB9B0\uC73C\uB85C \uC9C0\uBAA9\uD55C\uB2E4."
+      en: Upon receiving the news of a prison-break in Borimi, Dojo suspected Sir
+        Gongrin as a mastermind.
+  - stage: 49
+    comments:
+    - kr: "\uC774\uC18C\uAC00 \uACE0\uAD6C\uB824\uC5D0 \uC788\uB294 \uB3D9\uC548,
+        \uC220\uCC9C\uC131\uC5D0\uC11C \uBC31\uC81C\uC5D0 \uBC18\uAE30\uB97C \uB4E0\uB2E4."
+      en: While Yiso was in Korea, there was a rebellion in the Sulchun castle of
+        BaekJae.
+  - stage: 50
+    comments:
+    - kr: "\uC744\uC74C\uC740 \uC628\uC870\uC5D0\uAC8C \uCD9C\uBCD1\uC744 \uC694\uCCAD\uD558\uB098,
+        \uC628\uC870\uB294 \uAE30\uB098\uAE34 \uACE0\uBBFC \uB05D\uC5D0 \uC704\uB840\uC131
+        \uC218\uBE44\uB97C \uBA85\uD55C\uB2E4."
+      en: Ulm suggested sending troops to rescue the Queen from Wirei, but Onjo refused
+        and instead decided to reinforce the city's defenses after careful consideration.
+  - stage: 51
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uAC00 \uC704\uD5D8\uC5D0 \uBE60\uC84C\uB2E4\uB294 \uC18C\uC2DD\uC744
+        \uB4E4\uC740 \uCD5C\uD6C8\uC740 \uC6D0\uAD70\uC744 \uD30C\uACAC\uD558\uB824\uACE0
+        \uD558\uB098, \uB099\uB791\uC655 \uCD5C\uACBD\uC774 \uD5C8\uB77D\uD558\uC9C0
+        \uC54A\uB294\uB2E4."
+      en: When news of the danger in SosuNo reached Choi Hun, he prepared to dispatch
+        his forces, but his brother, the king of Nakrang, ordered him to stop.
+  - stage: 52
+    comments:
+    - kr: "\uC220\uCC9C\uC131 \uBC18\uB780 \uC18C\uC2DD\uC744 \uB4E4\uC740 \uC18C\uBAA8\uB294
+        \uAD70\uC0AC\uB97C \uB3D9\uC6D0\uD558\uB824\uACE0 \uD558\uC9C0\uB9CC, \uC704\uB840\uC131\uC758
+        \uC628\uC870\uAC00 \uB450\uB824\uC6CC\uC11C \uAC10\uD788 \uC2DC\uB3C4\uD558\uC9C0
+        \uBABB\uD55C\uB2E4."
+      en: At the news of a rebellion in Sulchun, Somo eagerly ordered an attack,
+        but had to hold back due to Onjo's forces stationed in Wirei.
+  - stage: 53
+    comments:
+    - kr: "\uD55C\uACFC \uB3D9\uB9F9\uC740 \uAE68\uC9C0\uACE0, \uBD80\uC5EC\uB85C\uBD80\uD130
+        \uAC15\uD55C \uC555\uBC15\uC744 \uBC1B\uC740 \uACE0\uAD6C\uB824\uB294 \uBD80\uC5EC\uC758
+        \uCE68\uC785\uC744 \uB300\uBE44\uD558\uB290\uB77C \uC815\uC2E0\uC774 \uC5C6\uB2E4."
+      en: Buri, the great kingdom of the North, demanded Korea's submission, which
+        Korea rejected. Since then, Korea has been busy preparing for Buri's invasion.
+  - stage: 54
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uC628\uC870\uAC00 \uC123\uBD88\uB9AC \uBCD1\uB825\uC744
+        \uC6C0\uC9C1\uC774\uC9C0 \uC54A\uC558\uB2E4\uB294 \uC6B0\uBCF4 \uC744\uC74C\uC758
+        \uBCF4\uACE0\uC5D0 \uC628\uC870\uB97C \uD06C\uAC8C \uCE6D\uCC2C\uD55C\uB2E4."
+      en: SosuNo praised Onjo highly upon receiving Ulm's report about his calmness
+        and the forces in Wirei.
+  - stage: 55
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uC218\uBAA8\uC758 \uCE68\uC785\uC744 \uB9C9\uB294
+        \uAC83\uC744 \uCD5C\uC6B0\uC120\uACFC\uC81C\uB85C \uC120\uC815\uD558\uACE0,
+        \uC774\uC18C\uC5D0\uAC8C \uC220\uCC9C\uC131\uC744 \uB9E1\uAE34\uB2E4."
+      en: SosuNo quickly realized that dealing with Sumo's threat was of utmost importance
+        and appointed Yiso as the castellan of Sulchun.
+  - stage: 56
+    comments:
+    - kr: "\uD638\uACF5\uC774 \uB77C\uD0C0\uC774\uC640 \uC190\uC7A1\uACE0 \uC18C\uC11C\uB178\uB97C
+        \uC704\uD5D8\uC5D0 \uBE60\uB728\uB838\uB2E4\uB294 \uC99D\uAC70\uB97C \uBC1B\uC740
+        \uC774\uC18C\uB294 \uD669\uAE09\uD788 \uBBF8\uCD94\uD640\uC5D0 \uC788\uB294
+        \uC18C\uC11C\uB178\uC5D0\uAC8C \uC54C\uB9B0\uB2E4."
+      en: As soon as Yiso discovered proof that Hoh and Modo had joined forces to
+        set up SosuNo, she hurriedly informed SosuNo of the revelation.
+  - stage: 57
+    comments:
+    - kr: "\uC220\uCC9C\uC131 \uBCF4\uC218 \uC804\uC5D0 \uC218\uBAA8\uAD6D\uC774
+        \uAE09\uC2B5\uD560 \uACC4\uD68D\uC774\uB77C\uACE0 \uBCF4\uACE0\uB97C \uBC1B\uC740
+        \uC18C\uC11C\uB178\uB294 \uC628\uC870\uC5D0\uAC8C \uCD1D\uC9C0\uD718\uB97C
+        \uBA85\uB839\uD55C\uB2E4."
+      en: Upon learning that Sumo planned to raid Sulchun before completing repairs,
+        SosuNo appointed Onjo as the commander of northern BaekJae.
+  - stage: 58
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uBE44\uB958\uB97C \uB300\uBCF4\uB85C \uC784\uBA85\uD55C\uB2E4.
+        \uBE44\uB958\uB294 \uD328\uB9AC\uB97C \uBD81\uD1B5\uC81C\uC0AC\uB85C, \uC6D0\uC8FC\uB97C
+        \uB0A8\uD1B5\uC81C\uC0AC\uB85C \uC784\uBA85\uD558\uACE0, \uB450 \uC0AC\uB78C\uC5D0\uAC8C
+        \uC218\uAD70\uC744 \uB9E1\uAE34\uB2E4."
+      en: SosuNo also assigned Biryu as Prime Minister, Felie as the Northern Commodore,
+        and Wonju as the Southern Commodore.
+  - stage: 59
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uAC00 \uCD5C\uB7C9\uC744 \uC548\uC804\uD558\uAC8C \uB099\uB791\uC73C\uB85C
+        \uBCF4\uB0B4\uC790, \uCD5C\uD6C8\uC740 \uB099\uB791\uC655 \uCD5C\uACBD\uC5D0\uAC8C
+        \uBC31\uC81C\uC640 \uB3D9\uB9F9\uC744 \uB9FA\uC744 \uAC83\uC744 \uAD8C\uD55C\uB2E4."
+      en: As SosuNo safely released Choi Liang to Nakrang, Choi Hun persuaded the
+        king of Nakrang to form an alliance with BaekJae.
+  - stage: 60
+    comments:
+    - kr: "\uBB34\uB518\uC740 \uD654\uD569\uC758 \uC99D\uD45C\uB85C \uD615\uC81C\uB4E4\uC744
+        \uC0AC\uBA74\uD55C\uB2E4. \uC18C\uC11C\uB178\uB294 \uB9C8\uD55C\uC758 \uBD88\uAE38\uC774
+        \uC544\uC9C1 \uAEBC\uC9C0\uC9C0 \uC54A\uC558\uB2E4\uB294 \uC18C\uC2DD\uC744
+        \uC774\uC18C\uC5D0\uAC8C \uC804\uD55C\uB2E4."
+      en: Mudin pardoned his brothers as a token of unity. SosuNo advised Yiso that
+        the flame not be extinguished in Mahan yet.
+  - stage: 61
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uB294 \uACE4\uBBF8\uC131\uACFC \uACE4\uBBF8\uCC9C \uC9C0\uC5ED\uC744
+        \uC9C1\uC811 \uBC29\uBB38\uD558\uC5EC \uC628\uC870\uB97C \uCE58\uD558\uD55C\uB2E4."
+      en: SosuNo paid a royal visit to Gonmi to honor Onjo.
+  - stage: 62
+    comments:
+    - kr: "\uC774\uC18C\uB294 \uC804\uC11C\uAD6C\uB97C \uBCF4\uB0B4 \uC8FC\uC9C4\uC5D0\uAC8C
+        \uC790\uC2E0\uC774 \uC810\uB839\uD55C \uD638\uB2E8\uC744 \uC811\uC218\uD558\uB77C
+        \uBA85\uC744 \uB0B4\uB9B0\uB2E4."
+      en: Yiso sent a homing pigeon with an order for Juzin to occupy the Hoh base
+        she had conquered.
+  - stage: 63
+    comments:
+    - kr: "\uC11D\uAC00\uC7A5\uC8FC \uB450\uC2DC\uB294 \uD615\uC218\uC5D0\uC11C \uBAA8\uB3C4\uB77C\uC758
+        \uB77C\uD0C0\uC774\uC640 \uB098\uD758\uC9F8 \uD611\uC0C1\uC744 \uBC8C\uC774\uACE0
+        \uC788\uC5C8\uB2E4."
+      en: Dush Suk had been negotiating with Latai, Modo kahn for 4 days near the
+        Hyung river.
+  - stage: 64
+    comments:
+    - kr: "\uB77C\uD0C0\uC774\uB294 \uC11D\uAC00\uC7A5\uC758 \uD574\uC0C1 \uAD50\uC5ED\uC744
+        \uBC31\uC81C\uAC00 \uC544\uB2CC \uBAA8\uB3C4\uB77C\uB97C \uD1B5\uD574\uC11C
+        \uD560 \uAC83\uC744 \uB048\uC9C8\uAE30\uAC8C \uC694\uAD6C\uD55C\uB2E4."
+      en: Latai kept demanding that Suk conduct his maritime trade through Modo instead
+        of BaekJae.
+  - stage: 65
+    comments:
+    - kr: "\uC774\uC18C\uAC00 \uC704\uB840\uC131 \uBD80\uADFC\uC758 \uD638\uB2E8\uC744
+        \uC18C\uD0D5\uD558\uB294 \uC911\uC774\uB77C\uB294 \uBCF4\uACE0\uB97C \uBC1B\uC740
+        \uC18C\uC11C\uB178\uB294 \uC7A5\uAD70\uAC10\uC740 \uB9DE\uC73C\uB098, \uC131\uC8FC\uAC10\uC740
+        \uC544\uB2C8\uB77C\uBA70 \uD600\uB97C \uCC2C\uB2E4."
+      en: At the report that Yiso had been wiping out the inland bases of Hoh, SosuNo
+        sighed, saying, "Mere a general suits her."
+  - stage: 66
+    comments:
+    - kr: "\uC774\uC18C\uAC00 \uB9C8\uD55C\uC5D0 \uC654\uB2E4\uB294 \uC18C\uC2DD\uC744
+        \uB4E4\uC740 \uBB34\uB518\uC740 \uC774\uC18C\uB97C \uCC3E\uC544\uAC00\uB098,
+        \uC774\uBBF8 \uC774\uC18C\uAC00 \uB5A0\uB0AC\uB2E4\uB294 \uAC78 \uC54C\uACE0
+        \uC544\uC26C\uC6CC\uD55C\uB2E4."
+      en: Upon receiving the news that Yiso had come to Mahan, Mudin went to see
+        her, but only found that she had already left.
+  - stage: 67
+    comments:
+    - kr: "\uBE44\uB958\uAC00 \uB099\uB791\uC655 \uCD5C\uACBD\uC744 \uB9CC\uB098
+        \uB3D9\uB9F9\uC744 \uC131\uC0AC\uC2DC\uD0A4\uC790, \uC18C\uC11C\uB178\uB294
+        \uBB34\uCC99 \uAE30\uBED0\uD55C\uB2E4."
+      en: 'SosuNo was overjoyed that Biryu succeeded in forming an alliance with
+        Nakrang. '
+  - stage: 68
+    comments:
+    - kr: "\uC11D\uB450\uC2DC\uC640 \uD611\uC0C1\uC774 \uACB0\uB82C\uB418\uC790,
+        \uB77C\uD0C0\uC774\uB294 \uC5F0\uD569 \uC138\uB825\uB4E4\uACFC \uD568\uAED8
+        \uC5F0\uB77D\uD558\uC5EC \uC11D\uAC00\uC7A5\uC744 \uAE30\uC2B5\uD558\uB824\uACE0
+        \uD55C\uB2E4."
+      en: After negotiations with Dushi Suk broke down, Latai conspired to raid the
+        Suk manor with his allies.
+  - stage: 69
+    comments:
+    - kr: "\uC628\uC870\uC758 \uBC30\uB824\uB85C \uBD80\uB2E8\uC8FC\uB294 \uBBF8\uCD94\uD640\uC5D0\uC11C
+        \uBC30\uB97C \uD0C0\uACE0 \uACE0\uD5A5\uC73C\uB85C \uB3CC\uC544\uAC04\uB2E4."
+      en: Thanks to Onjo's discreet arrangements, the vice-lord of Hoh managed to
+        depart from Michuhol safely...
+    - kr: "\uC628\uC870\uB294 \uC774\uC18C\uC5D0\uAC8C \uB9C8\uD55C\uC5D0 \uB370\uB9AC\uACE0
+        \uAC08 \uBCD1\uB825\uC744 \uB0B4\uC5B4\uC900\uB2E4."
+      en: And he also provided Yiso with some of his cavalry to assist in Mudin's
+        rescue mission in Mahan.
+  - stage: 70
+    comments:
+    - kr: "\uB77C\uD0C0\uC774\uB294 \uB3D9\uB9F9\uB4E4\uACFC \uC11D\uAC00\uC7A5 \uAE30\uC2B5\uC744
+        \uACF5\uBAA8\uD55C\uB2E4."
+      en: Latai launched a surprise attack on Suk Manor with the support of his allies.
+    - kr: "\uD558\uC9C0\uB9CC, \uC11D\uB450\uC2DC\uB294 \uC774\uBBF8 \uACF5\uC2B5\uC744
+        \uC608\uACAC\uD558\uACE0 \uBC29\uBE44\uB97C \uD558\uACE0 \uC788\uC5C8\uB2E4."
+      en: However, Dushi Suk astutely anticipated the assault and successfully bolstered
+        the manor's defenses.
+  - stage: 71
+    comments:
+    - kr: "\uBC18\uB780 \uC18C\uC2DD\uC5D0 \uC720\uAC15\uC740 \uBCD1\uB825\uC744
+        \uC774\uB04C\uACE0 \uC655\uC131\uC73C\uB85C \uD5A5\uD588\uC9C0\uB9CC, \uB0AD\uC790\uACE1\uC5D0\uC11C
+        \uBC18\uB780\uAD70\uC5D0\uAC8C \uBC1C\uBAA9\uC744 \uBD99\uC7A1\uD614\uB2E4."
+      en: Upon hearing news of the rebellion by the three princes, Yugang rushed
+        with his troops to the royal castle, but they were ambushed and cornered
+        in the Nangja valley by the rebels.
+  - stage: 72
+    comments:
+    - kr: "\uC11D\uB450\uC2DC\uC758 \uD65C\uC57D\uC73C\uB85C \uC11D\uAC00\uC7A5\uC5D0\uC11C
+        \uB300\uD328\uD55C \uB77C\uD0C0\uC774\uB294 \uC790\uC2E0\uC758 \uC218\uC801
+        \uB3D9\uB9F9\uB4E4\uC5D0\uAC8C \uCC45\uC784\uC744 \uBB3B\uAE30 \uC2DC\uC791\uD55C\uB2E4."
+      en: After suffering a crushing defeat in the Suk manor, Latai began calling
+        his pirate allies to account.
+  - stage: 73
+    comments:
+    - kr: "\uB9C8\uD55C\uC758 \uC138 \uC655\uC790 \uBC18\uB780 \uC774\uD6C4, \uB9C8\uD55C\uACFC
+        \uBC31\uC81C\uC5D0 \uD070 \uAC00\uBB44\uC774 \uB4E4\uC5B4 \uD749\uB144\uC774
+        \uB4E4\uACE0 \uC804\uC5FC\uBCD1\uAE4C\uC9C0 \uB3CC\uC558\uB2E4."
+      en: After the 3-prince rebellion in Mahan, a drought plagued Mahan and BaekJae,
+        leading to a bad harvest and an epidemic.
+  - stage: 74
+    comments:
+    - kr: "\uB099\uB791\uC655 \uCD5C\uACBD\uC740 \uB0A8\uBD80 \uB0B4\uB780\uC744
+        \uD3C9\uC815\uD55C \uCD5C\uD6C8\uC774 \uBC31\uC81C\uC640 \uD654\uD574\uB97C
+        \uC8FC\uC7A5\uD558\uC790, \uCD5C\uD6C8\uC744 \uD30C\uC9C1\uD55C\uB2E4."
+      en: After Choi Hun suppressed the civil war in the southern Nakrang, he advised
+        the king to reconcile with BaekJae, but the king dismissed him from office.
+  - stage: 75
+    comments:
+    - kr: "\uC218\uBAA8\uC758 \uAE30\uC2B5\uC73C\uB85C \uC704\uB840\uC131\uC740 \uD3EC\uC704\uB2F9\uD55C\uB2E4."
+      en: When Sumo successfully launched a surprise attack on Wirye Castle, encircling
+        it in a bid for conquest...
+    - kr: "\uADF8\uB7EC\uC790, \uC628\uC870\uB294 \uC774\uC18C\uC5D0\uAC8C \uC6D0\uBCD1\uC744
+        \uBCF4\uB0B4\uB77C\uACE0 \uBA85\uB839\uC744 \uB0B4\uB9B0\uB2E4."
+      en: Onjo promptly issued orders to Yiso, commanding the dispatch of reinforcements.
+  - stage: 76
+    comments:
+    - kr: "\uC5F4\uD758\uC774 \uB118\uAC8C \uC704\uB840\uC131\uC744 \uD3EC\uC704\uD55C
+        \uC218\uBAA8\uAD70\uC0AC\uAC00 \uAC11\uC790\uAE30 \uCCA0\uC218\uD558\uC790,
+        \uC628\uC870\uB294 \uBA70\uCE60 \uAE30\uB2E4\uB9AC\uB2E4\uAC00 \uC815\uC608\uBCD1\uC744
+        \uC120\uBC1C\uD558\uC5EC \uB4A4\uB97C \uCAD3\uB294\uB2E4."
+      en: After the Sumo forces suddenly withdrew, giving up the siege attack for
+        10 days, Onjo waited for a few days and then led his elite troops to chase
+        them.
+  - stage: 77
+    comments:
+    - kr: "\uC218\uBAA8 \uAD70\uC0AC\uB97C \uC644\uBCBD\uD788 \uBB3C\uB9AC\uCE58\uC790,
+        \uBE44\uB958\uB294 \uC774\uC18C\uC5D0\uAC8C \uB2E4\uC2DC \uC218\uAD70\uC744
+        \uB9E1\uAE34\uB2E4."
+      en: After defeating Sumo's attack perfectly, Biryu entrusted the navy to Yiso
+        again.
+  - stage: 78
+    comments:
+    - kr: "\uD749\uB144 \uD53C\uD574 \uB300\uCC45\uC73C\uB85C \uB0A8\uC6D4\uACFC
+        \uC300 \uAD50\uC5ED\uC744 \uC131\uC0AC\uC2DC\uD0A8 \uC18C\uC11C\uB178\uB294
+        \uC774\uC18C\uC5D0\uAC8C \uAD50\uC5ED\uB85C \uC548\uC804 \uD655\uBCF4\uB97C
+        \uBD80\uD0C1\uD55C\uB2E4."
+      en: After concluding a rice trading agreement with Vietnam, SosuNo asked Yiso
+        to ensure safety along the trade route.
+  - stage: 79
+    comments:
+    - kr: "\uB0A8\uC6D4\uACFC \uBC31\uC81C\uC758 \uBC14\uB2F7\uAE38\uC5D0\uC11C \uD65C\uB3D9
+        \uC911\uC778 \uC218\uC801\uB4E4\uC740 \uBAA8\uB3C4\uB77C\uB97C \uD3EC\uD568\uD55C
+        \uCD1D 9\uAC1C\uB098 \uB41C\uB2E4."
+      en: There are 9 pirates corps, acting around the sea route between BaekJae
+        and Vietnam.
+  - stage: 80
+    comments:
+    - kr: "\uC774\uC18C\uB294 \uC300 \uAD50\uC5ED\uAE38\uC758 \uC548\uC804 \uD655\uBCF4\uB97C
+        \uC704\uD574 \uB0A8\uD574\uC640 \uB3D9\uD574\uC758 \uC218\uC801\uB2E8 9\uAC1C\uB97C
+        \uD3C9\uC815\uD558\uAE30\uB85C \uACB0\uC815\uD55C\uB2E4."
+      en: Yiso announced that the BaekJae Navy would subjugate 9 pirates to ensure
+        the safety of the rice trade route.
+  - stage: 81
+    comments:
+    - kr: "\uC2ED\uB144 \uC804, \uB77C\uD0C0\uC774\uC758 \uD611\uBC15\uC5D0 \uC5B4\uCA54
+        \uC218 \uC5C6\uC774 \uB77C\uD0C0\uC774\uC758 \uC870\uCE74\uC640 \uACB0\uD63C\uD558\uAC8C
+        \uB41C \uC18C\uB098 \uCE78\uC740 \uBAB0\uB798 \uC5B4\uB9AC \uBAA8\uB140\uB97C
+        \uD0C8\uCD9C\uC2DC\uCF30\uB2E4."
+      en: 10 years ago, SohNa kahn was forced to marry one of Latai's niece under
+        the threat of Modo. He secretly made Erry and her mother escape.
+  - stage: 82
+    comments:
+    - kr: "\uBB34\uB518\uC744 \uB0A9\uCE58\uD558\uB824\uB358 \uD638\uB2E8 \uBD80\uB2E8\uC8FC\uB294
+        \uBD99\uC7A1\uD600 \uB9C8\uD55C\uC73C\uB85C \uC555\uC1A1\uB418\uC5C8\uACE0,
+        \uC0C8\uB85C\uC6B4 \uB9C8\uD55C \uC655 \uC720\uAC15\uC740 \uD638\uACF5\uC744
+        \uD638\uCD9C\uD558\uC600\uB2E4."
+      en: As the Hoh vice-lord was taken to Mahan for attempting to kidnap Mudin.
+        Yugang, the new king of Mahan, summoned Hujing, the lord of Hoh.
+  - stage: 83
+    comments:
+    - kr: "\uD638\uACF5\uC740 \uB0A8\uD574 \uC218\uC801\uB4E4\uC774 \uD1A0\uBC8C\uB418\uACE0
+        \uC788\uB2E4\uB294 \uC18C\uC2DD\uC744 \uB4E4\uC5C8\uC73C\uB098, \uB538\uC744
+        \uAD6C\uD558\uAE30 \uC704\uD574 \uB9C8\uD55C\uC73C\uB85C \uD5A5\uD55C\uB2E4."
+      en: The lord of Hoh got debriefed that the 2 pirate corps were being exterminated,
+        but he headed to Mahan to save his daughter.
+  - stage: 84
+    comments:
+    - kr: "\uC628\uC870\uAC00 \uB099\uB791\uACFC \uC778\uC811\uD55C \uC9C0\uC5ED\uC5D0
+        \uB9C8\uC218\uC131\uC744 \uC313\uACE0 \uBCD1\uC0B0\uC5D0 \uBAA9\uCC45\uC744
+        \uC138\uC6B0\uC790, \uB099\uB791\uACFC \uB3D9\uB9F9\uC774 \uAE68\uC84C\uB2E4."
+      en: As Onjo built the Masu castle and set up the wooden fence at Mt. Soldier,
+        Nankrang declared that the alliance be broken.
+  - stage: 85
+    comments:
+    - kr: "\uACE0\uAD6C\uB824\uAC00 \uC120\uBE44 \uC815\uBC8C\uC744 \uC131\uACF5\uD558\uC790,
+        \uC218\uBAA8 \uCE78 \uC18C\uBAA8\uB294 \uBC31\uC81C\uB97C \uACF5\uB7B5\uD558\uAE30
+        \uC704\uD574 \uACE0\uAD6C\uB824\uC5D0\uC11C \uAD70\uB7C9\uC744 \uBE4C\uB9B0\uB2E4."
+      en: When Korea triumphed over Xianbie, Somo, the Sumo kahn, borrowed food from
+        Korea for a war with BaekJae.
+  - stage: 86
+    comments:
+    - kr: "\uC18C\uBAA8\uB294 \uACE4\uBBF8\uCC9C \uC77C\uB300\uB97C \uD0C8\uD658\uD558\uAE30
+        \uC704\uD574 \uAE30\uC2B5 \uC791\uC804\uC744 \uD3BC\uCE58\uB098, \uC628\uC870\uAC00
+        \uC815\uC608 \uAE30\uBCD1\uC744 \uC9C1\uC811 \uB04C\uACE0 \uC18C\uBAA8\uB97C
+        \uBB3C\uB9AC\uCE5C\uB2E4."
+      en: Somo launched a surprise attack to recapture all the areas of Gonmi Castle,
+        but Onjo led his elite cavalry and defeated Somo.
+  - stage: 87
+    comments:
+    - kr: "\uC218\uBAA8\uB97C \uBB3C\uB9AC\uCE5C\uC9C0 \uC5BC\uB9C8\uB418\uC9C0 \uC54A\uC544,
+        \uB099\uB791\uAD6D \uCD5C\uACBD\uC774 \uBCD1\uC0B0\uC744 \uAE30\uC2B5\uD558\uC5EC
+        \uC810\uB839\uD55C\uB2E4."
+      en: Not long after Onjo's defeat of Sumo's invasion, Choi Kyoung, the king
+        of Nakrang, raided Mt. Soldier and occupied the fortress of BaekJae.
+  - stage: 88
+    comments:
+    - kr: "\uC628\uC870\uB294 \uB3C5\uC0B0\uACFC \uAD6C\uCC9C \uB450 \uACF3\uC5D0
+        \uBAA9\uCC45\uC744 \uC138\uC6B0\uACE0, \uB099\uB791\uC73C\uB85C \uAC00\uB294
+        \uB3C4\uB85C\uB97C \uCC28\uB2E8\uD588\uB2E4."
+      en: Onjo strategically placed wooden fences at two key locations, Mt. Bald
+        and the Dog Stream, effectively obstructing the main roads to Nakrang.
+  - stage: 89
+    comments:
+    - kr: "\uBE44\uB958\uB294 \uB099\uB791\uACFC \uD654\uD574\uB97C, \uC628\uC870\uB294
+        \uC804\uC7C1\uC744 \uC8FC\uC7A5\uD558\uB2E4\uAC00 \uB450 \uC0AC\uB78C\uC740
+        \uC2E0\uD558\uB4E4 \uC55E\uC5D0\uC11C \uD06C\uAC8C \uB2E4\uD25C\uB2E4. "
+      en: "Biryu and Onjo found themselves in a heated debate before their subjects
+        \u2013 a classic case of 'Should we fight or should we make up?' with Nakrang."
+  - stage: 90
+    comments:
+    - kr: "\uBD80\uC5EC\uC758 \uB300\uC18C\uC655\uC740 \uC804\uBC29\uC704\uC801\uC778
+        \uACE0\uAD6C\uB824 \uC815\uBC8C\uC744 \uACC4\uD68D\uD55C\uB2E4."
+      en: "Daeso, the king of Buri, cooked up quite the plan \u2013 a grand takeover
+        of Korea."
+    - kr: "\uADF8 \uC77C\uD658\uC73C\uB85C \uBC31\uC81C\uC5D0 \uC0AC\uC2E0\uC744
+        \uBCF4\uB0B4 \uB3D9\uCC38 \uC758\uC0AC\uB97C \uD0C0\uC9C4\uD55C\uB2E4."
+      en: And to see if Biryu was game for this royal escapade, he sent an envoy
+        to BaekJae.
+  - stage: 91
+    comments:
+    - kr: "\uC218\uBAA8\uC640 \uB099\uB791 \uBB38\uC81C\uB97C \uBB34\uC2DC\uD560
+        \uC218 \uC5C6\uB294 \uBE44\uB958\uB294..."
+      en: In the midst of grappling with potential conflicts involving Sumo and Nakrang,
+    - kr: "\uACE0\uAD6C\uB824 \uC815\uBC8C\uC5D0 \uCC38\uAC00\uD558\uC9C0 \uC54A\uAE30\uB85C
+        \uACB0\uC815\uD558\uACE0, \uC774\uB97C \uBD80\uC5EC\uC5D0 \uD1B5\uBCF4\uD55C\uB2E4."
+      en: ... Biryu ultimately decided to abstain from Buri's Korea invasion.
+  - stage: 92
+    comments:
+    - kr: "\uC628\uC870\uB294 \uBD80\uC5EC\uC640 \uD568\uAED8 \uACE0\uAD6C\uB824\uB97C
+        \uCE68\uACF5\uD558\uAE30 \uC704\uD574 \uC704\uB840\uC131\uC5D0\uC11C \uC740\uBC00\uD788
+        \uC804\uC7C1\uC744 \uC900\uBE44\uD55C\uB2E4."
+      en: In Wirei, Onjo has been secretly preparing for war to join Buri's invasion
+        of Korea.
+  - stage: 93
+    comments:
+    - kr: "\uD638\uACF5\uC740 \uC774\uC18C\uC640 \uAD50\uC5ED \uB3D9\uB9F9\uC744
+        \uB9FA\uACE0 \uC11C\uB77C\uBC8C\uB85C \uB3CC\uC544\uAC00\uACE0..."
+      en: Hujing, Lord Hoh, had finally signed a trade alliance with Yiso and returned
+        to Seraburl.
+    - kr: "\uD638\uB2E8\uC740 \uB4DC\uB514\uC5B4 \uC218\uC801\uC5D0\uC11C \uC11C\uB77C\uBC8C
+        \uC218\uAD70\uC73C\uB85C \uC7AC\uD3B8\uB41C\uB2E4."
+      en: He was able to reorganize his corps with the Seraburl navy, at last.
+  - stage: 94
+    comments:
+    - kr: "\uC744\uC74C\uC740 \uC0AC\uCD0C\uB204\uB098\uC778 \uC18C\uC11C\uB178\uB97C
+        \uC808\uB300 \uB2E4\uCE58\uAC8C \uD558\uC9C0 \uC54A\uACA0\uB2E4\uB294 \uC57D\uC18D\uC744
+        \uBC1B\uACE0, \uBC18\uB780\uC5D0 \uCC38\uAC00\uD588\uB2E4."
+      en: Ulm joined Onjo's rebellion, under the condition that no harm be done to
+        SosuNo, his cousin.
+  - stage: 95
+    comments:
+    - kr: "\uD328\uB9AC\uC640 \uC6D0\uC8FC\uC758 \uD76C\uC0DD\uC5D0\uB3C4 \uBE44\uB958\uAC00
+        \uC704\uB840\uC131\uC5D0 \uBD99\uC7A1\uD614\uB2E4\uB294 \uC18C\uC2DD\uC744
+        \uC811\uD558\uC790..."
+      en: Upon hearing the news of Biryu's capture despite the sacrifice of Felie
+        and Wonju...
+    - kr: "\uC18C\uC11C\uB178\uB294 \uC790\uC2E0\uC758 5\uD638\uC7A5\uACFC \uD568\uAED8
+        \uC704\uB840\uC131\uC5D0 \uC7A0\uC785\uD588\uB2E4."
+      en: SosuNo tried to infiltrate the Wirei castle with her 5 old generals, known
+        as the '5 tigers'.
+  - stage: 96
+    comments:
+    - kr: "\uC628\uC870\uB294 \uC18C\uC11C\uB178\uAC00 \uC704\uB840\uC131\uC5D0 \uC7A0\uC785\uD588\uB2E4\uB294
+        \uCCA9\uBCF4\uB97C \uBBF8\uB9AC \uBC1B\uACE0, \uC18C\uC11C\uB178\uC640 5\uD638\uC7A5\uC744
+        \uBAA8\uB450 \uCCB4\uD3EC\uD588\uB2E4."
+      en: As Onjo foresaw SosuNo's actions, he managed to apprehend her along with
+        her 5 tiger generals in Wirei.
+  - stage: 97
+    comments:
+    - kr: "\uB05D\uAE4C\uC9C0 \uC800\uD56D\uD558\uB358 \uBE44\uB958\uB294 \uD06C\uAC8C
+        \uBD80\uC0C1\uC744 \uC785\uACE0 \uC790\uB9AC\uC5D0 \uB204\uC6E0\uB2E4\uAC00..."
+      en: Biryu's resistance came to an end due to his grievous wounds...
+    - kr: "\uC11C\uB978 \uBC88\uC9F8 \uD0DC\uC591\uACFC \uD568\uAED8 \uB9C8\uCE68\uB0B4
+        \uC800\uBB3C\uACE0 \uB9D0\uC558\uB2E4."
+      en: ...as the sun set for the thirtieth time since his confinement.
+  - stage: 98
+    comments:
+    - kr: "\uC628\uC870\uB294 \uC608\uC0C1\uCE58 \uBABB\uD55C \uD615\uC758 \uC8FD\uC74C\uC744
+        \uCC98\uC808\uD558\uAC8C \uC2AC\uD37C\uD560 \uD2C8\uC870\uCC28 \uC5C6\uC5C8\uB2E4."
+      en: Onjo's ambitions could be shattered by Biryu's demise...
+    - kr: "\uC120\uC704\uC5D0 \uC2E4\uD328\uD558\uBA74, \uADF8\uC758 \uC57C\uB9DD\uB3C4
+        \uD55C\uB0B1 \uBB3C\uAC70\uD488\uC774 \uB420 \uC218 \uBC16\uC5D0 \uC5C6\uC5C8\uAE30
+        \uB54C\uBB38\uC774\uC5C8\uB2E4."
+      en: ...leaving him unable to secure the crown he had aimed to obtain from his
+        brother's living hand.
+  - stage: 99
+    comments:
+    - kr: "\uC720\uD3D0\uB41C \uC18C\uC11C\uB178\uC758 \uB299\uC740 \uBAA8\uC2B5\uC5D0
+        \uC774\uC18C\uB294 \uB208\uBB3C\uC744 \uD130\uB728\uB9AC\uACE0..."
+      en: Yiso felt sorrow and guilt at finding SosuNo in jail, looking much older
+        than she used to...
+    - kr: "\uC18C\uC11C\uB178\uB294 \uC774\uC18C\uC758 \uB4F1\uC744 \uC4F0\uB2E4\uB4EC\uB294\uB2E4."
+      en: And SosuNo hugged Yiso and patted her on the back.
+  - stage: 100
+    comments:
+    - kr: "\uC18C\uC11C\uB178\uC758 \uC778\uC815\uACFC \uACF5\uD45C\uB85C \uC628\uC870\uB294
+        \uC21C\uC870\uB86D\uAC8C \uBC31\uC81C\uC758 \uC655\uC774 \uB418\uC5B4 \uBC31\uC81C
+        \uC804\uC5ED\uC744 \uB5A0\uB9E1\uB294\uB2E4."
+      en: With SosuNo's formal recognition, Onjo ascended to the throne of BaekJae
+        amidst the resounding applause of the people.
+    - kr: "\uC774\uC18C\uB294 \uBC31\uC81C \uC218\uAD70 \uCD1D\uC0AC\uB839\uAD00
+        \uACB8 \uC0C1\uC88C\uD3C9\uC774 \uB418\uC5B4 \uBC31\uC81C\uC758 \uBC14\uB2E4\uB97C
+        \uCC45\uC784\uC9C4\uB2E4."
+      en: Onjo, embracing his newfound responsibility, appointed Yiso as both the
+        new Prime Minister and Admiral of the realm.

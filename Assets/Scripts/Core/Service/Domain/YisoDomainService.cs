@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Core.Domain.Cabinet;
 using Core.Domain.Data;
+using Core.Domain.Data.Checkpoint;
 using Core.Domain.Dialogue;
 using Core.Domain.Direction;
 using Core.Domain.Locale;
@@ -25,6 +26,7 @@ namespace Core.Service.Domain {
         private readonly Dictionary<int, YisoGameDirection> directions;
         private readonly Dictionary<int, YisoStageFlow> flows;
         private readonly Dictionary<int, YisoSkill> skills;
+        private readonly Dictionary<int, YisoCheckpointSO> checkpoints;
         
 
         private readonly YisoStoryLoadingComments storyLoadingComments;
@@ -45,6 +47,7 @@ namespace Core.Service.Domain {
             directions = settings.directionPackSO.ToDictionary();
             flows = settings.flowsSO.CreateDictionary();
             skills = settings.skillPackSO.CreateDictionary();
+            checkpoints = settings.checkpointPackSO.ToDictionary();
             
             storyLoadingComments = settings.storyLoadingCommentsSO.CreateComments();
 
@@ -94,6 +97,8 @@ namespace Core.Service.Domain {
 
         public IReadOnlyDictionary<int, YisoSkill> GetSkills() => skills;
 
+        public bool TryGetCheckpointSO(int id, out YisoCheckpointSO so) => checkpoints.TryGetValue(id, out so);
+
         #endregion
         
         #region NORMAL_DATA
@@ -119,6 +124,7 @@ namespace Core.Service.Domain {
             [Title("Story Loading Comments")] public YisoStoryLoadingCommentsSO storyLoadingCommentsSO;
             [Title("Stage Flow Comments")] public YisoStageFlowsSO flowsSO;
             [Title("Skills")] public YisoSkillPackSO skillPackSO;
+            [Title("Checkpoints")] public YisoCheckpointPackSO checkpointPackSO;
             [Title("Constant Sprites")] public Sprite moneySprite;
             public Sprite expSprite;
             public Sprite combatRatingSprite;

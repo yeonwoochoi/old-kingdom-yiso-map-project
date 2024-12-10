@@ -1,13 +1,16 @@
 ﻿using System.Collections.Generic;
 using Character.Core;
 using Core.Behaviour;
-using Manager_Temp_;
+using Core.Domain.Data.Checkpoint;
+using Core.Service;
+using Core.Service.Character;
+using Manager;
 using UnityEngine;
 
 namespace Spawn {
     [AddComponentMenu("Yiso/Spawn/Checkpoint")]
     public class YisoCharacterCheckPoint : RunIBehaviour {
-        public int id;
+        public YisoCheckpointSO checkpointSO;
         public Transform spawnPosition;
         public bool forceAssignation = false;
         public YisoCharacter.FacingDirections facingDirection = YisoCharacter.FacingDirections.East;
@@ -15,7 +18,9 @@ namespace Spawn {
 
         protected List<IRespawnable> listeners;
 
+        public int CheckPointId => checkpointSO == null ? -1 : checkpointSO.id;
         public Vector2 SpawnPosition => spawnPosition == null ? transform.position : spawnPosition.transform.position;
+        public IYisoCharacterService CharacterService => YisoServiceProvider.Instance.Get<IYisoCharacterService>();
 
         protected override void Awake() {
             listeners = new List<IRespawnable>();
@@ -41,6 +46,11 @@ namespace Spawn {
 
         protected virtual void OnTriggerEnter2D(Collider2D collider) {
             TriggerEnter(collider.gameObject);
+        }
+
+        private void SaveData() {
+            var player = YisoServiceProvider.Instance.Get<IYisoCharacterService>().GetPlayer();
+            player.GameModule.SetCheckpointId(CheckPointId);
         }
 
         protected virtual void TriggerEnter(GameObject collider) {

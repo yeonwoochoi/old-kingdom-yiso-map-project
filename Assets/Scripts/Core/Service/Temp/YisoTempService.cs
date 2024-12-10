@@ -1,4 +1,4 @@
-using Manager_Temp_;
+using Manager;
 
 namespace Core.Service.Temp {
     public class YisoTempService : IYisoTempService {

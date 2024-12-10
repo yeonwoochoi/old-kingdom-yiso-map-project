@@ -9,7 +9,7 @@ using Core.Service.UI;
 using Cutscene.Scripts.Control.Cutscene;
 using Cutscene.Scripts.Control.Cutscene.Trigger;
 using DG.Tweening;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Event;
 using Tools.StateMachine;

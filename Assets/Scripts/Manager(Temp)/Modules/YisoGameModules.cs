@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     [Serializable]
     public class YisoGameModules {
         #region Settings

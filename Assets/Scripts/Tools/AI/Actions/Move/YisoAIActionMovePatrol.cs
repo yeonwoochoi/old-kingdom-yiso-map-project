@@ -2,7 +2,7 @@
 using Character.Ability;
 using Character.Core;
 using Character.Health;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Movement.PathMovement;
 using UnityEngine;

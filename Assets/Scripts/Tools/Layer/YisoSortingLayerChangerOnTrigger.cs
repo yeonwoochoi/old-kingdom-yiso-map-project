@@ -1,6 +1,6 @@
 ﻿using Character.Core;
 using Core.Behaviour;
-using Manager_Temp_;
+using Manager;
 using UnityEngine;
 using UnityEngine.Rendering;
 

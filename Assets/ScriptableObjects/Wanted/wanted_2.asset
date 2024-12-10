@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85ae18a11c4444eaf2cca55e868f365, type: 3}
+  m_Name: wanted_2
+  m_EditorClassIdentifier: 
+  id: 2
+  targetImage: {fileID: 21300000, guid: c5c74185b3c480f459b4f9e8cd572c01, type: 3}
+  targetName:
+    kr: "\uC740\uC728 \uC544\uB77C"
+    en: 
+  targetDescription:
+    kr: "\uBC31\uC81C\uC758 \uACE0\uC704 \uAD00\uB8CC\uB85C \uC704\uC7A5\uD558\uC5EC
+      \uBC31\uC131\uB4E4\uC744 \uC18D\uC774\uACE0 \uC7AC\uC0B0\uC744 \uAC08\uCDE8\uD55C
+      \uC0AC\uAE30\uAFBC. \uB2E4\uC218\uC758 \uD53C\uD574\uC790\uAC00 \uBC1C\uC0DD\uD558\uC600\uC73C\uBA70,
+      \uD604\uC7AC \uC911\uBD80 \uC0B0\uC545\uC9C0\uB300\uC5D0\uC11C \uC740\uC2E0
+      \uC911\uC774\uB77C\uB294 \uC18C\uBB38\uC774 \uC788\uC74C"
+    en: 
+  bounty: 2500
+  rewardItems:
+  - itemSO: {fileID: 11400000, guid: 3513d74bb219549ca8d7af481694c9f9, type: 2}
+    count: 1
+  - itemSO: {fileID: 11400000, guid: 0d18804f3528d45ed9b5efe95b0a0dae, type: 2}
+    count: 10
+  - itemSO: {fileID: 11400000, guid: a75b617aae9eb492ea934f33c28c6b9e, type: 2}
+    count: 20

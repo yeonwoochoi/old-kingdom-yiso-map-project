@@ -1,6 +1,4 @@
-using System;
 using Character.Core;
-using Controller.Map;
 using Core.Domain.Actor.Ally;
 using Core.Domain.Actor.Enemy;
 using Core.Domain.Actor.Erry;
@@ -11,8 +9,8 @@ using Core.Domain.Quest;
 using Core.Service;
 using Core.Service.Character;
 using Core.Service.Temp;
-using Manager_Temp_;
-using Manager_Temp_.Modules;
+using Manager;
+using Manager.Modules;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

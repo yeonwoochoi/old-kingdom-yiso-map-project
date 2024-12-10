@@ -9,7 +9,7 @@ using UnityEngine;
 using Utils;
 using Utils.Beagle;
 
-namespace Manager_Temp_.Modules {
+namespace Manager.Modules {
     public struct DamageEffectEvent {
         public Vector3 position;
         public float damage;

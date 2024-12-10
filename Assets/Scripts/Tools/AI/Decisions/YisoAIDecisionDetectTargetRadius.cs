@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Character.Ability;
 using Character.Core;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Utils;
 using Utils.Beagle;
 
 namespace Tools.AI.Decisions {

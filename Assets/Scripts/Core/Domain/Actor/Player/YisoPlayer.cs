@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Core.Domain.Actor.Attack;
 using Core.Domain.Actor.Enemy;
 using Core.Domain.Actor.Erry;
+using Core.Domain.Actor.Player.Modules.Game;
 using Core.Domain.Actor.Player.Modules.Inventory.V2;
 using Core.Domain.Actor.Player.Modules.Pet;
 using Core.Domain.Actor.Player.Modules.Quest;
@@ -33,6 +34,8 @@ namespace Core.Domain.Actor.Player {
         public YisoPlayerPetModule PetModule { get; }
         
         public YisoPlayerSkillModule SkillModule { get; }
+        
+        public YisoPlayerGameModule GameModule { get; }
 
         #endregion
 
@@ -46,6 +49,7 @@ namespace Core.Domain.Actor.Player {
             QuestModule = new YisoPlayerQuestModule(this, quests);
             PetModule = new YisoPlayerPetModule(this);
             SkillModule = new YisoPlayerSkillModule(this);
+            GameModule = new YisoPlayerGameModule(this);
         }
 
         public void ResetData(IReadOnlyList<YisoQuest> quests) {
@@ -53,6 +57,7 @@ namespace Core.Domain.Actor.Player {
             QuestModule.ResetData(quests);
             PetModule.ResetData();
             SkillModule.ResetData();
+            GameModule.ResetData();
         }
 
         public int GetHp() => StatModule.Hp;
@@ -127,6 +132,8 @@ namespace Core.Domain.Actor.Player {
             StatModule.SaveData(ref data);
             SkillModule.SaveData(ref data);
             UIModule.SaveData(ref data);
+            PetModule.SaveData(ref data);
+            GameModule.SaveData(ref data);
         }
 
         public void LoadData(YisoPlayerData data, YisoPlayerInventoryItemsSO inventoryItemsSO = null) {
@@ -135,6 +142,7 @@ namespace Core.Domain.Actor.Player {
             StatModule.LoadData(data);
             SkillModule.LoadData(data);
             UIModule.LoadData(data);
+            GameModule.LoadData(data);
             StatModule.CalculateCombatRatingAllWeapons();
         }
 

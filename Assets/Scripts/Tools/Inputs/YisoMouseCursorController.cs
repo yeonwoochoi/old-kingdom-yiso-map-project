@@ -1,6 +1,6 @@
 using Controller.UI;
 using Core.Behaviour;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Utils.Beagle;

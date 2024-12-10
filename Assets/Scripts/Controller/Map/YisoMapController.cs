@@ -8,7 +8,7 @@ using Core.Domain.Map;
 using Core.Logger;
 using Core.Service;
 using Core.Service.Log;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Spawn;
 using Tools.Event;
@@ -37,36 +37,66 @@ namespace Controller.Map {
         }
     }
 
-    [Serializable]
-    public class CutsceneTriggerMapper {
-        public int gameModeId;
-        public GameObject cutsceneTrigger;
-    }
-
     [AddComponentMenu("Yiso/Controller/Map/Map Controller")]
     public class YisoMapController : RunIBehaviour, IYisoEventListener<YisoInGameEvent> {
-        [Title("Zones")] public List<YisoNavigationZoneController> navigationZones;
+        public List<YisoMapDataSetter> mapDataSetters;
 
-        [ShowIf("@navigationZones.Count == 0")]
+        [ShowIf("@mapDataSetters.Count == 0")]
         public MapBounds defaultMapBounds;
-
-        [Title("Camera")] public PolygonCollider2D[] cameraBoundaries;
-
-        [Title("Checkpoints")] public YisoCharacterCheckPoint[] checkPoints;
-
-        [Title("Cutscenes")] public CutsceneTriggerMapper[] stageCutsceneTriggers;
-        public CutsceneTriggerMapper[] bountyCutsceneTriggers;
+        
+        [Title("Debug")]
+        public bool testMode = false;
+        
         public YisoCharacterCheckPoint CurrentCheckPoint => currentCheckPoint;
         public YisoLogger LogService => YisoServiceProvider.Instance.Get<IYisoLogService>().GetLogger<YisoMapController>();
 
         public YisoMap CurrentMap { get; protected set; }
         public PolygonCollider2D CurrentCameraBoundary { get; protected set; }
+        
+        public List<YisoNavigationZoneController> AllNavigationZones { get; } = new();
+        public List<PolygonCollider2D> AllCameraBoundaries { get; } = new();
+        public List<YisoCharacterCheckPoint> AllCheckPoints { get; } = new();
+        public List<CutsceneTriggerMapper> AllStageCutsceneTriggers { get; } = new();
+        public List<CutsceneTriggerMapper> AllBountyCutsceneTriggers { get; } = new();
 
         protected List<YisoCharacterCheckPoint> currentCheckPoints;
         protected YisoCharacterCheckPoint initialCheckPoint;
         protected YisoCharacterCheckPoint currentCheckPoint; // 그 외 respawn시 사용됨
 
+        #region PreInitialization (Map Data)
+
+        private void CollectAllMapData() {
+            if (mapDataSetters == null || mapDataSetters.Count == 0) {
+                mapDataSetters = gameObject.GetComponentsInChildren<YisoMapDataSetter>().ToList();
+            }
+
+            foreach (var mapDataSetter in mapDataSetters) {
+                mapDataSetter.SetMapData(this);
+            }
+
+            LogService.Debug($"[YisoMapController.CollectAllMapData] Collected All Map Data (Count: {mapDataSetters.Count}).");
+        }
+
+        #endregion
+
         #region Initialization
+
+        protected override void Start() {
+            base.Start();
+            if (testMode) {
+                // Collect All Map Data
+                CollectAllMapData();
+                
+                // Set Check Points
+                InitializeCheckPoints(false);
+
+                // Set Camera Boundary
+                InitializeCameraBoundaries();
+
+                // Initialize Navigation Zones
+                InitializeNavigationZones();
+            }
+        }
 
         /// <summary>
         /// Initialization (매번 맵이 바뀔때 마다 호출됨)
@@ -76,6 +106,9 @@ namespace Controller.Map {
         /// <param name="gameModeId"></param>
         /// <param name="relevantIds"></param>
         public virtual void Initialization(YisoMap map, int gameModeId, bool isInitialLoad, int saveCheckpointId, List<int> relevantIds = null) {
+            // Collect All Map Data
+            CollectAllMapData();
+            
             // Set Map
             CurrentMap = map;
             LogService.Debug($"[YisoMapController.Initialization] Set current map (Id : {CurrentMap.Id}).");
@@ -127,12 +160,12 @@ namespace Controller.Map {
             relevantIds.Add(gameModeId);
             switch (GameManager.Instance.CurrentGameMode) {
                 case GameManager.GameMode.Story:
-                    ActivateStageTriggers(stageCutsceneTriggers, true, relevantIds);
-                    ActivateStageTriggers(bountyCutsceneTriggers, false, relevantIds);
+                    ActivateStageTriggers(AllStageCutsceneTriggers, true, relevantIds);
+                    ActivateStageTriggers(AllBountyCutsceneTriggers, false, relevantIds);
                     break;
                 case GameManager.GameMode.Bounty:
-                    ActivateStageTriggers(stageCutsceneTriggers, false, relevantIds);
-                    ActivateStageTriggers(bountyCutsceneTriggers, true, relevantIds);
+                    ActivateStageTriggers(AllStageCutsceneTriggers, false, relevantIds);
+                    ActivateStageTriggers(AllBountyCutsceneTriggers, true, relevantIds);
                     break;
             }
 
@@ -140,12 +173,12 @@ namespace Controller.Map {
         }
 
         protected virtual void InitializeCheckPoints(bool useSavedCheckpoint, int saveCheckPointId = -1) {
-            if (checkPoints == null || checkPoints.Length == 0) {
+            if (AllCheckPoints == null || AllCheckPoints.Count == 0) {
                 LogService.Warn("[YisoMapController.InitializeCheckPoints] No checkpoints found for this map.");
                 return;
             }
             
-            currentCheckPoints = checkPoints.OrderBy(o => o.checkPointOrder).ToList();
+            currentCheckPoints = AllCheckPoints.OrderBy(o => o.checkPointOrder).ToList();
 
             // Set checkpoints
             if (currentCheckPoints != null && currentCheckPoints.Count > 0) {
@@ -164,7 +197,7 @@ namespace Controller.Map {
                 return null;
             }
 
-            foreach (var checkPoint in currentCheckPoints.Where(checkPoint => checkPoint.id == id)) {
+            foreach (var checkPoint in currentCheckPoints.Where(checkPoint => checkPoint.CheckPointId == id)) {
                 LogService.Debug($"[YisoMapController.CheckpointManager] Checkpoint found with ID: {id}.");
                 return checkPoint;
             }
@@ -175,17 +208,17 @@ namespace Controller.Map {
         
 
         protected virtual void InitializeCameraBoundaries() {
-            if (cameraBoundaries == null || cameraBoundaries.Length == 0) {
+            if (AllCameraBoundaries == null || AllCameraBoundaries.Count == 0) {
                 LogService.Warn("[MapController.InitializeCameraBoundaries] Camera boundary is not registered.");
                 return;
             }
 
-            foreach (var cameraBoundary in cameraBoundaries) {
+            foreach (var cameraBoundary in AllCameraBoundaries) {
                 cameraBoundary.isTrigger = true;
                 cameraBoundary.AddComponent<YisoCameraBoundarySetter>();
             }
 
-            CurrentCameraBoundary = cameraBoundaries[0];
+            CurrentCameraBoundary = AllCameraBoundaries[0];
             YisoCameraEvent.Trigger(YisoCameraEventTypes.SetConfiner, CurrentCameraBoundary);
             LogService.Debug("[MapController.InitializeCameraBoundaries] Set Camera Boundary.");
         }
@@ -193,14 +226,14 @@ namespace Controller.Map {
         protected virtual void InitializeNavigationZones() {
             LogService.Debug("[YisoMapController.InitializeNavigationZones] Initializing navigation zones.");
 
-            if (navigationZones == null || navigationZones.Count == 0) {
+            if (AllNavigationZones == null || AllNavigationZones.Count == 0) {
                 LogService.Debug("[YisoMapController.InitializeNavigationZones] No navigation zones found. Creating default navigation zone.");
                 CreateDefaultNavigationZones();
             }
 
-            for (var i = 0; i < navigationZones.Count; i++) {
-                navigationZones[i].ZoneName = $"Zone{i + 1}";
-                LogService.Debug($"[YisoMapController.InitializeNavigationZones] Navigation zone initialized: {navigationZones[i].ZoneName}.");
+            for (var i = 0; i < AllNavigationZones.Count; i++) {
+                AllNavigationZones[i].ZoneName = $"Zone{i + 1}";
+                LogService.Debug($"[YisoMapController.InitializeNavigationZones] Navigation zone initialized: {AllNavigationZones[i].ZoneName}.");
             }
 
             LogService.Info("[YisoMapController.InitializeNavigationZones] Navigation zones initialization complete.");
@@ -226,7 +259,7 @@ namespace Controller.Map {
 
             var navigationZoneController = confinerGameObject.AddComponent<YisoNavigationZoneController>();
             navigationZoneController.mapBounds = defaultMapBounds;
-            navigationZones.Add(navigationZoneController);
+            AllNavigationZones.Add(navigationZoneController);
 
             LogService.Info("[YisoMapController.CreateDefaultNavigationZones] Default navigation zone created and added to navigationZones list.");
         }
@@ -274,7 +307,7 @@ namespace Controller.Map {
         public virtual void SetCurrentCheckpoint(YisoCharacterCheckPoint newCheckPoint) {
             if (!newCheckPoint.forceAssignation && currentCheckPoint != null && newCheckPoint.checkPointOrder < currentCheckPoint.checkPointOrder) return;
             currentCheckPoint = newCheckPoint;
-            LogService.Debug($"[YisoMapController.SetCurrentCheckpoint] Set Current Checkpoint: {newCheckPoint.id}.");
+            LogService.Debug($"[YisoMapController.SetCurrentCheckpoint] Set Current Checkpoint: {newCheckPoint.CheckPointId}.");
         }
 
         #endregion
@@ -326,7 +359,7 @@ namespace Controller.Map {
             }
         }
 
-        private void ActivateStageTriggers(CutsceneTriggerMapper[] triggers, bool active, ICollection<int> ids) {
+        private void ActivateStageTriggers(List<CutsceneTriggerMapper> triggers, bool active, ICollection<int> ids) {
             if (triggers == null) {
                 LogService.Warn($"[YisoMapController.ActivateStageTriggers] Triggers array is null. Exiting method.");
                 return;

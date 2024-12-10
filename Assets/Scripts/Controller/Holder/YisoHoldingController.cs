@@ -8,7 +8,7 @@ using Core.Service.Temp;
 using Core.Service.UI;
 using Core.Service.UI.HUD;
 using Core.Service.UI.Popup;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using Tools.Inputs;
 using UI.HUD.Interact;

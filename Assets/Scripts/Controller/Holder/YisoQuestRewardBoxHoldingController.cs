@@ -6,7 +6,7 @@ using Core.Service;
 using Core.Service.Character;
 using Core.Service.Game;
 using Core.Service.UI.Game;
-using Manager_Temp_;
+using Manager;
 using TMPro;
 using Tools.Event;
 using UI.HUD.Interact;

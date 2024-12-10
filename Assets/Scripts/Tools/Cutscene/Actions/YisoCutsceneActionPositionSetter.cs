@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using Character.Ability;
 using Character.Core;
-using Core.Logger;
-using Manager_Temp_;
+using Manager;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

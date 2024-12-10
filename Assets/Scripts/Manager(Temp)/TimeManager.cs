@@ -11,7 +11,7 @@ using UI.HUD.Timer;
 using UnityEngine;
 using Utils.Beagle;
 
-namespace Manager_Temp_ {
+namespace Manager {
     /// <summary>
     /// Change: 지정된 시간동안 시간 척도를 변경
     /// Reset: 시간 척도를 초기 값을 재설정

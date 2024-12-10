@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Core.Domain.Cabinet;
+using Core.Domain.Data.Checkpoint;
 using Core.Domain.Dialogue;
 using Core.Domain.Direction;
 using Core.Domain.Locale;
@@ -16,6 +17,7 @@ namespace Core.Service.Domain {
         public YisoDialogue GetDialogueByIdElseThrow(int dialogueId);
         public YisoGameDirection GetGameDirectionByIdOrElseThrow(int id);
         public List<YisoWanted> GetWantedList();
+        public bool TryGetCheckpointSO(int id, out YisoCheckpointSO so);
         public Sprite GetMoneyIcon();
         public Sprite GetExpIcon();
         public Sprite GetCombatRatingIcon();
