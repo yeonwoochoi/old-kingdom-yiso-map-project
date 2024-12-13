@@ -32,7 +32,7 @@ namespace Core.Domain.Actor.Player.Modules.Game {
 
         public void LoadData(YisoPlayerData data) {
             CheckpointId = data.gameData.checkpointId;
-            LastPosition = data.gameData.lastPosition;
+            LastPosition = data.gameData.GetPosition();
             MapId = data.gameData.mapId;
             PetIds = data.gameData.petIds;
         }
@@ -40,7 +40,7 @@ namespace Core.Domain.Actor.Player.Modules.Game {
         public void SaveData(ref YisoPlayerData data) {
             data.gameData.checkpointId = CheckpointId;
             data.gameData.mapId = MapId;
-            data.gameData.lastPosition = LastPosition;
+            data.gameData.SetPosition(LastPosition);
         }
         
         public void ResetData() {

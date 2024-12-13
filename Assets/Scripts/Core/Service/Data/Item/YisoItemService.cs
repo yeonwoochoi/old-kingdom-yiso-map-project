@@ -237,18 +237,23 @@ namespace Core.Service.Data.Item {
         public YisoStore CreateDevStore(int stageId, int count = 15) {
             var storeItems = new List<YisoStoreItem>();
 
-            for (var i = 0; i < count; i++) {
-                var faction = itemFactorService.GetRandomFaction();
-                var slot = itemFactorService.GetRandomSlot();
-                var randomItem = CreateRandomItem(stageId, faction, slot, YisoEquipRanks.S);
-                storeItems.Add(new YisoStoreItem(randomItem, -1));
-            }
+            var store = new YisoStore(stageId);
+
             
+            if (count > 0) {
+                for (var i = 0; i < count; i++) {
+                    var faction = itemFactorService.GetRandomFaction();
+                    var slot = itemFactorService.GetRandomSlot();
+                    var randomItem = CreateRandomItem(stageId, faction, slot, YisoEquipRanks.S);
+                    storeItems.Add(new YisoStoreItem(randomItem, -1));
+                }
+                
+                store.EquipItems.AddRange(storeItems);
+            }
+
             var arrowItemId = 20000101;
             var arrowItem = GetItemOrElseThrow(arrowItemId);
             
-            var store = new YisoStore(stageId);
-            store.EquipItems.AddRange(storeItems);
             store.UseItems.Add(new YisoStoreItem(arrowItem, 100));
             SetStoreItemPrices(stageId, store);
             return store;

@@ -131,10 +131,10 @@ namespace Core.Service.Factor.Item {
             itemFactors.dropFactors.moneyDropFactors[YisoEnemyTypes.FIELD_BOSS] = 2d;
             itemFactors.dropFactors.moneyDropFactors[YisoEnemyTypes.BOSS] = 3d;
 
-            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.NORMAL] = 0.5d;
-            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.ELITE] = 0.3d;
-            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.FIELD_BOSS] = 0.05d;
-            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.BOSS] = 0.01d;
+            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.NORMAL] = 0.001d;
+            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.ELITE] = 0.5d;
+            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.FIELD_BOSS] = 0.5d;
+            itemFactors.dropFactors.dropFactors[YisoEnemyTypes.BOSS] = 0.5d;
         }
 
         public bool IsReady() => ready;

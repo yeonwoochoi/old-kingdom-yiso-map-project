@@ -151,9 +151,9 @@ namespace Core.Service.Character {
             
             bool TryGenerateRandomItem(out YisoItem item) {
                 item = null;
-                var itemDropRate = player.StatModule.ItemDropRate.ToNormalized();
-                var dropProb = ProbUtils.Add(itemDropRate, enemyItemProbFactor);
-                if (!Randomizer.Below(dropProb)) return false;
+                // var itemDropRate = player.StatModule.ItemDropRate.ToNormalized();
+                // var dropProb = ProbUtils.Add(itemDropRate, enemyItemProbFactor);
+                if (!Randomizer.Below(enemyItemProbFactor)) return false;
                 item = itemService.CreateRandomItem(stageId);
                 return true;
             }
